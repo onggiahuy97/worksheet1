@@ -1,0 +1,6 @@
+Verified file:
+Lines count: 1439 verified.tsv
+Words count: 588540 verified.tsv
+Unverified file:
+Lines count: 99 unverified.tsv
+Words count: 43387 unverified.tsv
