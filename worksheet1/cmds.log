@@ -86,3 +86,146 @@
    86  rm --help
    87  history
    88  history > cmds.log
+    1  ls -latr
+    2  passwd huyong123
+    3  passwd
+    4  cd /Users/huyong/Library/Mobile\ Documents/com~apple~CloudDocs/SJSU/CS\ Dept/CS\ 131\ /Github 
+    5  ls
+    6  mkdir worksheet1
+    7  ls
+    8  cd worksheet1/
+    9  ls
+   10  git init 
+   11  git init
+   12  git add .
+   13  git commit -m "First"
+   14  git clone https://github.com/onggiahuy97/CS131_HuyOng.git
+   15  git status
+   16  git add .
+   17  ls
+   18  git status
+   19  git init
+   20  git add .
+   21  gh auth login
+   22  git branch
+   23  branch
+   24  git help
+   25  git branch
+   26  cd ..
+   27  ls
+   28  cd worksheet1/
+   29  git clone  https://github.com/onggiahuy97/CS131_HuyOng.git
+   30  ls
+   31  cd CS131_HuyOng/
+   32  ls
+   33  cd ..
+   34  cd CS131_HuyOng/
+   35  git init
+   36  git add .
+   37  git commit -m "Updated"
+   38  git config --global user.email "ogh.huy@gmail.com"
+   39  git config --global user.name "Huy Ong CS 131"
+   40  git branch
+   41  git add .
+   42  git commit -m "Updated"
+   43  touch hello.py
+   44  ls
+   45  vim hello.py 
+   46  git status
+   47  git add .
+   48  git commit -m "Updated"
+   49  git push -u origin main
+   50  clear
+   51  gti branch
+   52  git branch
+   53  git checkout test1
+   54  git checkout -b test1
+   55  git status
+   56  ls
+   57  vim hello.py 
+   58  git add .
+   59  git commit -m "UPdated"
+   60  git push -u origin test1
+   61  sudo apt-get install wget
+   62  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   63  ls
+   64  open .
+   65  git clone https://github.com/onggiahuy97/worksheet1.git
+   66  rm -r worksheet1/
+   67  ls
+   68  rm worksheet1
+   69  pwd
+   70  mkdir git
+   71  ls
+   72  cd git
+   73  ls
+   74  git clone https://github.com/onggiahuy97/worksheet1.git
+   75  ls
+   76  cd worksheet1
+   77  ls
+   78  vim hello.py
+   79  git status
+   80  git init
+   81  git add .
+   82  git commit -m "First commit"
+   83  git push -u origin main
+   84  ls
+   85  rm -m hello.py 
+   86  rm --help
+   87  history
+   88  history > cmds.log
+   89  ls
+   90  vim cmds.log
+   91  rm --help
+   92  rm -r hello.py 
+   93  ls
+   94  git add .
+   95  git commit -m "Updated"
+   96  git push -u origin main
+   97  clear
+   98  ls
+   99  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  100  ls
+  101  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+  102  clear
+  103  tail -f file amazon_reviews_us_Books_v1_02.tsv 
+  104  clear
+  105  man vi /
+  106  uit
+  107  clear
+  108  ls
+  109  open .
+  110  cd git
+  111  ls
+  112  cd .
+  113  ls
+  114  cd ..
+  115  cd worksheet1/
+  116  ls
+  117  cd ..
+  118  clear
+  119  ls
+  120  cd worksheet1/
+  121  ls
+  122  cd CS131_HuyOng/
+  123  ls
+  124  cd
+  125  cd git
+  126  ls
+  127  git status
+  128  cd worksheet1/
+  129  ls
+  130  mkdir worksheet1
+  131  ls
+  132  man mv
+  133  mv cmds.log worksheet1/
+  134  ls
+  135  cd worksheet1/
+  136  ls
+  137  git status
+  138  git add .
+  139  git commit -m "Updated"
+  140  history
+  141  clear
+  142  ls
+  143  history >> cmds.log
