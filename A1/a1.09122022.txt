@@ -1,0 +1,560 @@
+Script started on 2022-09-12 10:34:34-04:00
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -t , -k 4 downloaded_hashtags_extend.csv | wc -l
+64698
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -t , -k 2 downloaded_hashtags_extend.csv  [K| wc -l
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -t , -k 2 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@1
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l[1P[1@3
+64698
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sourt -u -k 1 downloaded_hashtags_extend.csv | wc -ln[K
+bash: sourt: command not found
+0
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sourt -u -k 1 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -k 1 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@0
+sort: field number is zero: invalid field specification ‘0’
+0
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -k 0 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@1
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -k1 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@,[C[1@ [1@1
+sort: invalid number after ',': invalid count at start of ‘’
+0
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -k1, 1 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ sort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@2
+107656
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ wc -l downloaded_hashtags_extend.csv 
+110350 downloaded_hashtags_extend.csv
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ [K[huy@sjsu A1]$ [K[huy@sjsu A1]$ clear
+[3J[H[2J]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ cat a1*.txt >> a1.combined.txt
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ ls
+a1.090722.txt  a1.090822.txt  a1.09122022.txt  a1.combined.txt  a1.txt  downloaded_hashtags_extend.csv  [0m[38;5;33mtemp[0m  [38;5;33mtemp2[0m  [38;5;33mtemp3[0m
+]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ clear
+[3J[H[2J]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ vi a1.combined.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;68r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[68;1H"a1.combined.txt" [noeol] 175581L, 12582843C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HScript started on 2022-09-07 21:02:12-04:00
+[34m^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ ls[34m^M[m
+a1.090722.txt  a1.txt  downloaded_hashtags_extend.csv  [34m^[[m[0m[34m^[[m[38;5;33mtemp[34m^[[m[0m  [34m^[[m[38;5;33mtemp2[34m^[[m[0m  [34m^[[m[38;5;33mtemp3[34m^[[m[0m[34m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ file downloaded_hashtags_extend.csv [34m^M[m
+downloaded_hashtags_extend.csv: UTF-8 Unicode text[34m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ man iconv[34m^M
+^[[m[?1049h[34m^[[m[22;0;0t[34m^[[m[?1h[34m^[[m=[34m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mNAME[34m^[[m[0m[34m^[[m[m[34m^M[m[10;8Hiconv - convert text from one character encoding to another[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mSYNOPSIS[34m^[[m[0m[34m^[[m[m[34m^M[13;8H^[[m[1miconv [34m^[[m[22m[[34m^[[m[4moptions[34m^[[m[24m] [-f [34m^[[m[4mfrom-encoding[34m^[[m[24m] [-t [34m^[[m[4mto-encoding[34m^[[m[24m] [[34m^[[m[4minputfile[34m^[[m[24m]...[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mDESCRIPTION[34m^[[m[0m[34m^[[m[m[34m^M[m[16;8HThe [34m^[[m[1miconv [34m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[34m^[[m[m[34m^M[m[17;8Hno input files are given, or if it is given as a dash (-), [34m^[[m[1miconv [34m^[[m[22mreads from  standard  input.[34m^[[m[m[34m^M[m[18;8HIf no output file is given, [34m^[[m[1miconv [34m^[[m[22mwrites to standard output.[34m^[[m[m[34m^M
+^[[m[m[34m^M[m[20;8HIf  no  [34m^[[m[4mfrom-encoding[34m^[[m[24m  is  given,  the default is derived from the current locale's character[34m^[[m[m[34m^M[m[21;8Hencoding.  If no [34m^[[m[4mto-encoding[34m^[[m[24m is given, the default is derived from the current locale's char‐[21;112H[34m^[[m[m[34m^M[m[22;8Hacter encoding.[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mOPTIONS[34m^[[m[0m[34m^[[m[m[34m^M[25;8H^[[m[1m-f [34m^[[m[4m[34m^[[m[22mfrom-encoding[34m^[[m[24m, [34m^[[m[1m--from-code=[34m^[[m[4m[34m^[[m[22mfrom-encoding[34m^[[m[0m[34m^[[m[m[34m^M[m[26;15HUse [34m^[[m[4mfrom-encoding[34m^[[m[24m for input characters.[34m^[[m[m[34m^M
+^[[m[m[34m^M[28;8H^[[m[1m-t [34m^[[m[4m[34m^[[m[22mto-encoding[34m^[[m[24m, [34m^[[m[1m--to-code=[34m^[[m[4m[34m^[[m[22mto-encoding[34m^[[m[0m[34m^[[m[m[34m^M[m[29;15HUse [34m^[[m[4mto-encoding[34m^[[m[24m for output characters.[34m^[[m[m[34m^M
+^[[m[m[34m^M[m[31;15HIf the string [34m^[[m[1m//IGNORE [34m^[[m[22mis appended to [34m^[[m[4mto-encoding[34m^[[m[24m, characters that cannot be converted[34m^[[m[m[34m^M[m[32;15Hare discarded and an error is printed after conversion.[34m^[[m[m[34m^M
+^[[m[m[34m^M[m[34;15HIf the string [34m^[[m[1m//TRANSLIT [34m^[[m[22mis appended to [34m^[[m[4mto-encoding[34m^[[m[24m, characters  being  converted  are[34m^[[m[m[34m^M[m[35;15Htransliterated  when  needed and possible.  This means that when a character cannot be[34m^[[m[m[34m^M[m[36;15Hrepresented in the target character set, it can be approximated through one or several[34m^[[m[m[34m^M[m[37;15Hsimilar  looking  characters.  Characters that are outside of the target character set[34m^[[m[m[34m^M[m[38;15Hand cannot be transliterated are replaced with a question mark (?) in the output.[34m^[[m[m[34m^M
+^[[m[m[34m^M[40;8H^[[m[1m-l[34m^[[m[22m, [34m^[[m[1m--list[34m^[[m[0m[34m^[[m[m[34m^M[m[41;15HList all known character set encodings.[34m^[[m[m[34m^M
+^[[m[m[34m^M[43;8H^[[m[1m-c     [34m^[[m[22mSilently discard characters that cannot  be  converted  instead  of  terminating  when[34m^[[m[m[34m^M[m[44;15Hencountering such characters.[34m^[[m[m[34m^M
+^[[m[m[34m^M[46;8H^[[m[1m-o [34m^[[m[4m[34m^[[m[22moutputfile[34m^[[m[24m, [34m^[[m[1m--output=[34m^[[m[4m[34m^[[m[22moutputfile[34m^[[m[0m[34m^[[m[m[34m^M[m[47;15HUse [34m^[[m[4moutputfile[34m^[[m[24m for output.[34m^[[m[m[34m^M
+^[[m[7m Manual page iconv(1) line 1 (press h for help or q to quit)[34m^[[m[27m[34m^[[m[K[34m^M^[[m[K[34m^[[m[?1l[34m^[[m>[34m^[[m[?1049l[34m^[[m[23;0;0t[34m^[[m]0;huy@sjsu:~/git/worksheet1/AA[49;1H1[34m^G[m[huy@sjsu A1]$ man iconv[34m^M
+^[[m[?1049h[34m^[[m[22;0;0t[34m^[[m[?1h[34m^[[m=[34m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mNAME[34m^[[m[0m[34m^[[m[m[34m^M[m[53;8Hiconv - convert text from one character encoding to another[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mSYNOPSIS[34m^[[m[0m[34m^[[m[m[34m^M[56;8H^[[m[1miconv [34m^[[m[22m[[34m^[[m[4moptions[34m^[[m[24m] [-f [34m^[[m[4mfrom-encoding[34m^[[m[24m] [-t [34m^[[m[4mto-encoding[34m^[[m[24m] [[34m^[[m[4minputfile[34m^[[m[24m]...[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mDESCRIPTION[34m^[[m[0m[34m^[[m[m[34m^M[m[59;8HThe [34m^[[m[1miconv [34m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[34m^[[m[m[34m^M[m[60;8Hno input files are given, or if it is given as a dash (-), [34m^[[m[1miconv [34m^[[m[22mreads from  standard  input.[34m^[[m[m[34m^M[m[61;8HIf no output file is given, [34m^[[m[1miconv [34m^[[m[22mwrites to standard output.[34m^[[m[m[34m^M
+^[[m[m[34m^M[m[63;8HIf  no  [34m^[[m[4mfrom-encoding[34m^[[m[24m  is  given,  the default is derived from the current locale's character[34m^[[m[m[34m^M[m[64;8Hencoding.  If no [34m^[[m[4mto-encoding[34m^[[m[24m is given, the default is derived from the current locale's char‐[64;112H[34m^[[m[m[34m^M[m[65;8Hacter encoding.[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mOPTIONS[34m^[[m[0m[34m^[[m[m[34m^M[m[68;124H1,1[11CTop[1;1H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1HScript started on 2022-09-07 21:02:12-04:00
+[38;5;81m^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ ls[38;5;81m^M[m
+a1.090722.txt  a1.txt  downloaded_hashtags_extend.csv  [38;5;81m^[[m[0m[38;5;81m^[[m[38;5;33mtemp[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp2[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp3[38;5;81m^[[m[0m[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ file downloaded_hashtags_extend.csv [38;5;81m^M[m
+downloaded_hashtags_extend.csv: UTF-8 Unicode text[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ man iconv[38;5;81m^M
+^[[m[?1049h[38;5;81m^[[m[22;0;0t[38;5;81m^[[m[?1h[38;5;81m^[[m=[38;5;81m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mNAME[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[10;8Hiconv - convert text from one character encoding to another[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mSYNOPSIS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[13;8H^[[m[1miconv [38;5;81m^[[m[22m[[38;5;81m^[[m[4moptions[38;5;81m^[[m[24m] [-f [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m] [-t [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m] [[38;5;81m^[[m[4minputfile[38;5;81m^[[m[24m]...[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mDESCRIPTION[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[16;8HThe [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[38;5;81m^[[m[m[38;5;81m^M[m[17;8Hno input files are given, or if it is given as a dash (-), [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mreads from  standard  input.[38;5;81m^[[m[m[38;5;81m^M[m[18;8HIf no output file is given, [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mwrites to standard output.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[20;8HIf  no  [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m  is  given,  the default is derived from the current locale's character[38;5;81m^[[m[m[38;5;81m^M[m[21;8Hencoding.  If no [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m is given, the default is derived from the current locale's char‐[21;112H[38;5;81m^[[m[m[38;5;81m^M[m[22;8Hacter encoding.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[25;8H^[[m[1m-f [38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--from-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[26;15HUse [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m for input characters.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[28;8H^[[m[1m-t [38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--to-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[29;15HUse [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m for output characters.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[31;15HIf the string [38;5;81m^[[m[1m//IGNORE [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters that cannot be converted[38;5;81m^[[m[m[38;5;81m^M[m[32;15Hare discarded and an error is printed after conversion.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[34;15HIf the string [38;5;81m^[[m[1m//TRANSLIT [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters  being  converted  are[38;5;81m^[[m[m[38;5;81m^M[m[35;15Htransliterated  when  needed and possible.  This means that when a character cannot be[38;5;81m^[[m[m[38;5;81m^M[m[36;15Hrepresented in the target character set, it can be approximated through one or several[38;5;81m^[[m[m[38;5;81m^M[m[37;15Hsimilar  looking  characters.  Characters that are outside of the target character set[38;5;81m^[[m[m[38;5;81m^M[m[38;15Hand cannot be transliterated are replaced with a question mark (?) in the output.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[40;8H^[[m[1m-l[38;5;81m^[[m[22m, [38;5;81m^[[m[1m--list[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[41;15HList all known character set encodings.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[43;8H^[[m[1m-c     [38;5;81m^[[m[22mSilently discard characters that cannot  be  converted  instead  of  terminating  when[38;5;81m^[[m[m[38;5;81m^M[m[44;15Hencountering such characters.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[46;8H^[[m[1m-o [38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--output=[38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[47;15HUse [38;5;81m^[[m[4moutputfile[38;5;81m^[[m[24m for output.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[7m Manual page iconv(1) line 1 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K[38;5;81m^[[m[?1l[38;5;81m^[[m>[38;5;81m^[[m[?1049l[38;5;81m^[[m[23;0;0t[38;5;81m^[[m]0;huy@sjsu:~/git/worksheet1/AA[49;1H1[38;5;81m^G[m[huy@sjsu A1]$ man iconv[38;5;81m^M
+^[[m[?1049h[38;5;81m^[[m[22;0;0t[38;5;81m^[[m[?1h[38;5;81m^[[m=[38;5;81m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mNAME[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[53;8Hiconv - convert text from one character encoding to another[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mSYNOPSIS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[56;8H^[[m[1miconv [38;5;81m^[[m[22m[[38;5;81m^[[m[4moptions[38;5;81m^[[m[24m] [-f [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m] [-t [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m] [[38;5;81m^[[m[4minputfile[38;5;81m^[[m[24m]...[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mDESCRIPTION[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[59;8HThe [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[38;5;81m^[[m[m[38;5;81m^M[m[60;8Hno input files are given, or if it is given as a dash (-), [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mreads from  standard  input.[38;5;81m^[[m[m[38;5;81m^M[m[61;8HIf no output file is given, [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mwrites to standard output.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[63;8HIf  no  [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m  is  given,  the default is derived from the current locale's character[38;5;81m^[[m[m[38;5;81m^M[m[64;8Hencoding.  If no [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m is given, the default is derived from the current locale's char‐[64;112H[38;5;81m^[[m[m[38;5;81m^M[m[65;8Hacter encoding.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H1,1[11CTop"a1.combined.txt" [noeol] 175581L, 12582843C[1;1H[?25h[?25l[68;114Hi[1;1H[68;114H [1;1H[68;1H[1m-- INSERT --[m[68;13H[K[68;124H1,1[11CTop[1;1H[?25h[?25l[2;67r[2;1H[L[1;68r[1;1H[K[2;1HScript started on 2022-09-07 21:02:12-04:00[68;124H[K[68;124H2,1[11CTop[2;1H[?25h[?25l[68;124H1[1;1H[?25h[?25l[2;67r[2;1H[L[1;68r[68;124H[K[68;124H2,1[11CTop[2;1H[?25h[?25l[3;67r[3;1H[L[1;68r[68;124H[K[68;124H3,1[11CTop[3;1H[?25h[?25l[68;124H2[2;1H[?25h[?25l[68;124H1[1;1H[?25h[?25lQ[68;126H2[1;2H[?25h[?25lu[68;126H3[1;3H[?25h[?25le[68;126H4[1;4H[?25h[?25ls[68;126H5[1;5H[?25h[?25lt[68;126H6[1;6H[?25h[?25li[68;126H7[1;7H[?25h[?25lo[68;126H8[1;8H[?25h[?25ln[68;126H9[1;9H[?25h[?25ls[68;126H10[1;10H[?25h[?25l[68;124H2,1 [2;1H[?25h[?25l[68;124H3[3;1H[?25h[?25l[68;124H4,10[4;10H[?25h[?25l[68;124H5,9-10[5;10H[?25h[?25l[68;124H6,10  [6;10H[?25h[?25l[68;124H7,9-10[7;10H[?25h[?25l[68;124H8,10  [8;10H[?25h[?25l[68;124H9,9-10[9;10H[?25h[?25l[68;124H10,9-10[10;10H[?25h[?25l[68;125H1,5-7 [11;7H[?25h[?25l[68;125H2,9-10[12;10H[?25h[?25l[68;125H3,10  [13;10H[?25h[?25l[68;125H4,5-7[14;7H[?25h[?25l[68;125H5,9-10[15;10H[?25h[?25l[68;125H6[16;10H[?25h[?25l[68;125H8[18;10H[?25h[?25l[68;125H9,10  [19;10H[?25h[?25l[68;124H20[20;10H[?25h[?25l[68;125H1[21;10H[?25h[?25l[68;125H2,5-7[22;7H[?25h[?25l[68;125H3,10 [23;10H[?25h[?25l[68;125H4[24;10H[?25h[?25l[68;125H5[25;10H[?25h[?25l[68;125H4[24;10H[?25h[?25l[68;125H3[23;10H[?25h[?25l[68;125H2,5-7[22;7H[?25h[?25l[68;125H1,10 [21;10H[?25h[?25l[68;125H0[20;10H[?25h[?25l[68;125H1[21;10H[?25h[?25l[68;125H2,5-7[22;7H[?25h[?25l[68;125H4,10 [24;10H[?25h[?25l[68;125H5[25;10H[?25h[?25l[68;125H6,5-7[26;7H[?25h[?25l[68;125H7,9-10[27;10H[?25h[?25l[68;125H8[28;10H[?25h[?25l[68;125H9,10  [29;10H[?25h[?25l[68;125H8,9-10[28;10H[?25h[?25l[68;125H6,5-7 [26;7H[?25h[?25l[68;125H5,10 [25;10H[?25h[?25l[68;125H3[23;10H[?25h[?25l[68;124H18,9-10[18;10H[?25h[?25l[68;125H7,5-7 [17;7H[?25h[?25l[68;125H6,9-10[16;10H[?25h[?25l[68;125H5[15;10H[?25h[?25l[68;125H3,10  [13;10H[?25h[?25l[68;125H1,5-7[11;7H[?25h[?25l[68;125H0,9-10[10;10H[?25h[?25l[68;124H9,9-10 [9;10H[?25h[?25l[68;124H7[7;10H[?25h[?25l[68;124H6,10  [6;10H[?25h[?25l[68;124H4[4;10H[?25h[?25l[68;124H2,1 [2;1H[?25h[?25l[68;124H1,10[1;10H[?25h[?25l[2;67r[2;1H[L[1;68r[68;124H[K[68;124H2,1[11CTop[2;1H[?25h[?25l1[68;126H2[2;2H[?25h[?25l.[68;126H3[2;3H[?25h[?25l[68;126H4[2;4H[?25h[?25l[3;67r[3;1H[L[1;68r[68;124H[K[68;124H3,1[11CTop[3;1H[?25h[?25l2[68;126H2[3;2H[?25h[?25l.[68;126H3[3;3H[?25h[?25l[4;67r[4;1H[L[1;68r[68;124H[K[68;124H4,1[11CTop[4;1H[?25h[?25l[68;126H2-9[4;9H[?25h[?25l[5;67r[5;1H[L[1;68r[4;9H- /home/huy/git/worksheet1/A1
+- Commands used: $ pw[68;11H[1m(paste) --[m[68;124H[K[5;22H[?25h[?25ld[68;124H5,23[10CTop[5;23H[?25h[?25l[68;124H4,16-23[4;23H[?25h[?25l[68;124H3,3    [3;3H[?25h[?25l[68;124H4,16-23[4;23H[?25h[?25l[5;67r[5;1H[4L[1;68r[4;23H[K[5;1H1.
+2.[7;9H- /home/huy/git/worksheet1/A1
+- Commands used: $ pwdt/worksheet1/A1[68;11H[1m--a[m[68;13H[K[68;124H8,23[10CTop[8;23H[?25h[?25l[68;124H9[9;23H[?25h[?25l[9;22H[K[68;127H2[9;22H[?25h[?25l[9;21H[K[68;127H1[9;21H[?25h[?25l[9;20H[K[68;127H0[9;20H[?25h[?25l[68;126H19[9;19H[?25h[?25l[9;18H[K[68;127H8[9;18H[?25h[?25l[68;127H7[9;17H[?25h[?25l[9;16H[K[68;127H6[9;16H[?25h[?25l[9;15H[K[68;127H5[9;15H[?25h[?25l[9;14H[K[68;127H4[9;14H[?25h[?25l[9;13H[K[68;127H3[9;13H[?25h[?25l[9;12H[K[68;127H2[9;12H[?25h[?25l[68;127H1[9;11H[?25h[?25l[9;10H[K[68;127H0[9;10H[?25h[?25l[9;9H[K[68;126H9 [9;9H[?25h[?25l[9;8H[K[68;126H8[9;8H[?25h[?25l[9;7H[K[68;126H7[9;7H[?25h[?25l[9;6H[K[68;126H6[9;6H[?25h[?25l[9;5H[K[68;126H5[9;5H[?25h[?25l[9;4H[K[68;126H4[9;4H[?25h[?25l[9;3H[K[68;126H3[9;3H[?25h[?25l[68;126H2[9;2H[?25h[?25l[9;1H[K[68;126H1[9;1H[?25h[?25l[8;67r[67;1H
+[1;68r[8;1H- Commands used: $ pwdt/worksheet1/A1[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H8,38[10CTop[8;38H[?25h[?25l[8;37H[K[68;127H7[8;37H[?25h[?25l[8;1H[K[68;126H1 [8;1H[?25h[?25lu[68;126H2[8;2H[?25h[?25l[8;1H[K[68;126H1[8;1H[?25h[?25l[7;67r[67;1H
+[1;68r[7;9H- /home/huy/git/worksheet1/A1[67;1H[38;5;81m^[[m[1mDESCRIPTION[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H7,31-38[7CTop[7;38H[?25h[?25l[7;9H[K[68;126H1    [7;1H[?25h[?25lu[68;126H2[7;2H[?25h[?25l[7;1H[K[68;126H1[7;1H[?25h[?25l[6;67r[67;1H
+[1;68r[6;1H2.[67;8HThe [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H6,3[11CTop[6;3H[?25h[?25l[6;1H[K[68;126H1[6;1H[?25h[?25l[5;67r[67;1H
+[1;68r[5;1H1.[67;8Hno input files are given, or if it is given as a dash (-), [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mreads from  standard  input.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H5,4[11CTop[5;4H[?25h[?25l[5;1H[K[68;126H1[5;1H[?25h[?25l[4;67r[67;1H
+[1;68r[4;9H- /home/huy/gi[67;8HIf no output file is given, [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mwrites to standard output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H4,16-23[7CTop[4;23H[?25h[?25l[4;9H[K[68;127H    [4;1H[?25h[?25l[5;67r[5;1H[L[1;68r[4;1H- /home/huy/git/worksheet1/A1
+- Commands used: $ pwd[68;11H[1m(paste) --[m[68;124H[K[5;23H[?25h[?25l[68;124H5,23[10CTop[5;23H[?25h[?25l[6;67r[6;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H6,1[11CTop[6;1H[?25h[?25l3[68;126H2[6;2H[?25h[?25l.[68;126H3[6;3H[?25h[?25l[7;67r[7;1H[L[1;68r[68;124H[K[68;124H7,1[11CTop[7;1H[?25h[?25l[8;67r[8;1H[2L[1;68r[7;1H- UID: echo $UID →[7;20H1027
+- $ groups →[8;14Hhuy
+- use co[68;11H[1m(paste) --[m[68;124H[K[9;9H[?25h[?25lmand lines on lecture to answer questions[68;124H9,50[10CTop[9;50H[?25h[?25l[10;67r[10;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H10,1[10CTop[10;1H[?25h[?25l4[68;127H2[10;2H[?25h[?25l.[68;127H3[10;3H[?25h[?25l[11;67r[11;1H[L[1;68r[68;124H[K[68;124H11,1[10CTop[11;1H[?25h[?25l[12;67r[12;1H[L[1;68r[11;1H- $mkdir temp →[11;17Hchmod -x temp
+- ls and ls -l work but cd[68;11H[1m(paste) --[m[68;124H[K[12;27H[?25h[?25l[13;67r[13;1H[L[1;68r[12;28Htemp doesn’[12;39Ht work
+- Permission denied for mkdir temp/newTemp[?25h[?25l[68;124H13,43[9CTop[13;43H[?25h[?25l[14;67r[14;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H14,1[10CTop[14;1H[?25h[?25l5.[68;127H3[14;3H[?25h[?25l[15;67r[15;1H[L[1;68r[68;124H[K[68;124H15,1[10CTop[15;1H[?25h[?25l[16;67r[16;1H[L[1;68r[15;1H- temp3 is not a directory yet
+- cp will not work for[68;11H[1m(paste) --[m[68;124H[K[16;24H[?25h[?25l[17;67r[17;1H[L[1;68r[16;24Hcopying temp2 to temp3 whne temp3 is not a directory yet
+- to[67;1H[94m@@@                                                                                                                                          [17;5H[?25h[?25l[m do it: use ‘[17;18Hcp -r temp2 temp3’[68;124H17,40-36      Top[17;36H[?25h[?25l[18;67r[18;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H18,1[10CTop[18;1H[?25h[?25l6[68;127H2[18;2H[?25h[?25l.[68;127H3[18;3H[?25h[?25l[19;67r[19;1H[L[1;68r[68;124H[K[68;124H19,1[10CTop[19;1H[?25h[?25l[20;67r[20;1H[L[1;68r[19;1H- ls /proc/ | grep ‘[19;21Hmem’[20;1H- ls /proc/ | grep ‘[20;21Hcpu’[68;11H[1m(paste) --[m[68;124H[K[20;25H[?25h[?25l[68;124H20,29-25      Top[20;25H[?25h[?25l[21;67r[21;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H21,1[10CTop[21;1H[?25h[?25l7[68;127H2[21;2H[?25h[?25l.[68;127H3[21;3H[?25h[?25l[22;67r[22;1H[L[1;68r[68;124H[K[68;124H22,1[10CTop[22;1H[?25h[?25lhead /proc/meminfo →[22;22Htotal memory: 73080640 kB[68;127H49-47[22;47H[?25h[?25l[23;67r[23;1H[L[1;68r[68;124H[K[68;124H23,1[10CTop[23;1H[?25h[?25l8[68;127H2[23;2H[?25h[?25l.[68;127H3[23;3H[?25h[?25l[24;67r[24;1H[L[1;68r[68;124H[K[68;124H24,1[10CTop[24;1H[?25h[?25l[25;67r[25;1H[L[1;68r[24;1H- Using head won’[24;18Ht show all processors on server
+- E[68;11H[1m(paste) --[m[68;124H[K[25;4H[?25h[?25l[26;67r[26;1H[L[1;68r[25;4Hither use tail or cat to see the last processor.
+- cat /proc[?25h[?25l[27;67r[27;1H[L[1;68r[26;12H/cpuinfo →[26;23H255 processor
+- head /proc/cpuinfo →[27;24HPOWER8 (A[?25h[?25lrchitectured) and speed: 3525.000000MHz[68;124H27,74-72      Top[27;72H[?25h[?25l[28;67r[28;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H28,1[10CTop[28;1H[?25h[?25l9[68;127H2[28;2H[?25h[?25l.[68;127H3[28;3H[?25h[?25l[29;67r[29;1H[L[1;68r[68;124H[K[68;124H29,1[10CTop[29;1H[?25h[?25l- cp /home/test/A1/downloaded_hashtags_extend.csv git/workshe[?25h[?25l[30;67r[30;1H[L[1;68r[29;62Het1/A1
+- wc -l ‘[30;10Htwitter hastags file’[30;32H→[30;34Hprint: 110350 line[68;11H[1m(paste) --[m[68;124H[K[30;53H[?25h[?25l[31;67r[31;1H[L[1;68r[30;53Hcounted
+- ls -lh ‘[31;11Htwiiter hastags file’[31;33H→[31;35Hprint: 7.5M fil[?25h[?25le size[68;124H31,62-56      Top[31;56H[?25h[?25l[32;67r[32;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H32,1[10CTop[32;1H[?25h[?25l1[68;127H2[32;2H[?25h[?25l0[68;127H3[32;3H[?25h[?25l.[68;127H4[32;4H[?25h[?25l[33;67r[33;1H[L[1;68r[68;124H[K[68;124H33,1[10CTop[33;1H[?25h[?25lgrep -i great download_hastags_extend.csv | wc -l [?25h[?25l→[33;53Hprint: 57 hashtags contain word ‘[33;86Hgreat’[33;93Hcase-insens[?25h[?25litive.[68;128H16-110[33;110H[?25h[?25l[34;67r[34;1H[L[1;68r[68;124H[K[68;124H34,1[10CTop[34;1H[?25h[?25l1[68;127H2[34;2H[?25h[?25l1[68;127H3[34;3H[?25h[?25l.[68;127H4[34;4H[?25h[?25l[35;67r[35;1H[L[1;68r[68;124H[K[68;124H35,1[10CTop[35;1H[?25h[?25lfile downloaded_hashtags_extend.csv →[35;39HUFT 8 U[?25h[?25lnicode text[68;127H59-57[35;57H[?25h[?25l[36;67r[36;1H[L[1;68r[68;124H[K[68;124H36,1[10CTop[36;1H[?25h[?25l1[68;127H2[36;2H[?25h[?25l2[68;127H3[36;3H[?25h[?25l.[68;127H4[36;4H[?25h[?25l[37;67r[37;1H[L[1;68r[68;124H[K[68;124H37,1[10CTop[37;1H[?25h[?25l- iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv -o newT[?25h[?25l[38;67r[38;1H[L[1;68r[37;65Hype.csv →[37;75Hconvert the utf-8 file to ascii file
+- cat downloaded_ha[68;11H[1m(paste) --[m[68;124H[K[38;20H[?25h[?25lshtags_extend.csv | grep —[38;46Hcolor=’[38;53Hauto’[38;59H-P -n “[38;66H[\x80-\xFF][?25h[?25l”[38;79H→[38;81Hhighlight all the non-ascii encoding characters.[68;124H38,141-129    Top[38;129H[?25h[?25l[39;67r[39;1H[L[1;68r[68;11H[1m--a[m[68;13H[K[68;124H39,1[10CTop[39;1H[?25h[?25l1[68;127H2[39;2H[?25h[?25l3[68;127H3[39;3H[?25h[?25l.[68;127H4[39;4H[?25h[?25l[40;67r[40;1H[L[1;68r[68;124H[K[68;124H40,1[10CTop[40;1H[?25h[?25lsort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -[?25h[?25ll →[40;60Hprint: 107656 unique IDs[68;127H86-84[40;84H[?25h[?25l[41;67r[41;1H[L[1;68r[68;124H[K[68;124H41,1[10CTop[41;1H[?25h[?25l1[68;127H2[41;2H[?25h[?25l4[68;127H3[41;3H[?25h[?25l.[68;127H4[41;4H[?25h[?25l[42;67r[42;1H[L[1;68r[68;124H[K[68;124H42,1[10CTop[42;1H[?25h[?25l[41;67r[67;1H
+[1;68r[41;1H14.[67;1H[38;5;81m^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H41,4[10CTop[41;4H[?25h[?25l[41;3H[K[68;127H3[41;3H[?25h[?25l[41;2H[K[68;127H2[41;2H[?25h[?25l[41;1H[K[68;127H1[41;1H[?25h[?25l[40;67r[67;1H
+[1;68r[40;1Hsort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l →[40;60Hprint: 107656 unique IDs[67;8H[38;5;81m^[[m[1m-f [38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--from-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H40,86-84      Top[40;84H[?25h[?25l[41;67r[41;1H[4L[1;68r[41;1H1.
+2.[43;9H- /home/huy/git/worksheet1/A1
+- Commands used: $ pwd[68;124H[K[68;124H44,23[9CTop[44;23H[?25h[?25l[44;22H[K[68;128H2[44;22H[?25h[?25l[44;21H[K[68;128H1[44;21H[?25h[?25l[44;20H[K[68;128H0[44;20H[?25h[?25l[68;127H19[44;19H[?25h[?25l[44;18H[K[68;128H8[44;18H[?25h[?25l[68;128H7[44;17H[?25h[?25l[44;16H[K[68;128H6[44;16H[?25h[?25lu[68;128H7[44;17H[?25h[?25l[44;1H[K[68;128H [44;1H[?25h[?25l[43;67r[67;1H
+[1;68r[43;9H- /home/huy/git/worksheet1/A1[67;8Hacter encoding.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H43,31-38      Top[43;38H[?25h[?25l[43;9H[K[68;127H1    [43;1H[?25h[?25l[42;67r[67;1H
+[1;68r[42;1H2.[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H42,3[10CTop[42;3H[?25h[?25l[42;1H[K[68;127H1[42;1H[?25h[?25l[41;67r[67;1H
+[1;68r[41;1H1.[67;1H[38;5;81m^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H41,4[10CTop[41;4H[?25h[?25l[41;1H[K[68;127H1[41;1H[?25h[?25lsort -u -t , -k 4 downloaded_hashtags_extend.csv | wc -l[?25h[?25l →[41;60Hprint: 64698 unique tweets IDs are in the last column[?25h[?25l[68;128H15-113[41;113H[?25h[?25l[68;125H0,86-84  [40;84H[?25h[?25l[68;125H1,115-113[41;113H[?25h[?25l[42;67r[42;1H[L[1;68r[68;124H[K[68;124H42,1[10CTop[42;1H[?25h[?25l- sort -u -t , -k 2 downloaded_hashtags_extend.csv | [?25h[?25l[43;67r[43;1H[L[1;68r[42;54Hwc -l →[42;62Hprint: 107656 unique hashtags.
+- wc -l downloaded_h[68;11H[1m(paste) --[m[68;124H[K[43;21H[?25h[?25l[44;67r[44;1H[L[1;68r[43;21Hashtags_extend.csv →[43;42Hprint: 110350 tweets
+- so unique hasta[?25h[?25lgs is less than tweets.[68;124H44,41[9CTop[44;41H[?25h[68;1H[K[44;40H[?25l[68;114H^[[44;40H[68;114H  [44;41H[68;124H44,40[9CTop[44;40H[?25h[?25l[68;114H:[44;40H[68;114H[K[68;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"a1.combined.txt" 175627L, 12584668C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;huy@sjsu:~/git/worksheet1/A1[huy@sjsu A1]$ vi a1.combined.txt 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;68r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[68;1H"a1.combined.txt" 175627L, 12584668C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HQuestions
+1.
+2.
+- /home/huy/git/worksheet1/A1
+- Commands used: $ pwd
+3.
+- UID: echo $UID →[7;20H1027
+- $ groups →[8;14Hhuy
+- use comand lines on lecture to answer questions
+4.
+- $mkdir temp →[11;17Hchmod -x temp
+- ls and ls -l work but cd temp doesn’[12;39Ht work
+- Permission denied for mkdir temp/newTemp
+5.
+- temp3 is not a directory yet
+- cp will not work for copying temp2 to temp3 whne temp3 is not a directory yet
+- to do it: use ‘[17;18Hcp -r temp2 temp3’[18;1H6.
+- ls /proc/ | grep ‘[19;21Hmem’[20;1H- ls /proc/ | grep ‘[20;21Hcpu’[21;1H7.
+head /proc/meminfo →[22;22Htotal memory: 73080640 kB
+8.
+- Using head won’[24;18Ht show all processors on server
+- Either use tail or cat to see the last processor.
+- cat /proc/cpuinfo →[26;23H255 processor
+- head /proc/cpuinfo →[27;24HPOWER8 (Architectured) and speed: 3525.000000MHz
+9.
+- cp /home/test/A1/downloaded_hashtags_extend.csv git/worksheet1/A1
+- wc -l ‘[30;10Htwitter hastags file’[30;32H→[30;34Hprint: 110350 line counted
+- ls -lh ‘[31;11Htwiiter hastags file’[31;33H→[31;35Hprint: 7.5M file size
+10.
+grep -i great download_hastags_extend.csv | wc -l →[33;53Hprint: 57 hashtags contain word ‘[33;86Hgreat’[33;93Hcase-insensitive.
+11.
+file downloaded_hashtags_extend.csv →[35;39HUFT 8 Unicode text
+12.
+- iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv -o newType.csv →[37;75Hconvert the utf-8 file to ascii file
+- cat downloaded_hashtags_extend.csv | grep —[38;46Hcolor=’[38;53Hauto’[38;59H-P -n “[38;66H[\x80-\xFF]”[38;79H→[38;81Hhighlight all the non-ascii encoding characters.
+13.
+sort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l →[40;60Hprint: 107656 unique IDs
+sort -u -t , -k 4 downloaded_hashtags_extend.csv | wc -l →[41;60Hprint: 64698 unique tweets IDs are in the last column
+- sort -u -t , -k 2 downloaded_hashtags_extend.csv | wc -l →[42;62Hprint: 107656 unique hashtags.
+- wc -l downloaded_hashtags_extend.csv →[43;42Hprint: 110350 tweets
+- so unique hastags is less than tweets.
+
+
+Script started on 2022-09-07 21:02:12-04:00
+[34m^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ ls[34m^M[m
+a1.090722.txt  a1.txt  downloaded_hashtags_extend.csv  [34m^[[m[0m[34m^[[m[38;5;33mtemp[34m^[[m[0m  [34m^[[m[38;5;33mtemp2[34m^[[m[0m  [34m^[[m[38;5;33mtemp3[34m^[[m[0m[34m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ file downloaded_hashtags_extend.csv [34m^M[m
+downloaded_hashtags_extend.csv: UTF-8 Unicode text[34m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[34m^G[m[huy@sjsu A1]$ man iconv[34m^M
+^[[m[?1049h[34m^[[m[22;0;0t[34m^[[m[?1h[34m^[[m=[34m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mNAME[34m^[[m[0m[34m^[[m[m[34m^M[m[56;8Hiconv - convert text from one character encoding to another[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mSYNOPSIS[34m^[[m[0m[34m^[[m[m[34m^M[59;8H^[[m[1miconv [34m^[[m[22m[[34m^[[m[4moptions[34m^[[m[24m] [-f [34m^[[m[4mfrom-encoding[34m^[[m[24m] [-t [34m^[[m[4mto-encoding[34m^[[m[24m] [[34m^[[m[4minputfile[34m^[[m[24m]...[34m^[[m[m[34m^M
+^[[m[m[34m^M
+^[[m[1mDESCRIPTION[34m^[[m[0m[34m^[[m[m[34m^M[m[62;8HThe [34m^[[m[1miconv [34m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[34m^[[m[m[34m^M[m[63;8Hno input files are given, or if it is given as a dash (-), [34m^[[m[1miconv [34m^[[m[22mreads from  standard  input.[34m^[[m[m[34m^M[m[64;8HIf no output file is given, [34m^[[m[1miconv [34m^[[m[22mwrites to standard output.[34m^[[m[m[34m^M
+^[[m[m[34m^M[m[66;8HIf  no  [34m^[[m[4mfrom-encoding[34m^[[m[24m  is  given,  the default is derived from the current locale's character[34m^[[m[m[34m^M[m[67;8Hencoding.  If no [34m^[[m[4mto-encoding[34m^[[m[24m is given, the default is derived from the current locale's char‐[67;112H[34m^[[m[m[34m^M[m[68;124H44,40[9CTop[44;40H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1HQuestions
+1.
+2.
+- /home/huy/git/worksheet1/A1
+- Commands used: $ pwd
+3.
+- UID: echo $UID →[7;20H1027
+- $ groups →[8;14Hhuy
+- use comand lines on lecture to answer questions
+4.
+- $mkdir temp →[11;17Hchmod -x temp
+- ls and ls -l work but cd temp doesn’[12;39Ht work
+- Permission denied for mkdir temp/newTemp
+5.
+- temp3 is not a directory yet
+- cp will not work for copying temp2 to temp3 whne temp3 is not a directory yet
+- to do it: use ‘[17;18Hcp -r temp2 temp3’[18;1H6.
+- ls /proc/ | grep ‘[19;21Hmem’[20;1H- ls /proc/ | grep ‘[20;21Hcpu’[21;1H7.
+head /proc/meminfo →[22;22Htotal memory: 73080640 kB
+8.
+- Using head won’[24;18Ht show all processors on server
+- Either use tail or cat to see the last processor.
+- cat /proc/cpuinfo →[26;23H255 processor
+- head /proc/cpuinfo →[27;24HPOWER8 (Architectured) and speed: 3525.000000MHz
+9.
+- cp /home/test/A1/downloaded_hashtags_extend.csv git/worksheet1/A1
+- wc -l ‘[30;10Htwitter hastags file’[30;32H→[30;34Hprint: 110350 line counted
+- ls -lh ‘[31;11Htwiiter hastags file’[31;33H→[31;35Hprint: 7.5M file size
+10.
+grep -i great download_hastags_extend.csv | wc -l →[33;53Hprint: 57 hashtags contain word ‘[33;86Hgreat’[33;93Hcase-insensitive.
+11.
+file downloaded_hashtags_extend.csv →[35;39HUFT 8 Unicode text
+12.
+- iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv -o newType.csv →[37;75Hconvert the utf-8 file to ascii file
+- cat downloaded_hashtags_extend.csv | grep —[38;46Hcolor=’[38;53Hauto’[38;59H-P -n “[38;66H[\x80-\xFF]”[38;79H→[38;81Hhighlight all the non-ascii encoding characters.
+13.
+sort -u -t , -k 1 downloaded_hashtags_extend.csv | wc -l →[40;60Hprint: 107656 unique IDs
+sort -u -t , -k 4 downloaded_hashtags_extend.csv | wc -l →[41;60Hprint: 64698 unique tweets IDs are in the last column
+- sort -u -t , -k 2 downloaded_hashtags_extend.csv | wc -l →[42;62Hprint: 107656 unique hashtags.
+- wc -l downloaded_hashtags_extend.csv →[43;42Hprint: 110350 tweets
+- so unique hastags is less than tweets.
+
+
+Script started on 2022-09-07 21:02:12-04:00
+[38;5;81m^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ ls[38;5;81m^M[m
+a1.090722.txt  a1.txt  downloaded_hashtags_extend.csv  [38;5;81m^[[m[0m[38;5;81m^[[m[38;5;33mtemp[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp2[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp3[38;5;81m^[[m[0m[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ file downloaded_hashtags_extend.csv [38;5;81m^M[m
+downloaded_hashtags_extend.csv: UTF-8 Unicode text[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ man iconv[38;5;81m^M
+^[[m[?1049h[38;5;81m^[[m[22;0;0t[38;5;81m^[[m[?1h[38;5;81m^[[m=[38;5;81m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mNAME[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[56;8Hiconv - convert text from one character encoding to another[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mSYNOPSIS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[59;8H^[[m[1miconv [38;5;81m^[[m[22m[[38;5;81m^[[m[4moptions[38;5;81m^[[m[24m] [-f [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m] [-t [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m] [[38;5;81m^[[m[4minputfile[38;5;81m^[[m[24m]...[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M
+^[[m[1mDESCRIPTION[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[62;8HThe [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[38;5;81m^[[m[m[38;5;81m^M[m[63;8Hno input files are given, or if it is given as a dash (-), [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mreads from  standard  input.[38;5;81m^[[m[m[38;5;81m^M[m[64;8HIf no output file is given, [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mwrites to standard output.[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[66;8HIf  no  [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m  is  given,  the default is derived from the current locale's character[38;5;81m^[[m[m[38;5;81m^M[m[67;8Hencoding.  If no [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m is given, the default is derived from the current locale's char‐[67;112H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H44,40[9CTop"a1.combined.txt" 175627L, 12584668C[44;40H[?25h[?25l[68;125H5,0-1[45;1H[?25h[?25l[68;114H~@k[45;1H[68;114H   [46;1H[68;125H6[46;1H[?25h[?25l[68;114H~@k[46;1H[68;114H   [47;1H[68;125H7,1  [47;1H[?25h[?25l[68;125H8[48;1H[?25h[?25l[68;125H9[49;1H[?25h[?25l[68;114H~@k[49;1H[68;114H   [50;1H[68;124H50[50;1H[?25h[?25l[68;125H1[51;1H[?25h[?25l[68;114H~@k[51;1H[68;114H   [52;1H[68;125H2[52;1H[?25h[?25l[68;114H~@k[52;1H[68;114H   [53;1H[68;125H3[53;1H[?25h[?25l[68;114H~@k[53;1H[68;114H   [54;1H[68;125H4[54;1H[?25h[?25l[68;114H~@k[54;1H[68;114H   [55;1H[68;125H5[55;1H[?25h[?25l[68;114H~@k[55;1H[68;114H   [56;1H[68;125H6[56;1H[?25h[?25l[68;114H~@k[56;1H[68;114H   [57;1H[68;125H7[57;1H[?25h[?25l[68;114H~@k[57;1H[68;114H   [58;1H[68;125H8[58;1H[?25h[?25l[68;114H~@k[58;1H[68;114H   [59;1H[68;125H9[59;1H[?25h[?25l[68;114H~@k[59;1H[68;114H   [60;1H[68;124H60[60;1H[?25h[?25l[68;114H~@k[60;1H[68;114H   [61;1H[68;125H1[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;125H2[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8Hacter encoding.[38;5;81m^[[m[m[38;5;81m^M[m[68;1H[K[68;124H63,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H64,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H65,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-f [38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--from-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H66,1[11C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m for input characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H67,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H68,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-t [38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--to-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H69,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m for output characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H70,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H71,1[11C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15HIf the string [38;5;81m^[[m[1m//IGNORE [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters that cannot be converted[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H72,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hare discarded and an error is printed after conversion.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H73,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H74,1[11C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15HIf the string [38;5;81m^[[m[1m//TRANSLIT [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters  being  converted  are[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H75,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Htransliterated  when  needed and possible.  This means that when a character cannot be[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H76,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hrepresented in the target character set, it can be approximated through one or several[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H77,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hsimilar  looking  characters.  Characters that are outside of the target character set[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H78,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hand cannot be transliterated are replaced with a question mark (?) in the output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H79,1[11C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H80,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-l[38;5;81m^[[m[22m, [38;5;81m^[[m[1m--list[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H81,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HList all known character set encodings.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H82,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H83,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-c     [38;5;81m^[[m[22mSilently discard characters that cannot  be  converted  instead  of  terminating  when[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H84,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hencountering such characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H85,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H86,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-o [38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--output=[38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H87,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4moutputfile[38;5;81m^[[m[24m for output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H88,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H[38;5;81m^[[m[7m Manual page iconv(1) line 1 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K[38;5;81m^[[m[?1l[38;5;81m^[[m>[38;5;81m^[[m[?1049l[38;5;81m^[[m[23;0;0t[38;5;81m^[[m]0;huy@sjsu:~/git/worksheet1/AA[67;1H1[38;5;81m^G[m[huy@sjsu A1]$ man iconv[38;5;81m^M[m[68;124H[K[68;124H89,1[11C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;124H90[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[?1049h[38;5;81m^[[m[22;0;0t[38;5;81m^[[m[?1h[38;5;81m^[[m=[38;5;81m^M[mICONV(1)[34CLinux User Manual[33CICONV(1)[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H91,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H92,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[1mNAME[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H93,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;8Hiconv - convert text from one character encoding to another[38;5;81m^[[m[m[38;5;81m^M
+^[[m[m[38;5;81m^M[m[68;124H[K[68;124H94,1[11C0%[61;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[1mSYNOPSIS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H95,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1miconv [38;5;81m^[[m[22m[[38;5;81m^[[m[4moptions[38;5;81m^[[m[24m] [-f [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m] [-t [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m] [[38;5;81m^[[m[4minputfile[38;5;81m^[[m[24m]...[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H96,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H97,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[1mDESCRIPTION[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H98,1[11C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;8HThe [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mprogram reads in text in one encoding and outputs the text in another encoding.  If[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H99,1[11C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8Hno input files are given, or if it is given as a dash (-), [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mreads from  standard  input.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H100,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;8HIf no output file is given, [38;5;81m^[[m[1miconv [38;5;81m^[[m[22mwrites to standard output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H101,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H102,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;8HIf  no  [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m  is  given,  the default is derived from the current locale's character[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H103,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8Hencoding.  If no [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m is given, the default is derived from the current locale's char‐[67;112H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H104,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;8Hacter encoding.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H105,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H106,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[1mOPTIONS[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H107,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-f [38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--from-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mfrom-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H108,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4mfrom-encoding[38;5;81m^[[m[24m for input characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H109,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H110,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-t [38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--to-code=[38;5;81m^[[m[4m[38;5;81m^[[m[22mto-encoding[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H111,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m for output characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H112,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H113,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15HIf the string [38;5;81m^[[m[1m//IGNORE [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters that cannot be converted[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H114,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hare discarded and an error is printed after conversion.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H115,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H116,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HIf the string [38;5;81m^[[m[1m//TRANSLIT [38;5;81m^[[m[22mis appended to [38;5;81m^[[m[4mto-encoding[38;5;81m^[[m[24m, characters  being  converted  are[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H117,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15Htransliterated  when  needed and possible.  This means that when a character cannot be[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H118,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hrepresented in the target character set, it can be approximated through one or several[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H119,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15Hsimilar  looking  characters.  Characters that are outside of the target character set[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H120,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15Hand cannot be transliterated are replaced with a question mark (?) in the output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H121,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H122,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-l[38;5;81m^[[m[22m, [38;5;81m^[[m[1m--list[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H123,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HList all known character set encodings.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H124,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H125,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-c     [38;5;81m^[[m[22mSilently discard characters that cannot  be  converted  instead  of  terminating  when[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H126,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;15Hencountering such characters.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H127,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H128,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;8H[38;5;81m^[[m[1m-o [38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[24m, [38;5;81m^[[m[1m--output=[38;5;81m^[[m[4m[38;5;81m^[[m[22moutputfile[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H129,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;15HUse [38;5;81m^[[m[4moutputfile[38;5;81m^[[m[24m for output.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H130,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[7m Manual page iconv(1) line 1 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H131,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H[38;5;81m^[[m[7m Manual page iconv(1) line 2 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[7C[38;5;81m^[[m[1m-s[38;5;81m^[[m[22m,,[67;1H [38;5;81m^[[m[1m--silent[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H132,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;126H3[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H[38;5;81m^[[m[7m Manual page iconv(1) line 3 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[14CThis opp[67;1Htion is ignored; it is provided only for compatibility.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H134,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;126H5[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H[38;5;81m^[[m[7m Manual page iconv(1) line 4 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H136,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H[38;5;81m^[[m[7m Manual page iconv(1) line 5 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[7C[38;5;81m^[[m[1m--verbosee[67;1H[38;5;81m^[[m[0m[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H137,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H[38;5;81m^[[m[7m Manual page iconv(1) line 6 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K [38;5;81m^[[m[KESC[38;5;81m^H^H^H[mESC[38;5;81m^[[m[KO[38;5;81m^H[mO[38;5;81m^[[m[KB[38;5;81m^H[mB[38;5;81m^M^[[m[K[14CPrint pp[67;1Hrogress information on standard error when processing multiple files.[38;5;81m^[[m[m[38;5;81m^M[m[68;124H[K[68;124H138,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [60;1H[1;67r[1;1H[3M[1;68r[65;1H[38;5;81m^[[m[7m Manual page iconv(1) line 7 (press h for help or q to quit)[38;5;81m^[[m[27m[38;5;81m^[[m[K[38;5;81m^M^[[m[K[38;5;81m^[[m[?1l[38;5;81m^[[m>[38;5;81m^[[m[?1049l[38;5;81m^[[m[23;0;0t[38;5;81m^[[m]0;huy@sjsu:~/git/worksheet1/AA[66;1H1[38;5;81m^G[m[huy@sjsu A1]$ iconv -f [38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^G[mecho downloaded_hashtags_extend.csv | iconv -f u[38;5;81m^G[mtf-8 -t  [67;1Hascii[38;5;81m^M[m[68;124H[K[68;124H139,1[10C0%[60;1H[?25h[?25l[68;114H~@k[60;1H[68;114H   [61;1H[68;125H40[61;1H[?25h[?25l[1;67r[1;1H[2M[1;68r[66;1Hdownloaded_hashtags_extend.csv[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ ls[38;5;81m^M[m[68;124H[K[68;124H141,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [60;1H[1;67r[1;1H[3M[1;68r[65;1Ha1.090722.txt  a1.txt  downloaded_hashtags_extend.csv  [38;5;81m^[[m[0m[38;5;81m^[[m[38;5;33mtemp[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp2[38;5;81m^[[m[0m  [38;5;81m^[[m[38;5;33mtemp3[38;5;81m^[[m[0m[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ hea[38;5;81m^H^[[m[K[38;5;81m^H^[[m[K[38;5;81m^H^[[m[Kcat downloaded_hashtags_extend.csv | grep '[38;5;81m^H^[[m[K?[38;5;81m^M
+^[[m]0;huy@sjsu:~/git/worksheet1/A1[38;5;81m^G[m[huy@sjsu A1]$ cat [38;5;81m^G[ms[38;5;81m^H^[[m[Kdownloaded_hashtags_extend.csv [38;5;81m^M[m[68;124H[K[68;124H142,1[10C0%[60;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1Hauthor,hashtags,date,id[38;5;81m^M[m[68;124H[K[68;124H143,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,awesomepeopleontwitter,2022-04-30 23:18:45+00:00,1520543208614334465[38;5;81m^M[m[68;124H[K[68;124H144,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,journalism,2022-04-30 20:40:18+00:00,1520503332246376448[38;5;81m^M[m[68;124H[K[68;124H145,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,npr,2022-04-30 20:40:18+00:00,1520503332246376448[38;5;81m^M[m[68;124H[K[68;124H146,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,lc,2022-04-29 22:28:54+00:00,1520168272896962562[38;5;81m^M[m[68;124H[K[68;124H147,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-29 22:28:54+00:00,1520168272896962562[38;5;81m^M[m[68;124H[K[68;124H148,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H308045021,buddhism,2022-04-29 14:52:29+00:00,1520053412968210432[38;5;81m^M[m
+308045021,buddhism,2022-04-29 14:16:51+00:00,1520044444204032001[38;5;81m^M[m[68;124H[K[68;124H149,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;125H50[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,obgyntwitter,2022-04-29 02:47:33+00:00,1519870977311715328[38;5;81m^M[m[68;124H[K[68;124H151,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-28 21:20:34+00:00,1519788687957049344[38;5;81m^M[m[68;124H[K[68;124H152,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,history,2022-04-27 14:42:27+00:00,1519326111326511105[38;5;81m^M[m[68;124H[K[68;124H153,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-04-26 22:26:20+00:00,1519080463851311111[38;5;81m^M[m[68;124H[K[68;124H154,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-26 14:22:57+00:00,1518958816309792771[38;5;81m^M[m[68;124H[K[68;124H155,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,bodybreak,2022-04-26 13:36:51+00:00,1518947215267540992[38;5;81m^M[m[68;124H[K[68;124H156,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-26 11:37:21+00:00,1518917143169019905[38;5;81m^M[m[68;124H[K[68;124H157,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,immunizeunder5s,2022-04-25 17:44:34+00:00,1518647168835407875[38;5;81m^M[m[68;124H[K[68;124H158,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covidisntover,2022-04-25 17:44:34+00:00,1518647168835407875[38;5;81m^M[m[68;124H[K[68;124H159,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,takingabreak,2022-04-25 15:00:21+00:00,1518605841624190976[38;5;81m^M[m[68;124H[K[68;124H160,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-25 15:00:21+00:00,1518605841624190976[38;5;81m^M[m[68;124H[K[68;124H161,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,thankyoudonwinslow,2022-04-24 04:06:41+00:00,1518078954573381632[38;5;81m^M[m[68;124H[K[68;124H162,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-04-23 21:10:33+00:00,1517974229953695747[38;5;81m^M[m[68;124H[K[68;124H163,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-23 02:05:17+00:00,1517686015141552128[38;5;81m^M[m[68;124H[K[68;124H164,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,bbcnews,2022-04-22 18:55:23+00:00,1517577824604934147[38;5;81m^M[m[68;124H[K[68;124H165,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-22 18:55:23+00:00,1517577824604934147[38;5;81m^M[m[68;124H[K[68;124H166,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,liar,2022-04-22 18:54:54+00:00,1517577705457434626[38;5;81m^M[m[68;124H[K[68;124H167,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-04-22 16:46:51+00:00,1517545477398487041[38;5;81m^M[m[68;124H[K[68;124H168,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,she,2022-04-22 16:44:06+00:00,1517544787980828675[38;5;81m^M[m[68;124H[K[68;124H169,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,liar,2022-04-22 14:24:29+00:00,1517509652552069122[38;5;81m^M[m[68;124H[K[68;124H170,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,localelectionsmatter,2022-04-21 18:19:02+00:00,1517206291378286604[38;5;81m^M[m[68;124H[K[68;124H171,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,teamclots,2022-04-21 17:42:51+00:00,1517197185837940739[38;5;81m^M[m[68;124H[K[68;124H172,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,microclots,2022-04-21 17:42:51+00:00,1517197185837940739[38;5;81m^M[m[68;124H[K[68;124H173,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-04-21 15:48:05+00:00,1517168303625678850[38;5;81m^M[m[68;124H[K[68;124H174,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-21 15:48:05+00:00,1517168303625678850[38;5;81m^M[m[68;124H[K[68;124H175,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,chives,2022-04-21 12:54:26+00:00,1517124603235250179[38;5;81m^M[m[68;124H[K[68;124H176,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-21 12:54:26+00:00,1517124603235250179[38;5;81m^M[m[68;124H[K[68;124H177,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbiking,2022-04-20 13:38:17+00:00,1516773247521542145[38;5;81m^M[m[68;124H[K[68;124H178,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-20 13:38:17+00:00,1516773247521542145[38;5;81m^M[m[68;124H[K[68;124H179,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,happybody,2022-04-20 13:38:17+00:00,1516773247521542145[38;5;81m^M[m[68;124H[K[68;124H180,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happymind,2022-04-20 13:38:17+00:00,1516773247521542145[38;5;81m^M[m[68;124H[K[68;124H181,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-20 02:49:37+00:00,1516610008082960389[38;5;81m^M[m[68;124H[K[68;124H182,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,mybigfatgreekwedding,2022-04-20 02:15:52+00:00,1516601511748452356[38;5;81m^M[m[68;124H[K[68;124H183,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,mybigfatgreekwedding,2022-04-20 02:15:42+00:00,1516601473219629056[38;5;81m^M[m[68;124H[K[68;124H184,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,ba2,2022-04-20 00:58:51+00:00,1516582129425166343[38;5;81m^M[m[68;124H[K[68;124H185,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,ba2121,2022-04-20 00:58:51+00:00,1516582129425166343[38;5;81m^M[m[68;124H[K[68;124H186,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,history,2022-04-19 20:30:38+00:00,1516514632663506950[38;5;81m^M[m[68;124H[K[68;124H187,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,lunch,2022-04-19 15:30:43+00:00,1516439155051429891[38;5;81m^M[m[68;124H[K[68;124H188,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,momslife,2022-04-19 15:30:43+00:00,1516439155051429891[38;5;81m^M[m[68;124H[K[68;124H189,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-04-19 14:32:18+00:00,1516424455190425605[38;5;81m^M[m[68;124H[K[68;124H190,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-04-19 14:32:18+00:00,1516424455190425605[38;5;81m^M[m[68;124H[K[68;124H191,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,peace,2022-04-19 14:32:18+00:00,1516424455190425605[38;5;81m^M[m[68;124H[K[68;124H192,1[10C0%[62;1H[?25h[?25l[1;67r[1;1H[2M[1;68r[66;1H308045021,busymom,2022-04-19 13:33:58+00:00,1516409774023319564[38;5;81m^M[m
+308045021,dilemma,2022-04-19 13:33:58+00:00,1516409774023319564[38;5;81m^M[m[68;124H[K[68;124H193,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;126H4[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H308045021,longcovid,2022-04-18 23:48:22+00:00,1516202003990523904[38;5;81m^M[m
+308045021,theamatomyofscandal,2022-04-18 14:36:58+00:00,1516063241880932355[38;5;81m^M[m[68;124H[K[68;124H195,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;126H6[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,movies,2022-04-18 14:36:58+00:00,1516063241880932355[38;5;81m^M[m[68;124H[K[68;124H197,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H308045021,biking,2022-04-18 14:36:58+00:00,1516063241880932355[38;5;81m^M[m
+308045021,exercise,2022-04-18 13:44:19+00:00,1516049993303568392[38;5;81m^M[m[68;124H[K[68;124H198,1[10C0%[61;1H[?25h[?25l[68;126H9[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [61;1H[1;67r[1;1H[2M[1;68r[66;1H308045021,tired,2022-04-18 13:44:19+00:00,1516049993303568392[38;5;81m^M[m
+308045021,weather,2022-04-18 13:12:52+00:00,1516042077628416001[38;5;81m^M[m[68;124H[K[68;124H200,1[10C0%[61;1H[?25h[?25l[68;114H~@k[61;1H[68;114H   [62;1H[68;126H1[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [60;1H[1;67r[1;1H[3M[1;68r[65;1H308045021,longcovid,2022-04-18 13:07:48+00:00,1516040801029087232[38;5;81m^M[m
+308045021,winter,2022-04-18 12:49:23+00:00,1516036166302281730[38;5;81m^M[m
+308045021,weather,2022-04-18 12:30:39+00:00,1516031451107627008[38;5;81m^M[m[68;124H[K[68;124H202,1[10C0%[60;1H[?25h[?25l[68;114H~@k[60;1H[68;114H   [61;1H[68;126H3[61;1H[?25h[?25l[68;126H4[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-17 23:44:17+00:00,1515838589631873030[38;5;81m^M[m[68;124H[K[68;124H205,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,chilling,2022-04-16 22:39:14+00:00,1515459831976628227[38;5;81m^M[m[68;124H[K[68;124H206,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,patio,2022-04-16 21:58:59+00:00,1515449703730720778[38;5;81m^M[m[68;124H[K[68;124H207,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,greatday,2022-04-16 21:58:59+00:00,1515449703730720778[38;5;81m^M[m[68;124H[K[68;124H208,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-16 21:50:50+00:00,1515447653118754816[38;5;81m^M[m[68;124H[K[68;124H209,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,msm,2022-04-16 21:37:07+00:00,1515444197842731015[38;5;81m^M[m[68;124H[K[68;124H210,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,biking,2022-04-15 17:29:56+00:00,1515019607739977733[38;5;81m^M[m[68;124H[K[68;124H211,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercisewiththerightmusic,2022-04-15 17:29:56+00:00,1515019607739977733[38;5;81m^M[m[68;124H[K[68;124H212,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,thoughtswhilebiking,2022-04-15 17:25:24+00:00,1515018465974923265[38;5;81m^M[m[68;124H[K[68;124H213,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covidisnotover,2022-04-15 16:57:34+00:00,1515011461730516999[38;5;81m^M[m[68;124H[K[68;124H214,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,suffering,2022-04-15 16:57:34+00:00,1515011461730516999[38;5;81m^M[m[68;124H[K[68;124H215,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,artist,2022-04-15 16:49:56+00:00,1515009538210025476[38;5;81m^M[m[68;124H[K[68;124H216,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,cats,2022-04-15 16:49:56+00:00,1515009538210025476[38;5;81m^M[m[68;124H[K[68;124H217,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-04-15 02:09:38+00:00,1514788004337885189[38;5;81m^M[m[68;124H[K[68;124H218,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,journalist,2022-04-14 23:50:14+00:00,1514752925670813704[38;5;81m^M[m[68;124H[K[68;124H219,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-14 18:44:41+00:00,1514676028727250944[38;5;81m^M[m[68;124H[K[68;124H220,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-14 16:42:42+00:00,1514645331580968962[38;5;81m^M[m[68;124H[K[68;124H221,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-14 15:41:24+00:00,1514629905107013633[38;5;81m^M[m[68;124H[K[68;124H222,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-04-14 14:38:56+00:00,1514614183672758275[38;5;81m^M[m[68;124H[K[68;124H223,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-14 14:38:56+00:00,1514614183672758275[38;5;81m^M[m[68;124H[K[68;124H224,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,msm,2022-04-14 02:39:56+00:00,1514433241545121793[38;5;81m^M[m[68;124H[K[68;124H225,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,idtwitter,2022-04-14 02:29:06+00:00,1514430514962341896[38;5;81m^M[m[68;124H[K[68;124H226,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,sars_cov_2,2022-04-14 00:48:42+00:00,1514405249343184900[38;5;81m^M[m[68;124H[K[68;124H227,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,msm,2022-04-14 00:37:49+00:00,1514402509531582468[38;5;81m^M[m[68;124H[K[68;124H228,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-04-13 20:28:36+00:00,1514339791881527302[38;5;81m^M[m[68;124H[K[68;124H229,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,enlightenment,2022-04-13 20:28:36+00:00,1514339791881527302[38;5;81m^M[m[68;124H[K[68;124H230,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-04-13 20:22:19+00:00,1514338213766344710[38;5;81m^M[m[68;124H[K[68;124H231,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,violenceisnotok,2022-04-13 16:24:20+00:00,1514278321911222273[38;5;81m^M[m[68;124H[K[68;124H232,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,supportourschools,2022-04-13 16:24:20+00:00,1514278321911222273[38;5;81m^M[m[68;124H[K[68;124H233,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-13 16:17:56+00:00,1514276712430940171[38;5;81m^M[m[68;124H[K[68;124H234,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,postworkoutfood,2022-04-13 16:17:56+00:00,1514276712430940171[38;5;81m^M[m[68;124H[K[68;124H235,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,ultimatumnetflix,2022-04-13 15:01:57+00:00,1514257587339988997[38;5;81m^M[m[68;124H[K[68;124H236,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,relationships,2022-04-13 15:01:57+00:00,1514257587339988997[38;5;81m^M[m[68;124H[K[68;124H237,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-13 14:18:50+00:00,1514246739917783040[38;5;81m^M[m[68;124H[K[68;124H238,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-13 00:17:44+00:00,1514035069593210883[38;5;81m^M[m[68;124H[K[68;124H239,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-12 23:36:23+00:00,1514024661029429256[38;5;81m^M[m[68;124H[K[68;124H240,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-12 18:50:50+00:00,1513952803353513990[38;5;81m^M[m[68;124H[K[68;124H241,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,covidisnottheflu,2022-04-12 17:03:46+00:00,1513925855940157447[38;5;81m^M[m[68;124H[K[68;124H242,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-12 15:45:08+00:00,1513906067239022593[38;5;81m^M[m[68;124H[K[68;124H243,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,s,2022-04-12 15:43:23+00:00,1513905627323678730[38;5;81m^M[m[68;124H[K[68;124H244,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,bridgertonnetflix,2022-04-12 14:25:53+00:00,1513886126116847639[38;5;81m^M[m[68;124H[K[68;124H245,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-04-12 14:25:53+00:00,1513886126116847639[38;5;81m^M[m[68;124H[K[68;124H246,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-12 14:25:53+00:00,1513886126116847639[38;5;81m^M[m[68;124H[K[68;124H247,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,grounding,2022-04-12 14:25:53+00:00,1513886126116847639[38;5;81m^M[m[68;124H[K[68;124H248,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-04-12 14:25:53+00:00,1513886126116847639[38;5;81m^M[m[68;124H[K[68;124H249,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,violence,2022-04-12 14:08:02+00:00,1513881631643349014[38;5;81m^M[m[68;124H[K[68;124H250,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,medtwitter,2022-04-11 22:31:43+00:00,1513646000493182977[38;5;81m^M[m[68;124H[K[68;124H251,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,nursetwitter,2022-04-11 22:31:43+00:00,1513646000493182977[38;5;81m^M[m[68;124H[K[68;124H252,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,bridgertons2,2022-04-11 16:20:25+00:00,1513552561198051328[38;5;81m^M[m[68;124H[K[68;124H253,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,biking,2022-04-11 14:12:16+00:00,1513520310599012352[38;5;81m^M[m[68;124H[K[68;124H254,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,tiredmom,2022-04-11 14:12:16+00:00,1513520310599012352[38;5;81m^M[m[68;124H[K[68;124H255,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,phantomoftheopera,2022-04-11 02:59:50+00:00,1513351087201337345[38;5;81m^M[m[68;124H[K[68;124H256,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,momslife,2022-04-10 22:54:46+00:00,1513289412867727362[38;5;81m^M[m[68;124H[K[68;124H257,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-04-10 20:19:45+00:00,1513250402719916044[38;5;81m^M[m[68;124H[K[68;124H258,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,misquitosloveme,2022-04-10 19:31:25+00:00,1513238239645245444[38;5;81m^M[m[68;124H[K[68;124H259,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,sunshine,2022-04-10 18:51:06+00:00,1513228094643093511[38;5;81m^M[m[68;124H[K[68;124H260,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,lc,2022-04-10 02:31:38+00:00,1512981602254655488[38;5;81m^M[m[68;124H[K[68;124H261,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid,2022-04-10 02:31:38+00:00,1512981602254655488[38;5;81m^M[m[68;124H[K[68;124H262,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,mothernature,2022-04-09 16:16:08+00:00,1512826708763807755[38;5;81m^M[m[68;124H[K[68;124H263,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,hail,2022-04-09 16:16:08+00:00,1512826708763807755[38;5;81m^M[m[68;124H[K[68;124H264,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,indecisiveweather,2022-04-09 12:49:54+00:00,1512774807791751172[38;5;81m^M[m[68;124H[K[68;124H265,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,pharmtwitter,2022-04-09 04:39:00+00:00,1512651266018660352[38;5;81m^M[m[68;124H[K[68;124H266,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,pharmacy,2022-04-09 04:39:00+00:00,1512651266018660352[38;5;81m^M[m[68;124H[K[68;124H267,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,medtwitter,2022-04-09 04:39:00+00:00,1512651266018660352[38;5;81m^M[m[68;124H[K[68;124H268,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,datascience,2022-04-08 20:15:04+00:00,1512524448037015553[38;5;81m^M[m[68;124H[K[68;124H269,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,rna,2022-04-08 20:13:56+00:00,1512524163755425792[38;5;81m^M[m[68;124H[K[68;124H270,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-08 16:57:06+00:00,1512474629914435597[38;5;81m^M[m[68;124H[K[68;124H271,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,bikingwisdom,2022-04-08 15:35:12+00:00,1512454019020693505[38;5;81m^M[m[68;124H[K[68;124H272,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-08 15:25:06+00:00,1512451476207067140[38;5;81m^M[m[68;124H[K[68;124H273,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,thoughts,2022-04-08 14:55:27+00:00,1512444012476653571[38;5;81m^M[m[68;124H[K[68;124H274,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbiking,2022-04-08 14:55:27+00:00,1512444012476653571[38;5;81m^M[m[68;124H[K[68;124H275,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happybody,2022-04-08 14:55:27+00:00,1512444012476653571[38;5;81m^M[m[68;124H[K[68;124H276,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happymind,2022-04-08 14:55:27+00:00,1512444012476653571[38;5;81m^M[m[68;124H[K[68;124H277,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,moonnight,2022-04-08 00:40:20+00:00,1512228816709693451[38;5;81m^M[m[68;124H[K[68;124H278,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-07 21:43:07+00:00,1512184218427797516[38;5;81m^M[m[68;124H[K[68;124H279,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yummy,2022-04-07 21:34:53+00:00,1512182145187471360[38;5;81m^M[m[68;124H[K[68;124H280,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-07 21:30:48+00:00,1512181118342160392[38;5;81m^M[m[68;124H[K[68;124H281,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-04-07 14:23:41+00:00,1512073630536011788[38;5;81m^M[m[68;124H[K[68;124H282,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-04-07 14:23:41+00:00,1512073630536011788[38;5;81m^M[m[68;124H[K[68;124H283,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,tired,2022-04-07 13:36:42+00:00,1512061808277819399[38;5;81m^M[m[68;124H[K[68;124H284,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,endthisnightmare,2022-04-07 13:36:42+00:00,1512061808277819399[38;5;81m^M[m[68;124H[K[68;124H285,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid,2022-04-07 13:36:42+00:00,1512061808277819399[38;5;81m^M[m[68;124H[K[68;124H286,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-04-06 14:24:51+00:00,1511711535848202242[38;5;81m^M[m[68;124H[K[68;124H287,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-04-06 14:22:39+00:00,1511710984527912965[38;5;81m^M[m[68;124H[K[68;124H288,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,globalinstability,2022-04-05 23:56:43+00:00,1511493065810366479[38;5;81m^M[m[68;124H[K[68;124H289,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,news6,2022-04-05 22:48:31+00:00,1511475902936399879[38;5;81m^M[m[68;124H[K[68;124H290,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,postcardstovoters,2022-04-05 19:08:02+00:00,1511420413741613063[38;5;81m^M[m[68;124H[K[68;124H291,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-04-05 14:42:35+00:00,1511353611170762752[38;5;81m^M[m[68;124H[K[68;124H292,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,ba2,2022-04-05 13:57:41+00:00,1511342312999247872[38;5;81m^M[m[68;124H[K[68;124H293,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,omicron,2022-04-05 13:57:41+00:00,1511342312999247872[38;5;81m^M[m[68;124H[K[68;124H294,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,thoughts,2022-04-05 01:56:23+00:00,1511160794154680322[38;5;81m^M[m[68;124H[K[68;124H295,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,democracy,2022-04-05 01:56:23+00:00,1511160794154680322[38;5;81m^M[m[68;124H[K[68;124H296,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-04 22:08:45+00:00,1511103508010913802[38;5;81m^M[m[68;124H[K[68;124H297,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,chinesefood,2022-04-04 21:34:47+00:00,1511094958094176262[38;5;81m^M[m[68;124H[K[68;124H298,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,cookfromscratch,2022-04-04 21:34:47+00:00,1511094958094176262[38;5;81m^M[m[68;124H[K[68;124H299,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,longcovid,2022-04-04 20:25:49+00:00,1511077602999607304[38;5;81m^M[m[68;124H[K[68;124H300,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-04 15:33:02+00:00,1511003918951661579[38;5;81m^M[m[68;124H[K[68;124H301,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,happybody,2022-04-04 15:33:02+00:00,1511003918951661579[38;5;81m^M[m[68;124H[K[68;124H302,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happymind,2022-04-04 15:33:02+00:00,1511003918951661579[38;5;81m^M[m[68;124H[K[68;124H303,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,endorphins,2022-04-04 15:33:02+00:00,1511003918951661579[38;5;81m^M[m[68;124H[K[68;124H304,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,hiit,2022-04-04 15:19:39+00:00,1511000554289442819[38;5;81m^M[m[68;124H[K[68;124H305,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,notverygooddecisoon,2022-04-04 15:19:39+00:00,1511000554289442819[38;5;81m^M[m[68;124H[K[68;124H306,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,regret,2022-04-04 15:19:39+00:00,1511000554289442819[38;5;81m^M[m[68;124H[K[68;124H307,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,grossgop,2022-04-04 14:34:07+00:00,1510989094209437700[38;5;81m^M[m[68;124H[K[68;124H308,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-04 14:28:38+00:00,1510987715701100547[38;5;81m^M[m[68;124H[K[68;124H309,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-04 14:28:38+00:00,1510987715701100547[38;5;81m^M[m[68;124H[K[68;124H310,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbiking,2022-04-04 14:28:38+00:00,1510987715701100547[38;5;81m^M[m[68;124H[K[68;124H311,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,kids,2022-04-04 14:12:27+00:00,1510983639923896323[38;5;81m^M[m[68;124H[K[68;124H312,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,busy,2022-04-04 14:12:27+00:00,1510983639923896323[38;5;81m^M[m[68;124H[K[68;124H313,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,authenticchinesefood,2022-04-04 13:47:23+00:00,1510977334651858945[38;5;81m^M[m[68;124H[K[68;124H314,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,lungcancer,2022-04-04 01:48:16+00:00,1510796361633091594[38;5;81m^M[m[68;124H[K[68;124H315,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,greed,2022-04-03 14:53:43+00:00,1510631637658345484[38;5;81m^M[m[68;124H[K[68;124H316,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,smalltownexcitement,2022-04-03 14:30:05+00:00,1510625690768625669[38;5;81m^M[m[68;124H[K[68;124H317,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,lungfu,2022-04-03 14:23:37+00:00,1510624063949058053[38;5;81m^M[m[68;124H[K[68;124H318,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,booster,2022-04-03 13:39:49+00:00,1510613039833399307[38;5;81m^M[m[68;124H[K[68;124H319,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,covid,2022-04-03 13:39:49+00:00,1510613039833399307[38;5;81m^M[m[68;124H[K[68;124H320,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,booster,2022-04-02 20:29:35+00:00,1510353772433846276[38;5;81m^M[m[68;124H[K[68;124H321,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid,2022-04-02 20:29:35+00:00,1510353772433846276[38;5;81m^M[m[68;124H[K[68;124H322,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,phantomoftheopera,2022-04-02 00:36:32+00:00,1510053532275298306[38;5;81m^M[m[68;124H[K[68;124H323,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,kids,2022-04-01 23:46:38+00:00,1510040974801649672[38;5;81m^M[m[68;124H[K[68;124H324,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,funnythingskidssay,2022-04-01 23:46:38+00:00,1510040974801649672[38;5;81m^M[m[68;124H[K[68;124H325,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,annoyed,2022-04-01 16:14:20+00:00,1509927152095043594[38;5;81m^M[m[68;124H[K[68;124H326,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,tiredmom,2022-04-01 14:08:27+00:00,1509895470855987200[38;5;81m^M[m[68;124H[K[68;124H327,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-04-01 14:08:27+00:00,1509895470855987200[38;5;81m^M[m[68;124H[K[68;124H328,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-04-01 14:08:27+00:00,1509895470855987200[38;5;81m^M[m[68;124H[K[68;124H329,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,bike,2022-04-01 14:08:27+00:00,1509895470855987200[38;5;81m^M[m[68;124H[K[68;124H330,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,lazy,2022-04-01 13:21:49+00:00,1509883736204193818[38;5;81m^M[m[68;124H[K[68;124H331,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,notinthemood,2022-04-01 13:21:49+00:00,1509883736204193818[38;5;81m^M[m[68;124H[K[68;124H332,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,latenightthoughts,2022-04-01 03:54:00+00:00,1509740841056841730[38;5;81m^M[m[68;124H[K[68;124H333,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,beauty,2022-04-01 03:54:00+00:00,1509740841056841730[38;5;81m^M[m[68;124H[K[68;124H334,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-03-31 15:48:19+00:00,1509558214345601026[38;5;81m^M[m[68;124H[K[68;124H335,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-03-31 15:48:19+00:00,1509558214345601026[38;5;81m^M[m[68;124H[K[68;124H336,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,peace,2022-03-31 15:48:19+00:00,1509558214345601026[38;5;81m^M[m[68;124H[K[68;124H337,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,doctorsday,2022-03-31 01:26:07+00:00,1509341235034705922[38;5;81m^M[m[68;124H[K[68;124H338,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,localelectionsmatter,2022-03-31 00:52:11+00:00,1509332695016427523[38;5;81m^M[m[68;124H[K[68;124H339,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,endorphins,2022-03-30 15:31:02+00:00,1509191480233148417[38;5;81m^M[m[68;124H[K[68;124H340,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,cardio,2022-03-30 15:31:02+00:00,1509191480233148417[38;5;81m^M[m[68;124H[K[68;124H341,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbike,2022-03-30 15:31:02+00:00,1509191480233148417[38;5;81m^M[m[68;124H[K[68;124H342,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happy,2022-03-30 15:31:02+00:00,1509191480233148417[38;5;81m^M[m[68;124H[K[68;124H343,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,music,2022-03-30 15:19:51+00:00,1509188662243778565[38;5;81m^M[m[68;124H[K[68;124H344,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-03-30 14:38:25+00:00,1509178236844056577[38;5;81m^M[m[68;124H[K[68;124H345,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbike,2022-03-30 14:38:25+00:00,1509178236844056577[38;5;81m^M[m[68;124H[K[68;124H346,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-03-30 14:38:25+00:00,1509178236844056577[38;5;81m^M[m[68;124H[K[68;124H347,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,cardio,2022-03-30 14:38:25+00:00,1509178236844056577[38;5;81m^M[m[68;124H[K[68;124H348,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-03-29 14:50:38+00:00,1508818925265596424[38;5;81m^M[m[68;124H[K[68;124H349,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-03-29 14:50:38+00:00,1508818925265596424[38;5;81m^M[m[68;124H[K[68;124H350,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-03-29 14:30:41+00:00,1508813902913617921[38;5;81m^M[m[68;124H[K[68;124H351,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-03-29 14:30:41+00:00,1508813902913617921[38;5;81m^M[m[68;124H[K[68;124H352,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,buddhism,2022-03-28 18:57:45+00:00,1508518726064291852[38;5;81m^M[m[68;124H[K[68;124H353,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,meditation,2022-03-28 18:57:45+00:00,1508518726064291852[38;5;81m^M[m[68;124H[K[68;124H354,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-03-28 15:15:16+00:00,1508462734018555911[38;5;81m^M[m[68;124H[K[68;124H355,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-03-28 15:15:16+00:00,1508462734018555911[38;5;81m^M[m[68;124H[K[68;124H356,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,tiredmom,2022-03-28 15:15:16+00:00,1508462734018555911[38;5;81m^M[m[68;124H[K[68;124H357,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbike,2022-03-28 15:15:16+00:00,1508462734018555911[38;5;81m^M[m[68;124H[K[68;124H358,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,hiit,2022-03-28 15:15:16+00:00,1508462734018555911[38;5;81m^M[m[68;124H[K[68;124H359,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,tiredmom,2022-03-28 15:04:11+00:00,1508459947402702849[38;5;81m^M[m[68;124H[K[68;124H360,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-03-28 15:04:11+00:00,1508459947402702849[38;5;81m^M[m[68;124H[K[68;124H361,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,indoorbike,2022-03-28 15:04:11+00:00,1508459947402702849[38;5;81m^M[m[68;124H[K[68;124H362,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,mythoughts,2022-03-28 11:48:54+00:00,1508410802474303494[38;5;81m^M[m[68;124H[K[68;124H363,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,noreasonforviolence,2022-03-28 11:48:54+00:00,1508410802474303494[38;5;81m^M[m[68;124H[K[68;124H364,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,crazyweather,2022-03-26 01:46:50+00:00,1507534511931854851[38;5;81m^M[m[68;124H[K[68;124H365,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,nursetwitter,2022-03-26 01:22:45+00:00,1507528451296792581[38;5;81m^M[m[68;124H[K[68;124H366,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,memories,2022-03-26 00:37:29+00:00,1507517057147056135[38;5;81m^M[m[68;124H[K[68;124H367,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,yum,2022-03-25 22:55:51+00:00,1507491478892855299[38;5;81m^M[m[68;124H[K[68;124H368,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,motherinlaw,2022-03-25 22:55:51+00:00,1507491478892855299[38;5;81m^M[m[68;124H[K[68;124H369,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,chinesemoms,2022-03-25 22:55:51+00:00,1507491478892855299[38;5;81m^M[m[68;124H[K[68;124H370,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,love,2022-03-25 22:55:51+00:00,1507491478892855299[38;5;81m^M[m[68;124H[K[68;124H371,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,boymom,2022-03-25 22:44:45+00:00,1507488686308569089[38;5;81m^M[m[68;124H[K[68;124H372,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yum,2022-03-25 22:21:33+00:00,1507482847875112963[38;5;81m^M[m[68;124H[K[68;124H373,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,chinesefood,2022-03-25 22:21:33+00:00,1507482847875112963[38;5;81m^M[m[68;124H[K[68;124H374,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,cookfromscratch,2022-03-25 22:21:33+00:00,1507482847875112963[38;5;81m^M[m[68;124H[K[68;124H375,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-03-25 20:44:56+00:00,1507458534774308866[38;5;81m^M[m[68;124H[K[68;124H376,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,customerservice,2022-03-25 17:00:05+00:00,1507401948894572555[38;5;81m^M[m[68;124H[K[68;124H377,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-03-25 14:18:44+00:00,1507361342453428227[38;5;81m^M[m[68;124H[K[68;124H378,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-03-25 14:18:44+00:00,1507361342453428227[38;5;81m^M[m[68;124H[K[68;124H379,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happybody,2022-03-25 14:18:44+00:00,1507361342453428227[38;5;81m^M[m[68;124H[K[68;124H380,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happymind,2022-03-25 14:18:44+00:00,1507361342453428227[38;5;81m^M[m[68;124H[K[68;124H381,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,applewatch,2022-03-25 00:08:43+00:00,1507147428318822413[38;5;81m^M[m[68;124H[K[68;124H382,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,tiredmom,2022-03-24 14:21:38+00:00,1506999684266700805[38;5;81m^M[m[68;124H[K[68;124H383,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,exercise,2022-03-24 14:21:38+00:00,1506999684266700805[38;5;81m^M[m[68;124H[K[68;124H384,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,covid19,2022-03-23 20:50:41+00:00,1506735205142478850[38;5;81m^M[m[68;124H[K[68;124H385,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,acaheretostay,2022-03-23 20:12:25+00:00,1506725574680666113[38;5;81m^M[m[68;124H[K[68;124H386,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,doesntmakesense,2022-03-23 17:35:34+00:00,1506686102614253569[38;5;81m^M[m[68;124H[K[68;124H387,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,yoga,2022-03-23 14:54:02+00:00,1506645453768638470[38;5;81m^M[m[68;124H[K[68;124H388,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,busymom,2022-03-23 14:54:02+00:00,1506645453768638470[38;5;81m^M[m[68;124H[K[68;124H389,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,biking,2022-03-22 15:19:35+00:00,1506289492805795854[38;5;81m^M[m[68;124H[K[68;124H390,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happy,2022-03-22 15:19:35+00:00,1506289492805795854[38;5;81m^M[m[68;124H[K[68;124H391,1[10C0%[62;1H[?25h[?25l[1;67r[67;1H
+[1;68r[67;1H308045021,endorphins,2022-03-22 15:19:35+00:00,1506289492805795854[38;5;81m^M[m[68;124H[K[68;124H392,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1;68r[67;1H308045021,happymom,2022-03-22 15:19:35+00:00,1506289492805795854[38;5;81m^M[m[68;124H[K[68;124H393,1[10C0%[62;1H[?25h[?25l[68;114H~@k[62;1H[68;114H   [62;1H[1;67r[67;1H
+[1
