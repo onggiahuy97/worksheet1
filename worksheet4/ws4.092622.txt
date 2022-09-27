@@ -1,0 +1,255 @@
+Script started on 2022-09-26 22:36:27-04:00
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ [K[huy@sjsu worksheet4]$ [K[huy@sjsu worksheet4]$ [K[huy@sjsu worksheet4]$ ls -latr
+total 0
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [0m[38;5;33m..[0m
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [38;5;33m.[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ ls -latrS
+total 0
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [0m[38;5;33m.[0m
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [38;5;33m..[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ ls -latrS[Ks
+total 0
+0 drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [0m[38;5;33m..[0m
+0 -rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+0 drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [38;5;33m.[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ ls -latrs[KSr
+total 0
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [0m[38;5;33m.[0m
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [38;5;33m..[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ ls -latrSr[K[K[K
+total 0
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [0m[38;5;33m.[0m
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [38;5;33m..[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ ls -latrSr[K[K
+total 0
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [0m[38;5;33m..[0m
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [38;5;33m.[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ alias l = [K[K[K="ls -latr"
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 0
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [0m[38;5;33m..[0m
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [38;5;33m.[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ lalias l="ls -latr"S"
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 0
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [0m[38;5;33m.[0m
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [38;5;33m..[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ lalias l="ls -latrS"[1P"
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ alias l="ls -latr"[K
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 0
+drwxrwxr-x 9 huy huy 110 Sep 26 22:36 [0m[38;5;33m..[0m
+-rw-rw-r-- 1 huy huy   0 Sep 26 22:36 ws4.092622.txt
+drwxrwxr-x 2 huy huy  28 Sep 26 22:36 [38;5;33m.[0m
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ clear
+[3J[H[2J]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l==[K[K[Kalias l[Kw="ls -la | wc"
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ w
+      4      29     142
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ clear
+[3J[H[2J]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ gedit !/.[K[K[K~/.bashrc
+bash: gedit: command not found
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ vi ![K~/.barch[K[K[Kshrc
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;43r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[43;1H"~/.bashrc" 18L, 376C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# .bashrc
+
+# Source global definitions[m
+[38;5;130mif [[m [38;5;130m-f[m /etc/bashrc [38;5;130m];[m [38;5;130mthen
+        . [m/etc/bashrc
+[38;5;130mfi[m
+
+[34m# User specific environment[m
+[38;5;130mif ![m [35m[[[m [38;5;130m"[m[35m$PATH[m[38;5;130m"[m [38;5;130m=~[m [38;5;130m"[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[38;5;130m"[m [35m]][m
+[38;5;130mthen[m
+    [35mPATH[m[38;5;130m="[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[35m$PATH[m[38;5;130m"
+fi
+export[m[36m PATH[m
+
+[34m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[94m~                                                                                                                                                 [20;1H~                                                                                                                                                 [21;1H~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H1,1[11CAll[1;1H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# .bashrc
+
+# Source global definitions[m
+[93mif [[m [93m-f[m /etc/bashrc [93m];[m [93mthen
+        . [m/etc/bashrc
+[93mfi[m
+
+[96m# User specific environment[m
+[93mif ![m [38;5;224m[[[m [93m"[m[38;5;81m$PATH[m[93m"[m [93m=~[m [93m"[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[93m"[m [38;5;224m]][m
+[93mthen[m
+    [38;5;81mPATH[m[93m="[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[38;5;81m$PATH[m[93m"
+fi
+export[m[1m[96m PATH[m
+
+[96m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[94m~                                                                                                                                                 [20;1H~                                                                                                                                                 [21;1H~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H1,1[11CAll"~/.bashrc" 18L, 376C[1;1H[?25h[?25l[43;119H~@k[1;1H[43;119H   [2;1H[43;129H2,0-1[2;1H[?25h[?25l[43;119H~@k[2;1H[43;119H   [3;1H[43;129H3,1  [3;1H[?25h[?25l[43;119H~@k[3;1H[43;119H   [4;1H[43;129H4[4;1H[?25h[?25l[43;119H~@k[4;1H[43;119H   [5;8H[43;129H5,1-8[5;8H[?25h[?25l[43;119H~@k[5;8H[43;119H   [6;1H[43;129H6,1  [6;1H[?25h[?25l[43;119H~@k[6;1H[43;119H   [7;1H[43;129H7,0-1[7;1H[?25h[?25l[43;119H~@k[7;1H[43;119H   [8;1H[43;129H8,1  [8;1H[?25h[?25l[43;119H~@k[8;1H[43;119H   [9;1H[43;129H9[9;1H[?25h[?25l[43;119H~@k[9;1H[43;119H   [10;1H[43;129H10,1[10;1H[?25h[?25l[43;119H~@k[10;1H[43;119H   [11;1H[43;130H1[11;1H[?25h[?25l[43;119H~@k[11;1H[43;119H   [12;1H[43;130H2[12;1H[?25h[?25l[43;119H~@k[12;1H[43;119H   [13;1H[43;130H3[13;1H[?25h[?25l[43;119H~@k[13;1H[43;119H   [14;1H[43;130H4,0-1[14;1H[?25h[?25l[43;119H~@k[14;1H[43;119H   [15;1H[43;130H5,1  [15;1H[?25h[?25l[43;119H~@k[15;1H[43;119H   [16;1H[43;130H6[16;1H[?25h[?25l[43;119H~@k[16;1H[43;119H   [17;1H[43;130H7,0-1[17;1H[?25h[?25l[43;119H~@k[17;1H[43;119H   [18;1H[43;130H8,1  [18;1H[?25h[?25l[43;119H~@k[18;1H[43;119H   [18;1H[?25h[?25l[43;119H~@k[18;1H[43;119H   [18;1H[?25h[?25l[43;119Hi[18;1H[43;119H [18;1H[43;1H[1m-- INSERT --[m[43;13H[K[43;129H18,1[10CAll[18;1H[?25h[?25l[43;132H2[18;2H[?25h[?25l[43;132H3[18;3H[?25h[?25l[43;132H4[18;4H[?25h[?25l[43;132H5[18;5H[?25h[?25l[43;132H6[18;6H[?25h[?25l[43;132H7[18;7H[?25h[?25l[43;132H8[18;8H[?25h[?25l[43;132H9[18;9H[?25h[?25l[43;132H10[18;10H[?25h[?25l[43;133H1[18;11H[?25h[?25l[96m      cific aliases and functions[m[43;133H2-17[18;17H[?25h[?25l[96mcific aliases and functions[m[18;38H[K[43;133H1   [18;11H[?25h[?25l[43;133H2[18;12H[?25h[?25l[43;133H3[18;13H[?25h[?25l[43;133H4[18;14H[?25h[?25l[43;133H5[18;15H[?25h[?25l[43;133H6[18;16H[?25h[?25l[43;133H7[18;17H[?25h[?25l[43;133H8[18;18H[?25h[?25l[43;133H9[18;19H[?25h[?25l[43;132H20[18;20H[?25h[?25l[43;133H1[18;21H[?25h[?25l[43;133H2[18;22H[?25h[?25l[43;133H3[18;23H[?25h[?25l[43;133H4[18;24H[?25h[?25l[43;133H5[18;25H[?25h[?25l[43;133H6[18;26H[?25h[?25l[43;133H7[18;27H[?25h[?25l[43;133H8[18;28H[?25h[?25l[43;133H9[18;29H[?25h[?25l[43;132H30[18;30H[?25h[?25l[43;133H1[18;31H[?25h[?25l[43;133H2[18;32H[?25h[?25l[43;133H3[18;33H[?25h[?25l[43;133H4[18;34H[?25h[?25l[43;133H5[18;35H[?25h[?25l[43;133H6[18;36H[?25h[?25l[43;133H7[18;37H[?25h[?25l[43;133H8[18;38H[?25h[?25l[19;1H[K[43;130H9,1 [19;1H[?25h[?25ll[43;132H2[19;2H[?25h[?25l[19;1H[K[43;132H1[19;1H[?25h[?25la[43;132H2[19;2H[?25h[?25ll[43;132H3[19;3H[?25h[?25li[43;132H4[19;4H[?25h[?25la[43;132H5[19;5H[?25h[?25l[93malias[m[43;132H6[19;6H[?25h[?25l[43;132H7[19;7H[?25h[?25ll[43;132H8[19;8H[?25h[?25l[43;132H9[19;9H[?25h[?25l[93m=[m[43;132H10[19;10H[?25h[?25l[19;9H[K[43;132H9 [19;9H[?25h[?25l[43;132H8[19;8H[?25h[?25l[1m[96ml[m=[43;132H9[19;9H[?25h[?25l[93m"[m[43;132H10[19;10H[?25h[?25l[95ml[m[43;133H1[19;11H[?25h[?25l[95ms[m[43;133H2[19;12H[?25h[?25l[95m [m[43;133H3[19;13H[?25h[?25l[95m-[m[43;133H4[19;14H[?25h[?25l[95ml[m[43;133H5[19;15H[?25h[?25l[95ma[m[43;133H6[19;16H[?25h[?25l[95mt[m[43;133H7[19;17H[?25h[?25l[95mr[m[43;133H8[19;18H[?25h[?25l[95m'[m[43;133H9[19;19H[?25h[?25l[19;18H[K[43;133H8[19;18H[?25h[?25l[93m"[m[43;133H9[19;19H[?25h[?25l[20;1H[K[43;129H20,1 [20;1H[?25h[?25la[43;132H2[20;2H[?25h[?25ll[43;132H3[20;3H[?25h[?25li[43;132H4[20;4H[?25h[?25la[43;132H5[20;5H[?25h[?25l[93malias[m[43;132H6[20;6H[?25h[?25l[43;132H7[20;7H[?25h[?25lw[43;132H8[20;8H[?25h[?25l[1m[96mw[m=[43;132H9[20;9H[?25h[?25l[93m"[m[43;132H10[20;10H[?25h[?25l[95ml[m[43;133H1[20;11H[?25h[?25l[95ma[m[43;133H2[20;12H[?25h[?25l[95m [m[43;133H3[20;13H[?25h[?25l[95m-[m[43;133H4[20;14H[?25h[?25l[95ml[m[43;133H5[20;15H[?25h[?25l[95ma[m[43;133H6[20;16H[?25h[?25l[95m [m[43;133H7[20;17H[?25h[?25l[95m|[m[43;133H8[20;18H[?25h[?25l[95m [m[43;133H9[20;19H[?25h[?25l[95mw[m[43;132H20[20;20H[?25h[?25l[95mc[m[43;133H1[20;21H[?25h[?25l[93m"[m[43;133H2[20;22H[?25h[43;1H[K[20;21H[?25l[43;119H^[[20;21H[43;119H  [20;22H[43;129H20,21[9CAll[20;21H[?25h[?25l[43;119H:[20;21H[43;119H[K[43;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"~/.bashrc" 20L, 417C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ vi ~/.bashrc
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;43r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[43;1H"~/.bashrc" 20L, 417C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# .bashrc
+
+# Source global definitions[m
+[38;5;130mif [[m [38;5;130m-f[m /etc/bashrc [38;5;130m];[m [38;5;130mthen
+        . [m/etc/bashrc
+[38;5;130mfi[m
+
+[34m# User specific environment[m
+[38;5;130mif ![m [35m[[[m [38;5;130m"[m[35m$PATH[m[38;5;130m"[m [38;5;130m=~[m [38;5;130m"[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[38;5;130m"[m [35m]][m
+[38;5;130mthen[m
+    [35mPATH[m[38;5;130m="[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[35m$PATH[m[38;5;130m"
+fi
+export[m[36m PATH[m
+
+[34m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[38;5;130malias[m [36ml[m=[38;5;130m"[m[31mls -latr[m[38;5;130m"
+alias[m [36mw[m=[38;5;130m"[m[31mla -la | wc[m[38;5;130m"[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll[20;21H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# .bashrc
+
+# Source global definitions[m
+[93mif [[m [93m-f[m /etc/bashrc [93m];[m [93mthen
+        . [m/etc/bashrc
+[93mfi[m
+
+[96m# User specific environment[m
+[93mif ![m [38;5;224m[[[m [93m"[m[38;5;81m$PATH[m[93m"[m [93m=~[m [93m"[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[93m"[m [38;5;224m]][m
+[93mthen[m
+    [38;5;81mPATH[m[93m="[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[38;5;81m$PATH[m[93m"
+fi
+export[m[1m[96m PATH[m
+
+[96m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[93malias[m [1m[96ml[m=[93m"[m[95mls -latr[m[93m"
+alias[m [1m[96mw[m=[93m"[m[95mla -la | wc[m[93m"[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll"~/.bashrc" 20L, 417C[20;21H[?25h[?25l[43;119H^[[20;21H[43;119H  [20;21H[43;119H^[[20;21H[43;119H  [20;21H[?25h[?25l[43;119H:[20;21H[43;1H[K[43;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[43;3H[K[43;3H[?25h[?25l[43;2H[K[43;2H[?25hq[?25l[?25hu[?25l[?25hi[?25l[?25ht[?25l[?25h[?25l[?2004l[43;1H[K[43;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ source ~/.bashrcc[K
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 24
+drwxrwxr-x 9 huy huy   110 Sep 26 22:36 [0m[38;5;33m..[0m
+drwxrwxr-x 2 huy huy    28 Sep 26 22:36 [38;5;33m.[0m
+-rw-rw-r-- 1 huy huy 24576 Sep 26 22:48 ws4.092622.txt
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ w
+bash: la: command not found
+      0       0       0
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ wlsource ~/.bashrc[4Pvi[C[C[C[C[C[C[C[C[C[C[4@source[C[C[C[C[C[C[C[C[C[C[4Pvi[C[C[C[C[C[C[C[C[C[C[3@gedit[C[C[C[C[C[C[C[C[C[C[10Pcleargedit ~/.bashrc[3Pvi[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;43r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[43;1H"~/.bashrc" 20L, 417C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# .bashrc
+
+# Source global definitions[m
+[38;5;130mif [[m [38;5;130m-f[m /etc/bashrc [38;5;130m];[m [38;5;130mthen
+        . [m/etc/bashrc
+[38;5;130mfi[m
+
+[34m# User specific environment[m
+[38;5;130mif ![m [35m[[[m [38;5;130m"[m[35m$PATH[m[38;5;130m"[m [38;5;130m=~[m [38;5;130m"[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[38;5;130m"[m [35m]][m
+[38;5;130mthen[m
+    [35mPATH[m[38;5;130m="[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[35m$PATH[m[38;5;130m"
+fi
+export[m[36m PATH[m
+
+[34m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[38;5;130malias[m [36ml[m=[38;5;130m"[m[31mls -latr[m[38;5;130m"
+alias[m [36mw[m=[38;5;130m"[m[31mla -la | wc[m[38;5;130m"[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll[20;21H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# .bashrc
+
+# Source global definitions[m
+[93mif [[m [93m-f[m /etc/bashrc [93m];[m [93mthen
+        . [m/etc/bashrc
+[93mfi[m
+
+[96m# User specific environment[m
+[93mif ![m [38;5;224m[[[m [93m"[m[38;5;81m$PATH[m[93m"[m [93m=~[m [93m"[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[93m"[m [38;5;224m]][m
+[93mthen[m
+    [38;5;81mPATH[m[93m="[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[38;5;81m$PATH[m[93m"
+fi
+export[m[1m[96m PATH[m
+
+[96m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[93malias[m [1m[96ml[m=[93m"[m[95mls -latr[m[93m"
+alias[m [1m[96mw[m=[93m"[m[95mla -la | wc[m[93m"[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll"~/.bashrc" 20L, 417C[20;21H[?25h[?25l[43;119H~@k[20;21H[43;119H   [20;21H[?25h[?25l[43;119H~@k[20;21H[43;119H   [19;18H[43;129H19,18[19;18H[?25h[?25l[43;119H~@k[19;18H[43;119H   [19;18H[?25h[?25l[43;119Hs[19;18H[43;119H [19;18H[43;119Hcl[19;18H[43;119H  [19;18H[43;1H[1m-- INSERT --[m[43;13H[K[43;129H19,18[9CAll[19;18H[K[20;1H[95malias w=[m[1Cla [38;5;224m-la[m | wc[19;18H[?25h[?25l[95m'[m[43;133H9[19;19H[?25h[?25l[43;133H8[19;18H[?25h[?25l[43;133H7[19;17H[?25h[?25l[43;133H6[19;16H[?25h[?25l[43;133H5[19;15H[?25h[?25l[43;133H4[19;14H[?25h[?25l[43;133H3[19;13H[?25h[?25l[43;133H2[19;12H[?25h[?25l[43;133H1[19;11H[?25h[?25l[43;133H0[19;10H[?25h[?25l[93mls[m [38;5;224m-latr[m[93m'[m[19;18H[K[20;9H[95m"la -la | wc"[m[43;132H9 [19;9H[?25h[?25l[93m'[m[95mls -latr[m[93m'
+alias[m [1m[96mw[m=[93m"[11C"[m[43;132H10[19;10H[?25h[?25l[43;129H20[20;10H[?25h[?25lla [38;5;224m-la[m | wc[93m"[m[20;21H[K[43;132H9 [20;9H[?25h[?25l[93m'[m[95mla -la | wc"[m[43;132H10[20;10H[?25h[?25l[43;133H1[20;11H[?25h[?25l[43;133H2[20;12H[?25h[?25l[43;133H3[20;13H[?25h[?25l[43;133H4[20;14H[?25h[?25l[43;133H5[20;15H[?25h[?25l[43;133H6[20;16H[?25h[?25l[43;133H7[20;17H[?25h[?25l[43;133H8[20;18H[?25h[?25l[43;133H9[20;19H[?25h[?25l[43;132H20[20;20H[?25h[?25l[43;133H1[20;21H[?25h[?25l[43;133H2[20;22H[?25h[?25l[20;21H[K[43;133H1[20;21H[?25h[?25l[93m'[m[43;133H2[20;22H[?25h[43;1H[K[20;21H[?25l[43;119H^[[20;21H[43;119H  [20;22H[43;129H20,21[9CAll[20;21H[?25h[?25l[43;119H:[20;21H[43;119H[K[43;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"~/.bashrc" 20L, 417C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ source ~/.bashrc
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 32
+drwxrwxr-x 9 huy huy   110 Sep 26 22:36 [0m[38;5;33m..[0m
+drwxrwxr-x 2 huy huy    28 Sep 26 22:36 [38;5;33m.[0m
+-rw-rw-r-- 1 huy huy 32768 Sep 26 22:49 ws4.092622.txt
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ w
+bash: la: command not found
+      0       0       0
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ w
+bash: la: command not found
+      0       0       0
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ wlsource ~/.bashrc[4Pvi[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;43r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[43;1H"~/.bashrc" 20L, 417C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# .bashrc
+
+# Source global definitions[m
+[38;5;130mif [[m [38;5;130m-f[m /etc/bashrc [38;5;130m];[m [38;5;130mthen
+        . [m/etc/bashrc
+[38;5;130mfi[m
+
+[34m# User specific environment[m
+[38;5;130mif ![m [35m[[[m [38;5;130m"[m[35m$PATH[m[38;5;130m"[m [38;5;130m=~[m [38;5;130m"[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[38;5;130m"[m [35m]][m
+[38;5;130mthen[m
+    [35mPATH[m[38;5;130m="[m[35m$HOME[m[31m/.local/bin:[m[35m$HOME[m[31m/bin:[m[35m$PATH[m[38;5;130m"
+fi
+export[m[36m PATH[m
+
+[34m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[38;5;130malias[m [36ml[m=[38;5;130m'[m[31mls -latr[m[38;5;130m'
+alias[m [36mw[m=[38;5;130m'[m[31mla -la | wc[m[38;5;130m'[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll[20;21H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# .bashrc
+
+# Source global definitions[m
+[93mif [[m [93m-f[m /etc/bashrc [93m];[m [93mthen
+        . [m/etc/bashrc
+[93mfi[m
+
+[96m# User specific environment[m
+[93mif ![m [38;5;224m[[[m [93m"[m[38;5;81m$PATH[m[93m"[m [93m=~[m [93m"[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[93m"[m [38;5;224m]][m
+[93mthen[m
+    [38;5;81mPATH[m[93m="[m[38;5;81m$HOME[m[95m/.local/bin:[m[38;5;81m$HOME[m[95m/bin:[m[38;5;81m$PATH[m[93m"
+fi
+export[m[1m[96m PATH[m
+
+[96m# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions[m
+[93malias[m [1m[96ml[m=[93m'[m[95mls -latr[m[93m'
+alias[m [1m[96mw[m=[93m'[m[95mla -la | wc[m[93m'[m
+[94m~                                                                                                                                                 [22;1H~                                                                                                                                                 [23;1H~                                                                                                                                                 [24;1H~                                                                                                                                                 [25;1H~                                                                                                                                                 [26;1H~                                                                                                                                                 [27;1H~                                                                                                                                                 [28;1H~                                                                                                                                                 [29;1H~                                                                                                                                                 [30;1H~                                                                                                                                                 [31;1H~                                                                                                                                                 [32;1H~                                                                                                                                                 [33;1H~                                                                                                                                                 [34;1H~                                                                                                                                                 [35;1H~                                                                                                                                                 [36;1H~                                                                                                                                                 [37;1H~                                                                                                                                                 [38;1H~                                                                                                                                                 [39;1H~                                                                                                                                                 [40;1H~                                                                                                                                                 [41;1H~                                                                                                                                                 [42;1H~                                                                                                                                                 [m[43;129H20,21[9CAll"~/.bashrc" 20L, 417C[20;21H[?25h[?25l[43;119H~@k[20;21H[43;119H   [20;20H[43;133H0[20;20H[?25h[?25l[43;119H~@k[20;20H[43;119H   [20;19H[43;132H19[20;19H[?25h[?25l[43;119H~@k[20;19H[43;119H   [20;18H[43;133H8[20;18H[?25h[?25l[43;119H~@k[20;18H[43;119H   [20;17H[43;133H7[20;17H[?25h[?25l[43;119H~@k[20;17H[43;119H   [20;16H[43;133H6[20;16H[?25h[?25l[43;119H~@k[20;16H[43;119H   [20;15H[43;133H5[20;15H[?25h[?25l[43;119H~@k[20;15H[43;119H   [20;14H[43;133H4[20;14H[?25h[?25l[43;119H~@k[20;14H[43;119H   [20;13H[43;133H3[20;13H[?25h[?25l[43;119H~@k[20;13H[43;119H   [20;12H[43;133H2[20;12H[?25h[?25l[43;119Hs[20;12H[43;119H [20;12H[43;119Hcl[20;12H[43;119H  [20;12H[43;1H[1m-- INSERT --[m[43;13H[K[43;129H20,12[9CAll[20;12H[95m-la | wc[m[93m'[m[20;21H[K[20;12H[?25h[?25l[95m-la | wc[m[93m'[m[20;20H[K[43;133H1[20;11H[?25h[?25l[95ms-la | wc[m[93m'[m[43;133H2[20;12H[?25h[?25l[95m -la | wc[m[93m'[m[43;133H3[20;13H[?25h[43;1H[K[20;12H[?25l[43;119H^[[20;12H[43;119H  [20;13H[43;129H20,12[9CAll[20;12H[?25h[?25l[43;119H:[20;12H[43;119H[K[43;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"~/.bashrc" 20L, 417C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ source ~/.bashrc
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ w
+      4      29     149
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 40
+drwxrwxr-x 9 huy huy   110 Sep 26 22:36 [0m[38;5;33m..[0m
+drwxrwxr-x 2 huy huy    28 Sep 26 22:36 [38;5;33m.[0m
+-rw-rw-r-- 1 huy huy 40960 Sep 26 22:49 ws4.092622.txt
+]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ clear
+[3J[H[2J]0;huy@sjsu:~/git/worksheet1/worksheet4[huy@sjsu worksheet4]$ l
+total 40
+drwxrwxr-x 9 huy huy   110 Sep 26 22:36 [0m[38;5;33m..[0m
+drwxrwxr-x 2 huy huy    28 Sep 26 22:36 [38;5;33
