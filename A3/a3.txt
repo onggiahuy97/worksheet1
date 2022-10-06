@@ -35,6 +35,7 @@ Question 4:
 - cat question4.txt | awk '{print $2}' > question4.1.txt
 - cat question4.SupportA2.txt | awk '{print $2}' > question4.2.txt
 - diff question4.1.txt question4.2.txt
+- comm -3 question4.1.txt question4.2.txt | sed 's/^\t//’
 
 Here is step by step:
 - Get 30 most frequent hashtags in these largest clusters of replies
@@ -42,7 +43,7 @@ Here is step by step:
 - Filter first file
 - Fileter second file
 - Diff the different between two files.
-
+- Show lines that only exist in one file or the other (not in both)
 
 
 
