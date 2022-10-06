@@ -1,0 +1,59 @@
+0a1
+> Ukraine
+2d2
+< LongCovid
+4,5c4,5
+< Ukraine
+< AlboForPM
+---
+> Russia
+> LongCovid
+7c7,20
+< JohnsonOut
+---
+> ableg
+> cdnpoli
+> เจ้าแก้มก้อน
+> Omicron
+> Russian
+> Kyiv
+> Putin
+> fluke_natouch
+> UkraineRussiaWar
+> BREAKING
+> DemVoice1
+> PMQs
+> OneOfUsAllOfUs
+> onpoli
+9,11c22,26
+< Russia
+< ausvotes
+< LNPCorruptionParty
+---
+> Mariupol
+> dogs
+> OhmThitiwat
+> โอห์มไง
+> Ukrainian
+13,22d27
+< BCCRSS
+< IStandWithUkraine
+< VoteFordOut2022
+< ScottyThePathologicalLiar
+< DemVoice1
+< Covid
+< Brexit
+< VoteThemAllOut2022
+< Omicron
+< insiders
+24,30c29,30
+< NeverVoteConservative
+< GutlessScomo
+< cdnpoli
+< bcpoli
+< AusVotes2022
+< ableg
+< WearAMask
+---
+> ausvotes
+> UkraineWar
