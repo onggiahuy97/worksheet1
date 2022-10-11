@@ -1,0 +1,1698 @@
+Step by step:
+- cat amazon.file.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | awk '{print $2}' > custid.txt
+- for loop:
+for id in $(cat custid.txt)
+do
+mkdir CUSTOMERSID/$id.txt
+done
+
+
+Script started on 2022-10-11 13:40:50-04:00
+]0;huy@sjsu:~/git/worksheet1/worksheet5[huy@sjsu worksheet5]$ [K[huy@sjsu worksheet5]$ [K[huy@sjsu worksheet5]$ [K[huy@sjsu worksheet5]$ tmux new-session -homrwork[K[K[K[K[Kework
+tmux: unknown option -- h
+usage: new-session [-AdDEP] [-c start-directory] [-F format] [-n window-name] [-s session-name] [-t target-session] [-x width] [-y height] [command]
+]0;huy@sjsu:~/git/worksheet1/worksheet5[huy@sjsu worksheet5]$ tmux new-session -s ws5
+[?1049h[22;0;0t[?1h=[H[2J[?12l[?25h[?1000l[?1002l[?1006l[?1005l[c(B[m[?12;25h[?12l[?25h[?1003l[?1006l[?2004l[1;1H[1;48r]112[1;1H[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[42m[ws5] 0:bash*                                                                                "sjsu.pub.pic2.ibm.com" 13:41 11-Oct-22(B[m[1;1H[?12l[?25h(B[m[?12;25h[?12l[?25h[?1003l[?1006l[?2004l[1;1H[1;48r[1;1H[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[42m[ws5] 0:bash*                                                                                "sjsu.pub.pic2.ibm.com" 13:41 11-Oct-22(B[m[1;1H[?12l[?25h[huy@sjsu worksheet5]$ [?25l[48;1H[30m[43m(rename-window) bash[7m (B[m[30m[43m                                                                                                               (B[m[1;24H[48;1H[30m[43m(rename-window) bas[7m (B[m[30m[43m                                                                                                                (B[m[1;24H[48;1H[30m[43m(rename-window) ba[7m (B[m[30m[43m                                                                                                                 (B[m[1;24H[48;1H[30m[43m(rename-window) b[7m (B[m[30m[43m                                                                                                                  (B[m[1;24H[48;1H[30m[43m(rename-window) [7m (B[m[30m[43m                                                                                                                   (B[m[1;24H[48;1H[30m[43m(rename-window) W[7m (B[m[30m[43m                                                                                                                  (B[m[1;24H[48;1H[30m[43m(rename-window) WS[7m (B[m[30m[43m                                                                                                                 (B[m[1;24H[48;1H[30m[43m(rename-window) WS5[7m (B[m[30m[43m                                                                                                                (B[m[1;24H[H[huy@sjsu worksheet5]$[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:41 11-Oct-22(B[m[1;24H[?12l[?25hd[Kcd
+[huy@sjsu ~]$ ls
+amazon_reviews_us_Books_v1_02.tsv  [34m[1mgit(B[m  t.tsv  [34m[1mworksheet1
+(B[m[huy@sjsu ~]$ head -1 [K[Kn 1 amazon_reviews_us_Books_v1_02.tsv 
+marketplace[5Ccustomer_id[5Creview_id[7Cproduct_id[6Cproduct_parent[2Cproduct_title[3Cproduct_category[8Cstar_ratinghelpful_votes[4Ctotal_votes[5Cvine[4Cverified_purchase[7Creview_headline[Creview_body[5Creview_date
+[huy@sjsu ~]$ [?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:42 11-Oct-22(B[m[7;15H[?12l[?25hhea[K[K[K[?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:43 11-Oct-22(B[m[7;15H[?12l[?25hfor i in {1...[K[?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:44 11-Oct-22(B[m[7;28H[?12l[?25h5}; e[Kdo echo hello; end
+> done
+hello
+-bash: end: command not found
+hello
+-bash: end: command not found
+hello
+-bash: end: command not found
+hello
+-bash: end: command not found
+hello
+-bash: end: command not found
+[huy@sjsu ~]$ for i in {1..5}; do echo hello; end; done[K[K[K[K[K[K[K[K[Kdone
+hello
+hello
+hello
+hello
+hello
+[huy@sjsu ~]$ [?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:45 11-Oct-22(B[m[25;15H[?12l[?25h[?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:46 11-Oct-22(B[m[25;15H[?12l[?25h[?25l[48;1H[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:47 11-Oct-22(B[m[25;15H[?12l[?25hhead amazon_reviews_us_Books_v1_02.tsv 
+marketplace[5Ccustomer_id[5Creview_id[7Cproduct_id[6Cproduct_parent[2Cproduct_title[3Cproduct_category[8Cstar_ratinghelpful_votes[4Ctotal_votes[5Cvine[4Cverified_purchase[7Creview_headline[Creview_body[5Creview_date
+US[6C12076615[8CRQ58W7SMO911M[3C0385730586[6C122662979[7CSisterhood of the Traveling Pants (Book 1)[6CBooks[3C4[2C23[7CN[7CN[7Cthis book was a great learning novel![3C[1;47r[17S[12;65Hthis boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.[8C2005-10-14
+US[6C12703090[8CRF6IUKMGL8SF[4C0811828964[6C56191234[8CThe Bad Girl's Guide to Getting What You Want[3CBooks[3C3[2C55[7CN[7CN[7CFun Fluff[7CIf you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.[2C2005-10-14
+US[6C12257412[8CR1DOSHH6AI622S[2C1844161560[6C253182049[7CEisenhorn (A Warhammer 40,000 Omnibus)[2CBooks[3C4[7C1[2C22[7CN[7CN[7Cthis isn't a review[5Cnever read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say[4C2005-10-14
+US[6C50732546[8CRATOTLA3OF70O[3C0373836635[6C348672532[7CColby Conspiracy (Colby Agency)[CBooks[3C5[7C2[7C2[2CNN[7Cfine author on her A-game[7CThough she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner[4C2005-10-14
+US[6C51964897[8CR1TNWRKIVHVYOV[2C0262181533[6C598678717[7CThe Psychology of Proof: Deductive Reasoning in Human Thinking[6CBooks[3C4[7C0[7C2[7CN[7CN[7CExecellent cursor examination[3CReview based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound pro[1;48r[47;99H[1;47r[36S[11;99Hofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />[4C2005-10-14
+US[6C31048862[8CR2F53LI9KK9MOY[2C0316769487[6C862964341[7CThe Catcher in the Rye[2CBooks[3C4[7C2[7C2[7CN[2CNInteresting, fun.[7CMy only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.[2C2005-10-14
+US[6C53000124[8CR1KJ6MB7MRSQFF[2C0805076069[6C145341889[7CBait and Switch: The (Futile) Pursuit of the American DreamBooks[4C4[7C9[7C11[6CN[7CN[7CI viewed this the opposite of Publisher's Weekly ...[4CThis book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.[5C2005-10-14
+US[6C29732693[8CR2XIM9LT335WHE[2C1581603681[6C640542054[7COpening Combination Padlocks: No Tools, No Problem[6CBooks[7C4[7C3[7C10[6CN[7CN[7CNo Frills - Just The Facts[6CWhen looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.[4C2005-10-14
+US[6C48541186[8CR1VE0FQQ0QTQJN[2C0300108834[6C915891133[7CA Little History of the World (Little Histories)[8CBooks[7C5[7C16[6C20[6CN[7CY[7CSimple, entertaining![3CNever been much for enjoying history, but the style, brevity, and choice of subje[1;48r[47;22H[1;47r[47;132H
+[46;22Hct matter come together very nicely in this book.[2C2005-10-14
+[huy@sjsu ~]$ [1;48r[47;15Hhead -n2 [K[K 2 amazon_reviews_us_Books_v1_02.tsv [1;47r[47;132H
+[1;48r[47;1H[1;47r[8S[39;1Hmarketplace[5Ccustomer_id[5Creview_id[7Cproduct_id[6Cproduct_parent[2Cproduct_title[3Cproduct_category[8Cstar_ratinghelpful_votes[4Ctotal_votes[5Cvine[4Cverified_purchase[7Creview_headline[Creview_body[5Creview_date
+US[6C12076615[8CRQ58W7SMO911M[3C0385730586[6C122662979[7CSisterhood of the Traveling Pants (Book 1)[6CBooks[3C4[2C23[7CN[7CN[7Cthis book was a great learning novel![3Cthis boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immed[1;48r[47;93H[1;47r[6S[41;93Hiatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.[8C2005-10-14[1;48r[47;1H[huy@sjsu ~]$ cat amazon_reviews_us_Books_v1_02.tsv  [K| cut -f[Kd$\'t[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:48 11-Oct-22(B[m[47;65H[?12l[?25h' -f2,3 | head[1;47r[47;132H
+[1;48r[47;1H> ^C[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ cat amazon_reviews_us_Books_v1_02.tsv | cut -d$\'t' -f2,3 | head[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K$[1;47r[47;132H
+[1;48r[47;1H[1;47r[2S[45;1Hcut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.[1;48r[47;1H[huy@sjsu ~]$ \[Kcat amazon_reviews_us_Books_v1_02.tsv | cut -d$'t[K\t' -f2,3 | head[1;47r[47;132H
+[1;48r[47;1H[1;47r[5S[42;1Hcustomer_id[5Creview_id
+12076615[8CRQ58W7SMO911M
+12703090[8CRF6IUKMGL8SF
+12257412[8CR1DOSHH6AI622S
+50732546[8CRATOTLA3OF70O[1;48r[47;1H[1;47r[5S[42;1H51964897[8CR1TNWRKIVHVYOV
+31048862[8CR2F53LI9KK9MOY
+53000124[8CR1KJ6MB7MRSQFF
+29732693[8CR2XIM9LT335WHE
+48541186[8CR1VE0FQQ0QTQJN[1;48r[47;1H[huy@sjsu ~]$ [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:49 11-Oct-22(B[m[47;15H[?12l[?25hcat amazon_reviews_us_Books_v1_02.tsv | cut -d$'\t' -f2,3 | head[K[K[K[K[K[K[K[K[K | sort | uniq -c | sort -nr | head[1;47r[47;132H
+[1;48r[47;1H[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:50 11-Oct-22(B[m[47;1H[?12l[?25h^[[B^[[B^[[B^[[B^[[B^[[B^C[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ cut amazon_reviews_us_Books_v1_02.tsv -d $[15G[Kcut -d2[K$'\t' -f2 amazon_reviews_us_Books_v1_02.tsv | head[1;47r[47;132H
+[1;48r[47;1H[1;47r[10S[37;1Hcustomer_id
+12076615
+12703090
+12257412
+50732546
+51964897
+31048862
+53000124
+29732693
+48541186[1;48r[47;1H[huy@sjsu ~]$ cut -d$'\t' -f2 amazon_reviews_us_Books_v1_02.tsv | head[K[K[K[Ksort | sort[K[K[K[Kuniq -c | sort --[Knr | head[1;47r[47;132H
+[1;48r[47;1H[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:51 11-Oct-22(B[m[47;1H[?12l[?25h^C[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ head -n 1---[K[K[K[K1000 amazon_reviews_us_Books_v1_02.tsv | cut -d$\[K'\t' [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:52 11-Oct-22(B[m[47;76H[?12l[?25h-f2 [1;47r[47;132H
+[1;48r[47;1H[1;47r[4S[43;1Hcustomer_id
+12076615
+12703090
+12257412[1;48r[47;1H[1;47r[47;132H
+[46;1H50732546[1;48r[47;1H[1;47r[2S[45;1H51964897
+31048862[1;48r[47;1H[1;47r[5S[42;1H53000124
+29732693
+48541186
+15280864
+24209213[1;48r[47;1H[1;47r[47;132H
+[46;1H52253037[1;48r[47;1H[1;47r[2S[45;1H27925116
+15005044[1;48r[47;1H[1;47r[5S[42;1H52534781
+26217071
+37684582
+45232107
+15437121[1;48r[47;1H[1;47r[3S[44;1H52157117
+50732546
+15865974[1;48r[47;1H[1;47r[2S[45;1H13503149
+51917717[1;48r[47;1H[1;47r[2S[45;1H12070100
+14808839[1;48r[47;1H[1;47r[4S[43;1H30675785
+31863302
+12068874
+12073911[1;48r[47;1H[1;47r[2S[45;1H53043498
+12360098[1;48r[47;1H[1;47r[47;132H
+[46;1H41549714[1;48r[47;1H[1;47r[2S[45;1H49355567
+25947084[1;48r[47;1H[1;47r[3S[44;1H16234962
+12066099
+12071429[1;48r[47;1H[1;47r[3S[44;1H52818300
+52653080
+42098585[1;48r[47;1H[1;47r[2S[45;1H50057481
+25701781[1;48r[47;1H[1;47r[2S[45;1H43628635
+24597472[1;48r[47;1H[1;47r[4S[43;1H51303136
+29963330
+23972711
+52393676[1;48r[47;1H[1;47r[2S[45;1H24853483
+37527885[1;48r[47;1H[1;47r[47;132H
+[46;1H50913245[1;48r[47;1H[1;47r[2S[45;1H12071875
+39154110[1;48r[47;1H[1;47r[2S[45;1H13585650
+12068140[1;48r[47;1H[1;47r[2S[45;1H41582461
+12067919[1;48r[47;1H[1;47r[47;132H
+[46;1H32533252[1;48r[47;1H[1;47r[3S[44;1H12517857
+50732546
+40392769[1;48r[47;1H[1;47r[47;132H
+[46;1H37441931[1;48r[47;1H[1;47r[47;132H
+[46;1H39487575[1;48r[47;1H[1;47r[2S[45;1H38233919
+37217168[1;48r[47;1H[1;47r[3S[44;1H20243836
+23711977
+18755160[1;48r[47;1H[1;47r[2S[45;1H52714863
+38375667[1;48r[47;1H[1;47r[47;132H
+[46;1H50774468[1;48r[47;1H[1;47r[2S[45;1H50055196
+16300118[1;48r[47;1H[1;47r[47;132H
+[46;1H50913245[1;48r[47;1H[1;47r[3S[44;1H50036420
+31646732
+12072415[1;48r[47;1H[1;47r[4S[43;1H51174957
+16571810
+12075425
+14278448[1;48r[47;1H[1;47r[2S[45;1H12281899
+12069570[1;48r[47;1H[1;47r[47;132H
+[46;1H34103525[1;48r[47;1H[1;47r[47;132H
+[46;1H37811500[1;48r[47;1H[1;47r[3S[44;1H12256167
+49441053
+52811948[1;48r[47;1H[1;47r[3S[44;1H26274218
+50122160
+12075168[1;48r[47;1H[1;47r[2S[45;1H13499553
+24104879[1;48r[47;1H[1;47r[2S[45;1H50122160
+36259344[1;48r[47;1H[1;47r[2S[45;1H27565968
+29192266[1;48r[47;1H[1;47r[2S[45;1H14278448
+35726214[1;48r[47;1H[1;47r[47;132H
+[46;1H46181400[1;48r[47;1H[1;47r[2S[45;1H51734900
+24524878[1;48r[47;1H[1;47r[4S[43;1H40824697
+49967327
+49750558
+37458619[1;48r[47;1H[1;47r[4S[43;1H36218806
+40209750
+37746085
+16428702[1;48r[47;1H[1;47r[4S[43;1H50732546
+37357106
+51306037
+13129840[1;48r[47;1H[1;47r[3S[44;1H23972711
+38615993
+13093298[1;48r[47;1H[1;47r[3S[44;1H40333250
+12079497
+42010710[1;48r[47;1H[1;47r[47;132H
+[46;1H49435112[1;48r[47;1H[1;47r[47;132H
+[46;1H50774468[1;48r[47;1H[1;47r[2S[45;1H17136943
+28424332[1;48r[47;1H[1;47r[3S[44;1H35985708
+53094054
+47257366[1;48r[47;1H[1;47r[5S[42;1H39274513
+35362907
+24577728
+18086989
+37245519[1;48r[47;1H[1;47r[4S[43;1H50988702
+12071477
+28281811
+52943281[1;48r[47;1H[1;47r[3S[44;1H30501489
+53096219
+13114788[1;48r[47;1H[1;47r[3S[44;1H35739830
+50851960
+12070940[1;48r[47;1H[1;47r[3S[44;1H49268248
+50776149
+37172747[1;48r[47;1H[1;47r[3S[44;1H12069118
+43676843
+14564880[1;48r[47;1H[1;47r[47;132H
+[46;1H51125276[1;48r[47;1H[1;47r[2S[45;1H51988227
+12324016[1;48r[47;1H[1;47r[2S[45;1H49029775
+12668105[1;48r[47;1H[1;47r[3S[44;1H51197187
+40533689
+46072197[1;48r[47;1H[1;47r[47;132H
+[46;1H50776149[1;48r[47;1H[1;47r[3S[44;1H50131289
+22975473
+12065385[1;48r[47;1H[1;47r[2S[45;1H38510519
+13329544[1;48r[47;1H[1;47r[2S[45;1H12068129
+49718706[1;48r[47;1H[1;47r[2S[45;1H52280026
+49730788[1;48r[47;1H[1;47r[2S[45;1H49194026
+52985619[1;48r[47;1H[1;47r[3S[44;1H25803998
+43898203
+32128762[1;48r[47;1H[1;47r[47;132H
+[46;1H51857973[1;48r[47;1H[1;47r[47;132H
+[46;1H46134316[1;48r[47;1H[1;47r[47;132H
+[46;1H13364979[1;48r[47;1H[1;47r[2S[45;1H52038087
+50122160[1;48r[47;1H[1;47r[47;132H
+[46;1H44340879[1;48r[47;1H[1;47r[47;132H
+[46;1H16056234[1;48r[47;1H[1;47r[2S[45;1H52613142
+45152627[1;48r[47;1H[1;47r[2S[45;1H14937470
+12260466[1;48r[47;1H[1;47r[3S[44;1H34407806
+52754918
+12073121[1;48r[47;1H[1;47r[3S[44;1H36363581
+15362758
+35372005[1;48r[47;1H[1;47r[2S[45;1H50122160
+51671214[1;48r[47;1H[1;47r[3S[44;1H16136989
+12069644
+51683047[1;48r[47;1H[1;47r[2S[45;1H13408616
+53025670[1;48r[47;1H[1;47r[2S[45;1H45449148
+39916553[1;48r[47;1H[1;47r[47;132H
+[46;1H18588739[1;48r[47;1H[1;47r[47;132H
+[46;1H12485232[1;48r[47;1H[1;47r[3S[44;1H52206842
+50732546
+12067609[1;48r[47;1H[1;47r[47;132H
+[46;1H35985708[1;48r[47;1H[1;47r[2S[45;1H38120234
+51376708[1;48r[47;1H[1;47r[47;132H
+[46;1H52960913[1;48r[47;1H[1;47r[3S[44;1H14518631
+12066297
+28056444[1;48r[47;1H[1;47r[47;132H
+[46;1H38548084[1;48r[47;1H[1;47r[2S[45;1H52562189
+49676296[1;48r[47;1H[1;47r[2S[45;1H51060678
+39897489[1;48r[47;1H[1;47r[2S[45;1H43569155
+12074413[1;48r[47;1H[1;47r[2S[45;1H52776495
+50245855[1;48r[47;1H[1;47r[2S[45;1H53080748
+50122160[1;48r[47;1H[1;47r[2S[45;1H40453798
+45273033[1;48r[47;1H[1;47r[47;132H
+[46;1H52157385[1;48r[47;1H[1;47r[2S[45;1H50122160
+27830597[1;48r[47;1H[1;47r[47;132H
+[46;1H50122160[1;48r[47;1H[1;47r[3S[44;1H27797477
+49998206
+51915094[1;48r[47;1H[1;47r[3S[44;1H12072379
+40333250
+20734262[1;48r[47;1H[1;47r[2S[45;1H49130280
+12070768[1;48r[47;1H[1;47r[10S[37;1H12404453
+12070636
+42212993
+32579284
+15446808
+12069570
+50122160
+51732655
+16416628
+52245681[1;48r[47;1H[1;47r[3S[44;1H46407398
+39868472
+40876581[1;48r[47;1H[1;47r[2S[45;1H12098948
+42583835[1;48r[47;1H[1;47r[4S[43;1H12075430
+47327126
+45273033
+38107028[1;48r[47;1H[1;47r[4S[43;1H50122160
+47412112
+36930279
+12181658[1;48r[47;1H[1;47r[3S[44;1H13417436
+12157637
+36989589
+24513242[1;48r[47;9H[1;47r[3S[45;1H12071591
+20646364[1;48r[47;1H[1;47r[47;132H
+[46;1H51273451[1;48r[47;1H[1;47r[47;132H
+[46;1H31115146[1;48r[47;1H[1;47r[47;132H
+[46;1H12069684[1;48r[47;1H[1;47r[2S[45;1H50165760
+12075843[1;48r[47;1H[1;47r[2S[45;1H34407806
+24456839[1;48r[47;1H[1;47r[2S[45;1H19100981
+20079979[1;48r[47;1H[1;47r[2S[45;1H37019643
+28443887[1;48r[47;1H[1;47r[2S[45;1H52982196
+13796103[1;48r[47;1H[1;47r[3S[44;1H50122160
+49718706
+25328497[1;48r[47;1H[1;47r[2S[45;1H44919734
+50122160[1;48r[47;1H[1;47r[47;132H
+[46;1H52118148[1;48r[47;1H[1;47r[2S[45;1H31130822
+50838224[1;48r[47;1H[1;47r[3S[44;1H16219264
+20774594
+52558084[1;48r[47;1H[1;47r[2S[45;1H50737947
+26994853[1;48r[47;1H[1;47r[47;132H
+[46;1H35565614[1;48r[47;1H[1;47r[2S[45;1H51054788
+42056786[1;48r[47;1H[1;47r[2S[45;1H27379298
+50030450[1;48r[47;1H[1;47r[47;132H
+[46;1H50230169[1;48r[47;1H[1;47r[47;132H
+[46;1H33383825[1;48r[47;1H[1;47r[4S[43;1H40812306
+45694662
+50456091
+12072031[1;48r[47;1H[1;47r[47;132H
+[46;1H50001942[1;48r[47;1H[1;47r[2S[45;1H39569598
+49029775[1;48r[47;1H[1;47r[3S[44;1H13011373
+24297451
+17360258[1;48r[47;1H[1;47r[3S[44;1H50776149
+32034140
+13782234[1;48r[47;1H[1;47r[3S[44;1H49616908
+29356451
+24193995[1;48r[47;1H[1;47r[2S[45;1H36799474
+12598621[1;48r[47;1H[1;47r[47;132H
+[46;1H44340879[1;48r[47;1H[1;47r[2S[45;1H38267055
+12076042[1;48r[47;1H[1;47r[4S[43;1H39431061
+12075382
+34946095
+25807431[1;48r[47;1H[1;47r[3S[44;1H12069310
+45266624
+13574615[1;48r[47;1H[1;47r[47;132H
+[46;1H12073335[1;48r[47;1H[1;47r[2S[45;1H50210017
+50122160[1;48r[47;1H[1;47r[3S[44;1H51201373
+24006201
+14512478[1;48r[47;1H[1;47r[4S[43;1H51107898
+12076618
+36930279
+49718706[1;48r[47;1H[1;47r[5S[42;1H40876581
+14412222
+52455981
+33511327
+12304285[1;48r[47;1H[1;47r[2S[45;1H16530560
+37485245[1;48r[47;1H[1;47r[47;132H
+[46;1H34061238[1;48r[47;1H[1;47r[47;132H
+[46;1H53084107[1;48r[47;1H[1;47r[2S[45;1H52496855
+26761926[1;48r[47;1H[1;47r[47;132H
+[46;1H51935956[1;48r[47;1H[1;47r[2S[45;1H16331821
+16416628[1;48r[47;1H[1;47r[2S[45;1H12075869
+12072043[1;48r[47;1H[1;47r[47;132H
+[46;1H30212713[1;48r[47;1H[1;47r[47;132H
+[46;1H47099824[1;48r[47;1H[1;47r[3S[44;1H20642238
+26161270
+23719960[1;48r[47;1H[1;47r[2S[45;1H12668157
+53029896[1;48r[47;1H[1;47r[4S[43;1H18588739
+12074527
+30149999
+46673899[1;48r[47;1H[1;47r[47;132H
+[46;1H36398642[1;48r[47;1H[1;47r[3S[44;1H49770667
+50104667
+16888047[1;48r[47;1H[1;47r[47;132H
+[46;1H14242930[1;48r[47;1H[1;47r[4S[43;1H30137717
+12076014
+37514259
+28974819[1;48r[47;1H[1;47r[2S[45;1H45273033
+37808179[1;48r[47;1H[1;47r[4S[43;1H50122160
+42150499
+34185845
+12073588[1;48r[47;1H[1;47r[3S[44;1H16362361
+42146022
+12072387[1;48r[47;1H[1;47r[2S[45;1H13372301
+52579819[1;48r[47;1H[1;47r[47;132H
+[46;1H37314706[1;48r[47;1H[1;47r[47;132H
+[46;1H30371484[1;48r[47;1H[1;47r[47;132H
+[46;1H12076322[1;48r[47;1H[1;47r[3S[44;1H49117125
+51125276
+35458634[1;48r[47;1H[1;47r[4S[43;1H46258253
+14572557
+53068994
+14950476[1;48r[47;1H[1;47r[2S[45;1H12070495
+12068447[1;48r[47;1H[1;47r[3S[44;1H14713278
+42166479
+12273459[1;48r[47;1H[1;47r[4S[43;1H12066749
+52578424
+49822451
+33722618[1;48r[47;1H[1;47r[3S[44;1H42460739
+12079497
+17483653[1;48r[47;1H[1;47r[47;132H
+[46;1H48316556[1;48r[47;1H[1;47r[2S[45;1H12073522
+49828549[1;48r[47;1H[1;47r[4S[43;1H52931563
+50313662
+34500921
+52892033[1;48r[47;1H[1;47r[3S[44;1H50122160
+28168398
+12658357[1;48r[47;1H[1;47r[2S[45;1H50122160
+52007873[1;48r[47;1H[1;47r[3S[44;1H50122160
+47547175
+34431474[1;48r[47;1H[1;47r[47;132H
+[46;1H28644226[1;48r[47;1H[1;47r[4S[43;1H52713828
+12271188
+13251366
+29774703[1;48r[47;1H[1;47r[2S[45;1H12168426
+45749152[1;48r[47;1H[1;47r[3S[44;1H43472329
+38233919
+24868895[1;48r[47;1H[1;47r[2S[45;1H25373731
+53015353[1;48r[47;1H[1;47r[3S[44;1H12070085
+48957157
+14438730[1;48r[47;1H[1;47r[3S[44;1H45322222
+47237581
+14808486[1;48r[47;1H[1;47r[3S[44;1H37958240
+34165958
+52777522[1;48r[47;1H[1;47r[47;132H
+[46;1H12066457[1;48r[47;1H[1;47r[2S[45;1H40347755
+46072197[1;48r[47;1H[1;47r[2S[45;1H12345519
+51210023[1;48r[47;1H[1;47r[2S[45;1H12074717
+33512290[1;48r[47;1H[1;47r[3S[44;1H12073641
+52139358
+13180435[1;48r[47;1H[1;47r[3S[44;1H12073575
+18268147
+44242146[1;48r[47;1H[1;47r[4S[43;1H46983871
+12387076
+14859786
+50122160[1;48r[47;1H[1;47r[4S[43;1H12211492
+50122160
+14192504
+51670077[1;48r[47;1H[1;47r[47;132H
+[46;1H23571477[1;48r[47;1H[1;47r[2S[45;1H51380442
+52311900[1;48r[47;1H[1;47r[3S[44;1H50732546
+28934540
+51728855[1;48r[47;1H[1;47r[2S[45;1H51814407
+12069735[1;48r[47;1H[1;47r[2S[45;1H50732546
+16686411[1;48r[47;1H[1;47r[3S[44;1H45449148
+49137879
+37820337[1;48r[47;1H[1;47r[3S[44;1H37941602
+14885156
+23581572[1;48r[47;1H[1;47r[3S[44;1H12066432
+12075664
+46072197[1;48r[47;1H[1;47r[3S[44;1H24159509
+52676813
+15498070[1;48r[47;1H[1;47r[2S[45;1H30163399
+52542722[1;48r[47;1H[1;47r[2S[45;1H19235672
+52833980[1;48r[47;1H[1;47r[2S[45;1H12074858
+43898203[1;48r[47;1H[1;47r[3S[44;1H52496855
+51877030
+12073265[1;48r[47;1H[1;47r[4S[43;1H12735047
+51344200
+20686671
+52911473[1;48r[47;1H[1;47r[3S[44;1H29547017
+23482016
+42226551[1;48r[47;1H[1;47r[2S[45;1H42946641
+37748620[1;48r[47;1H[1;47r[3S[44;1H52691483
+18655709
+33420603[1;48r[47;1H[1;47r[2S[45;1H27374544
+19782075[1;48r[47;1H[1;47r[47;132H
+[46;1H13440553[1;48r[47;1H[1;47r[3S[44;1H49985302
+12487887
+52147705[1;48r[47;1H[1;47r[3S[44;1H38163987
+52745380
+50907063[1;48r[47;1H[1;47r[4S[43;1H24593424
+13918500
+14900918
+12083550[1;48r[47;1H[1;47r[47;132H
+[46;1H53017868[1;48r[47;1H[1;47r[47;132H
+[46;1H50199793[1;48r[47;1H[1;47r[3S[44;1H13252329
+23488951
+50937392[1;48r[47;1H[1;47r[47;132H
+[46;1H32025470[1;48r[47;1H[1;47r[47;132H
+[46;1H52973586[1;48r[47;1H[1;47r[2S[45;1H12093946
+47737510[1;48r[47;1H[1;47r[3S[44;1H50626719
+50350474
+32363812[1;48r[47;1H[1;47r[47;132H
+[46;1H39569598[1;48r[47;1H[1;47r[47;132H
+[46;1H12083110[1;48r[47;1H[1;47r[4S[43;1H15152351
+12079956
+36450495
+50120506[1;48r[47;1H[1;47r[2S[45;1H26015741
+12443612[1;48r[47;1H[1;47r[3S[44;1H53026514
+22274895
+12079026[1;48r[47;1H[1;47r[3S[44;1H49737710
+16587442
+12283770[1;48r[47;1H[1;47r[3S[44;1H19305060
+50193679
+32974419[1;48r[47;1H[1;47r[2S[45;1H50970785
+48695414[1;48r[47;1H[1;47r[3S[44;1H41032590
+12870081
+52805854[1;48r[47;1H[1;47r[2S[45;1H12076487
+12670864[1;48r[47;1H[1;47r[4S[43;1H52682387
+38003326
+31462359
+16300055[1;48r[47;1H[1;47r[3S[44;1H33080515
+51285590
+49475504[1;48r[47;1H[1;47r[2S[45;1H24062188
+46513820[1;48r[47;1H[1;47r[2S[45;1H12083999
+48914651[1;48r[47;1H[1;47r[3S[44;1H40799871
+12084637
+38120234[1;48r[47;1H[1;47r[47;132H
+[46;1H12084867[1;48r[47;1H[1;47r[2S[45;1H14230009
+12084090[1;48r[47;1H[1;47r[47;132H
+[46;1H50430704[1;48r[47;1H[1;47r[4S[43;1H52092775
+32598875
+13018576
+38924208[1;48r[47;1H[1;47r[3S[44;1H41532377
+51147029
+34873879[1;48r[47;1H[1;47r[2S[45;1H38163987
+40681716[1;48r[47;1H[1;47r[2S[45;1H52531262
+39758770[1;48r[47;1H[1;47r[3S[44;1H52843110
+50909056
+28735044[1;48r[47;1H[1;47r[2S[45;1H27419247
+49263512[1;48r[47;1H[1;47r[2S[45;1H22625299
+35667136[1;48r[47;1H[1;47r[3S[44;1H25613486
+47950934
+43468700[1;48r[47;1H[1;47r[47;132H
+[46;1H14053208[1;48r[47;1H[1;47r[2S[45;1H39663319
+16104916[1;48r[47;1H[1;47r[3S[44;1H13222682
+29739765
+52674826[1;48r[47;1H[1;47r[47;132H
+[46;1H50952040[1;48r[47;1H[1;47r[47;132H
+[46;1H51110149[1;48r[47;1H[1;47r[47;132H
+[46;1H35224302[1;48r[47;1H[1;47r[4S[43;1H12670864
+27267782
+49955926
+12082808[1;48r[47;1H[1;47r[2S[45;1H12145828
+51737796[1;48r[47;1H[1;47r[2S[45;1H12084068
+52793338[1;48r[47;1H[1;47r[47;132H
+[46;1H12084872[1;48r[47;1H[1;47r[2S[45;1H52697458
+48531726[1;48r[47;1H[1;47r[3S[44;1H14689678
+12427935
+51247650[1;48r[47;1H[1;47r[3S[44;1H51638342
+51906118
+12083282[1;48r[47;1H[1;47r[3S[44;1H51880637
+38554571
+12075869[1;48r[47;1H[1;47r[3S[44;1H38519848
+37672260
+38427080[1;48r[47;1H[1;47r[3S[44;1H51025090
+12081595
+12083294[1;48r[47;1H[1;47r[2S[45;1H53034087
+24054200[1;48r[47;1H[1;47r[3S[44;1H12080862
+49816804
+16697070[1;48r[47;1H[1;47r[4S[43;1H52543504
+12254343
+12202528
+13855637[1;48r[47;1H[1;47r[3S[44;1H45503962
+16824837
+47848645[1;48r[47;1H[1;47r[6S[41;1H13042268
+16107129
+42929046
+16107129
+12078825
+12261921[1;48r[47;1H[1;47r[3S[44;1H52806429
+12718936
+16193052[1;48r[47;1H[1;47r[47;132H
+[46;1H53075035[1;48r[47;1H[1;47r[47;132H
+[46;1H16428084[1;48r[47;1H[1;47r[2S[45;1H38518257
+52498515[1;48r[47;1H[1;47r[4S[43;1H39550310
+52467446
+50794348
+18121602[1;48r[47;1H[1;47r[47;132H
+[46;1H14945543[1;48r[47;1H[1;47r[47;132H
+[46;1H49148452[1;48r[47;1H[1;47r[3S[44;1H37369285
+31640958
+12085903[1;48r[47;1H[1;47r[3S[44;1H25202301
+12085394
+51177136[1;48r[47;1H[1;47r[4S[43;1H16300055
+29230547
+14846843
+29739765[1;48r[47;1H[1;47r[47;132H
+[46;1H49415047[1;48r[47;1H[1;47r[47;132H
+[46;1H31821274[1;48r[47;1H[1;47r[2S[45;1H13765231
+31459902[1;48r[47;1H[1;47r[47;132H
+[46;1H25866759[1;48r[47;1H[1;47r[4S[43;1H37892706
+53021862
+50183686
+50914351[1;48r[47;1H[1;47r[4S[43;1H37432827
+14924702
+24775220
+24438137[1;48r[47;1H[1;47r[3S[44;1H44468214
+52619596
+36299313[1;48r[47;1H[1;47r[5S[42;1H52790774
+32086327
+31889610
+52783653
+39580874[1;48r[47;1H[1;47r[2S[45;1H50652563
+12261840[1;48r[47;1H[1;47r[3S[44;1H51079977
+29557933
+42919136[1;48r[47;1H[1;47r[47;132H
+[46;1H52567763[1;48r[47;1H[1;47r[47;132H
+[46;1H30410834[1;48r[47;1H[1;47r[2S[45;1H39569598
+12085551[1;48r[47;1H[1;47r[2S[45;1H49263512
+33401214[1;48r[47;1H[1;47r[2S[45;1H12075885
+12085094[1;48r[47;1H[1;47r[4S[43;1H27588377
+14900918
+51901946
+21083066[1;48r[47;1H[1;47r[3S[44;1H12086121
+31313379
+12150805[1;48r[47;1H[1;47r[3S[44;1H49780890
+25236595
+12092467[1;48r[47;1H[1;47r[4S[43;1H50001942
+52328430
+34255205
+40677041[1;48r[47;1H[1;47r[3S[44;1H12082329
+53032696
+12081135[1;48r[47;1H[1;47r[2S[45;1H14304162
+42404233[1;48r[47;1H[1;47r[2S[45;1H52173832
+17131357[1;48r[47;1H[1;47r[3S[44;1H12077953
+49245395
+12078249[1;48r[47;1H[1;47r[47;132H
+[46;1H24775220[1;48r[47;1H[1;47r[2S[45;1H49836087
+12080355[1;48r[47;1H[1;47r[47;132H
+[46;1H28009332[1;48r[47;1H[1;47r[5S[42;1H36642996
+27772245
+33023700
+23465706
+47088607[1;48r[47;1H[1;47r[3S[44;1H51763820
+36727807
+13367530[1;48r[47;1H[1;47r[4S[43;1H51269541
+53009026
+12078400
+51668001[1;48r[47;1H[1;47r[2S[45;1H12254193
+52831609[1;48r[47;1H[1;47r[4S[43;1H50676891
+49191406
+51357860
+48243164[1;48r[47;1H[1;47r[47;132H
+[46;1H23795289[1;48r[47;1H[1;47r[2S[45;1H32076312
+13553196[1;48r[47;1H[1;47r[47;132H
+[46;1H31821274[1;48r[47;1H[1;47r[47;132H
+[46;1H36398642[1;48r[47;1H[1;47r[3S[44;1H13645370
+36818189
+12081419[1;48r[47;1H[1;47r[4S[43;1H37386263
+38427080
+19029158
+12598141[1;48r[47;1H[1;47r[2S[45;1H12082085
+21971218[1;48r[47;1H[1;47r[47;132H
+[46;1H50755972[1;48r[47;1H[1;47r[47;132H
+[46;1H12443612[1;48r[47;1H[1;47r[2S[45;1H52423461
+29040605[1;48r[47;1H[1;47r[3S[44;1H40648693
+23943681
+20081508[1;48r[47;1H[1;47r[2S[45;1H39663319
+49816804[1;48r[47;1H[1;47r[5S[42;1H28644226
+36877802
+52681575
+52268900
+14554430[1;48r[47;1H[1;47r[2S[45;1H12077953
+12086385[1;48r[47;1H[1;47r[47;132H
+[46;1H50089334[1;48r[47;1H[1;47r[2S[45;1H12086403
+50324305[1;48r[47;1H[1;47r[2S[45;1H12108487
+51000144[1;48r[47;1H[1;47r[3S[44;1H34888889
+14485833
+49703305[1;48r[47;1H[1;47r[47;132H
+[46;1H46899882[1;48r[47;1H[1;47r[3S[44;1H49515749
+13138109
+50699680[1;48r[47;1H[1;47r[3S[44;1H12082621
+25312211
+52613612[1;48r[47;1H[1;47r[3S[44;1H50122160
+52634996
+45652181[1;48r[47;1H[1;47r[2S[45;1H34942164
+12083321[1;48r[47;1H[1;47r[3S[44;1H52192696
+32460366
+12079141[1;48r[47;1H[1;47r[2S[45;1H50630820
+12650110[1;48r[47;1H[1;47r[47;132H
+[46;1H14242930[1;48r[47;1H[1;47r[4S[43;1H15329707
+36303832
+12260642
+35431244[1;48r[47;1H[1;47r[2S[45;1H34909991
+35997305[1;48r[47;1H[1;47r[4S[43;1H53044971
+38312855
+24265363
+16824837[1;48r[47;1H[1;47r[3S[44;1H34488688
+50551569
+14511213[1;48r[47;1H[1;47r[3S[44;1H28262420
+42824481
+29888645[1;48r[47;1H[1;47r[3S[44;1H12911151
+12111671
+44536551[1;48r[47;1H[1;47r[4S[43;1H45398679
+27399046
+40040353
+30427115[1;48r[47;1H[1;47r[3S[44;1H29594403
+33096492
+29267218[1;48r[47;1H[1;47r[3S[44;1H12113579
+33804535
+12084732[1;48r[47;1H[1;47r[3S[44;1H44727325
+14765309
+51346317[1;48r[47;1H[1;47r[4S[43;1H27499706
+52928885
+15607794
+36571652[1;48r[47;1H[1;47r[4S[43;1H12082385
+52161778
+52656905
+12082394[1;48r[47;1H[1;47r[47;132H
+[46;1H46865021[1;48r[47;1H[1;47r[3S[44;1H49046623
+52906211
+16438507[1;48r[47;1H[1;47r[3S[44;1H32991141
+52969192
+13109169[1;48r[47;1H[1;47r[4S[43;1H48194869
+20618740
+40195625
+14821142[1;48r[47;1H[1;47r[2S[45;1H29879882
+22607881[1;48r[47;1H[1;47r[2S[45;1H49914986
+51267036[1;48r[47;1H[1;47r[47;132H
+[46;1H39532527[1;48r[47;1H[1;47r[3S[44;1H51408606
+34562454
+24821242[1;48r[47;1H[1;47r[3S[44;1H44158600
+52011976
+52865216[1;48r[47;1H[1;47r[4S[43;1H12086935
+24135329
+12275130
+30635251[1;48r[47;1H[1;47r[47;132H
+[46;1H31845955[1;48r[47;1H[1;47r[2S[45;1H49263512
+39318516[1;48r[47;1H[1;47r[2S[45;1H34922531
+52559361[1;48r[47;1H[1;47r[47;132H
+[46;1H36097625[1;48r[47;1H[1;47r[47;132H
+[46;1H49191406[1;48r[47;1H[1;47r[47;132H
+[46;1H53052943[1;48r[47;1H[1;47r[4S[43;1H14900918
+35482946
+27025067
+43837570[1;48r[47;1H[1;47r[4S[43;1H15617568
+43801023
+15596972
+35526444[1;48r[47;1H[1;47r[4S[43;1H50015285
+51364892
+12256021
+37780818[1;48r[47;1H[1;47r[2S[45;1H50717669
+51083840[1;48r[47;1H[1;47r[4S[43;1H12462484
+12083294
+12424173
+18265003[1;48r[47;1H[1;47r[2S[45;1H21751805
+52387751[1;48r[47;1H[1;47r[3S[44;1H43622358
+52627646
+49645255[1;48r[47;1H[1;47r[5S[42;1H12262489
+50776149
+23801320
+51273949
+27126162[1;48r[47;1H[1;47r[4S[43;1H52656163
+27723092
+14477731
+36835258[1;48r[47;1H[1;47r[3S[44;1H43299065
+28434452
+12081310[1;48r[47;1H[1;47r[4S[43;1H12670864
+50887573
+52989820
+20818227[1;48r[47;1H[1;47r[2S[45;1H12268417
+12079748[1;48r[47;1H[1;47r[4S[43;1H49227628
+36839006
+28408137
+12743289[1;48r[47;1H[1;47r[2S[45;1H17308457
+16341915[1;48r[47;1H[1;47r[5S[42;1H12083200
+29683210
+12082539
+50776149
+12273009[1;48r[47;1H[1;47r[4S[43;1H12350668
+49471923
+30224180
+35320107[1;48r[47;1H[1;47r[2S[45;1H12075843
+32698845[1;48r[47;1H[1;47r[6S[41;1H16359124
+28694499
+51405907
+52588841
+29789925
+16131453[1;48r[47;1H[1;47r[3S[44;1H34103408
+12080245
+51330742[1;48r[47;1H[1;47r[3S[44;1H29547017
+12082856
+52966690[1;48r[47;1H[1;47r[4S[43;1H48738317
+18310246
+24282851
+48707535[1;48r[47;1H[1;47r[47;132H
+[46;1H36642996[1;48r[47;1H[1;47r[3S[44;1H34503981
+31423413
+43106182[1;48r[47;1H[1;47r[47;132H
+[46;1H49516108[1;48r[47;1H[1;47r[6S[41;1H30201228
+16405380
+51325595
+51860774
+12076254
+12078868[1;48r[47;1H[1;47r[3S[44;1H49148452
+50600650
+12086929[1;48r[47;1H[1;47r[2S[45;1H51054788
+50389115[1;48r[47;1H[1;47r[3S[44;1H21535627
+12085045
+33554074[1;48r[47;1H[1;47r[4S[43;1H30663178
+44001474
+16682344
+44395932[1;48r[47;1H[1;47r[3S[44;1H50978194
+12262358
+12082837[1;48r[47;1H[1;47r[4S[43;1H51814288
+12183786
+12274587
+16953014[1;48r[47;1H[1;47r[2S[45;1H40347396
+32371281[1;48r[47;1H[1;47r[2S[45;1H13936772
+51387894[1;48r[47;1H[1;47r[47;132H
+[46;1H12402421[1;48r[47;1H[1;47r[47;132H
+[46;1H31115146[1;48r[47;1H[1;47r[2S[45;1H53083398
+47231926[1;48r[47;1H[1;47r[47;132H
+[46;1H15446808[1;48r[47;1H[1;47r[2S[45;1H42220781
+21765554[1;48r[47;1H[1;47r[2S[45;1H52117048
+51617399[1;48r[47;1H[1;47r[4S[43;1H30178423
+12080726
+42185718
+27357571[1;48r[47;1H[huy@sjsu ~]$ head -n 1000 amazon_reviews_us_Books_v1_02.tsv | cut -d$'\t' -f2 | for i in {1..5|[K}; do print ; done[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[huy@sjsu ~]$ head -n 1000 amazon_reviews_us_Books_v1_02.tsv | cut -d$'\t' -f2 | for i in {1..5}; do print ; done[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:53 11-Oct-22(B[m[47;114H[?12l[?25h[C[1@ [1@$[1@0[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: print: command not found[1;48r[47;1H[huy@sjsu ~]$ head -n 1000 amazon_reviews_us_Books_v1_02.tsv | cut -d$'\t' -f2 | for i in {1..5}; do print $0 ; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[15G[Kcat amazon_reviews_us_Books_v1_02.tsv | cut -f[Kd$'\t' -f2 | sort | uniq -c \[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:54 11-Oct-22(B[m[47;89H[?12l[?25hso[K[K[K| sort -nr | awk 'print $2'}'[1@{[C[C[C[C[C[C[C[C[C[C | head [1;47r[47;132H
+[1;48r[47;1H[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:55 11-Oct-22(B[m[47;1H[?12l[?25h^C[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ cd git/worksheet1/W[Kworksheet4/[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu worksheet4]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hcmds.log  [34m[1mCUSTOMERS(B[m  [34m[1mPRODUCTS(B[m  README.txt  ws4.092622.1.txt  ws4.092622.2.txt  ws4.092622.txt  ws4.combined.txt[1;48r[47;1H[huy@sjsu worksheet4]$ cd Cu[KUSTOMERS/[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu CUSTOMERS]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H12257412.txt  12703090.txt  51964897.txt[1;48r[47;1H[huy@sjsu CUSTOMERS]$ cd[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ head -n1000[K[K[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:56 11-Oct-22(B[m[47;24H[?12l[?25h[K[K 1000 amazon_reviews_us_Books_v1_02.tsv | cut -f[Kd$'\t' -f2[15G[Kcut -d$'\t2[K' -f2 |[Kamazon_reviews_us_Books_v1_02.tsv | head[1;47r[47;132H
+[1;48r[47;1H[1;47r[10S[37;1Hcustomer_id
+12076615
+12703090
+12257412
+50732546
+51964897
+31048862
+53000124
+29732693
+48541186[1;48r[47;1H[huy@sjsu ~]$ cut -d$'\t' -f2 amazon_reviews_us_Books_v1_02.tsv | head | [K[K[K[K[K[K[Ksort | uniq -c \ s[K[K[K[K|[K | sort -nr | head -n 1000 > custid.txt[1;47r[47;132H
+[1;48r[47;1H[?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:57 11-Oct-22(B[m[47;1H[?12l[?25h[huy@sjsu ~]$ [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:58 11-Oct-22(B[m[47;15H[?12l[?25hls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hamazon_reviews_us_Books_v1_02.tsv  custid.txt  [34m[1mgit(B[m  t.tsv  [34m[1mworksheet1[1;48r[47;1H(B[m[huy@sjsu ~]$ head custid.txt [1;47r[47;132H
+[1;48r[47;1H[1;47r[10S[37;1H  21922 50122160
+   9964 50732546
+   2664 52615377
+   2215 45041039
+   1797 50776149
+   1786 50913245
+   1643 20595117
+   1622 45273033
+   1416 39569598
+   1384 49693975[1;48r[47;1H[huy@sjsu ~]$ [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 13:59 11-Oct-22(B[m[47;15H[?12l[?25hawk[K[K[Kcat custid.txt | awk '{print $2[K2}' | head[1;47r[47;132H
+[1;48r[47;1H[1;47r[10S[37;1H50122160
+50732546
+52615377
+45041039
+50776149
+50913245
+20595117
+45273033
+39569598
+49693975[1;48r[47;1H[huy@sjsu ~]$ cat custid.txt | awk '{print $2}' | head[K[K[K[K[K[K> git/worksheet1/worksheet4[K5/custid.txt[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu ~]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hamazon_reviews_us_Books_v1_02.tsv  custid.txt  [34m[1mgit(B[m  t.tsv  [34m[1mworksheet1[1;48r[47;1H(B[m[huy@sjsu ~]$ git [K[K[K[Kcd [K[K[Kcd [K[K[Kcd git [K/worksheet1/worksheet5/[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu worksheet5]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hcustid.txt  ws5.txt[1;48r[47;1H[huy@sjsu worksheet5]$ head custid.txt [1;47r[47;132H
+[1;48r[47;1H[1;47r[10S[37;1H50122160
+50732546
+52615377
+45041039
+50776149
+50913245
+20595117
+45273033
+39569598
+49693975[1;48r[47;1H[huy@sjsu worksheet5]$ wc -l a[Kcustid.txt [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 14:00 11-Oct-22(B[m[47;41H[?12l[?25h[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H1000 custid.txt[1;48r[47;1H[huy@sjsu worksheet5]$ for i in {1..10][K{[K}[1;47r[47;132H
+[1;48r[47;1H> echo hello[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: syntax error near unexpected token `echo'[1;48r[47;1H[huy@sjsu worksheet5]$ for i in {1..10}; echo hello[K[K[K[K[K[K[K[K[K[K[1;47r[47;132H
+[1;48r[47;1H> do [1;47r[47;132H
+[1;48r[47;1H> echo hello[1;47r[47;132H
+[1;48r[47;1H> done[1;47r[47;132H
+[1;48r[47;1H[1;47r[2S[45;1Hhello
+hello[1;48r[47;1H[1;47r[5S[42;1Hhello
+hello
+hello
+hello
+hello[1;48r[47;1H[1;47r[3S[44;1Hhello
+hello
+hello[1;48r[47;1H[huy@sjsu worksheet5]$ while read custid.txt [1;47r[47;132H
+[1;48r[47;1H> do [1;47r[47;132H
+[1;48r[47;1H> [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 14:01 11-Oct-22(B[m[47;3H[?12l[?25hecho hello[1;47r[47;132H
+[1;48r[47;1H> done[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1H-bash: read: `custid.txt': not a valid identifier[1;48r[47;1H[huy@sjsu worksheet5]$ [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 14:02 11-Oct-22(B[m[47;24H[?12l[?25hfor c[Kid in $(cat custid.txt)[1;47r[47;132H
+[1;48r[47;1H> do[1;47r[47;132H
+[1;48r[47;1H> echo $id[1;47r[47;132H
+[1;48r[47;1H> done[1;47r[47;132H
+[1;48r[47;1H[1;47r[3S[44;1H50122160
+50732546
+52615377[1;48r[47;1H[1;47r[2S[45;1H45041039
+50776149[1;48r[47;1H[1;47r[2S[45;1H50913245
+20595117[1;48r[47;1H[1;47r[47;132H
+[46;1H45273033[1;48r[47;1H[1;47r[47;132H
+[46;1H39569598[1;48r[47;1H[1;47r[47;132H
+[46;1H49693975[1;48r[47;1H[1;47r[2S[45;1H38491967
+36642996[1;48r[47;1H[1;47r[2S[45;1H50881246
+52254603[1;48r[47;1H[1;47r[2S[45;1H51987970
+49750558[1;48r[47;1H[1;47r[47;132H
+[46;1H49115690[1;48r[47;1H[1;47r[2S[45;1H50608834
+50068216[1;48r[47;1H[1;47r[47;132H
+[46;1H51147790[1;48r[47;1H[1;47r[6S[41;1H43546353
+50199793
+52476938
+50774468
+49273674
+49148452[1;48r[47;1H[1;47r[3S[44;1H41012519
+52938698
+52793250[1;48r[47;1H[1;47r[47;132H
+[46;1H52173832[1;48r[47;1H[1;47r[2S[45;1H49447323
+52564468[1;48r[47;1H[1;47r[47;132H
+[46;1H49355567[1;48r[47;1H[1;47r[2S[45;1H52797744
+52894384[1;48r[47;1H[1;47r[5S[42;1H53082946
+49992211
+53084107
+51065232
+51934027[1;48r[47;1H[1;47r[2S[45;1H50652563
+52830980[1;48r[47;1H[1;47r[2S[45;1H52774618
+52496677[1;48r[47;1H[1;47r[2S[45;1H49202417
+51243012[1;48r[47;1H[1;47r[47;132H
+[46;1H53072811[1;48r[47;1H[1;47r[2S[45;1H51379338
+53009736[1;48r[47;1H[1;47r[2S[45;1H51325095
+53016962[1;48r[47;1H[1;47r[47;132H
+[46;1H50702879[1;48r[47;1H[1;47r[2S[45;1H50941451
+35985708[1;48r[47;1H[1;47r[47;132H
+[46;1H45193257[1;48r[47;1H[1;47r[2S[45;1H46983871
+53008075[1;48r[47;1H[1;47r[2S[45;1H51917998
+52266433[1;48r[47;1H[1;47r[2S[45;1H50895620
+51010391[1;48r[47;1H[1;47r[47;132H
+[46;1H39134375[1;48r[47;1H[1;47r[2S[45;1H35004134
+53071109[1;48r[47;1H[1;47r[2S[45;1H53037408
+51247650[1;48r[47;1H[1;47r[47;132H
+[46;1H46134316[1;48r[47;1H[1;47r[2S[45;1H50592435
+52706646[1;48r[47;1H[1;47r[2S[45;1H45284807
+53047425[1;48r[47;1H[1;47r[47;132H
+[46;1H52517734[1;48r[47;1H[1;47r[2S[45;1H52223435
+51809405[1;48r[47;1H[1;47r[2S[45;1H38672733
+52753467[1;48r[47;1H[1;47r[47;132H
+[46;1H50761804[1;48r[47;1H[1;47r[2S[45;1H52500542
+50378566[1;48r[47;1H[1;47r[47;132H
+[46;1H51210331[1;48r[47;1H[1;47r[2S[45;1H49786731
+50389232[1;48r[47;1H[1;47r[47;132H
+[46;1H51110953[1;48r[47;1H[1;47r[2S[45;1H49042814
+51915884[1;48r[47;1H[1;47r[2S[45;1H52447634
+52966385[1;48r[47;1H[1;47r[47;132H
+[46;1H52947077[1;48r[47;1H[1;47r[2S[45;1H30559999
+52845727[1;48r[47;1H[1;47r[2S[45;1H50057481
+52008531[1;48r[47;1H[1;47r[47;132H
+[46;1H51199159[1;48r[47;1H[1;47r[2S[45;1H51145127
+50736950[1;48r[47;1H[1;47r[47;132H
+[46;1H53052943[1;48r[47;1H[1;47r[2S[45;1H52012289
+52697458[1;48r[47;1H[1;47r[2S[45;1H42800127
+51142763[1;48r[47;1H[1;47r[2S[45;1H49945008
+50667536[1;48r[47;1H[1;47r[47;132H
+[46;1H51214937[1;48r[47;1H[1;47r[2S[45;1H53047293
+52639757[1;48r[47;1H[1;47r[2S[45;1H52451546
+52474360[1;48r[47;1H[1;47r[47;132H
+[46;1H52300235[1;48r[47;1H[1;47r[2S[45;1H49865122
+52150226[1;48r[47;1H[1;47r[47;132H
+[46;1H50864942[1;48r[47;1H[1;47r[2S[45;1H52791632
+38002140[1;48r[47;1H[1;47r[47;132H
+[46;1H49600435[1;48r[47;1H[1;47r[2S[45;1H45761937
+48354073[1;48r[47;1H[1;47r[2S[45;1H49390985
+51130320[1;48r[47;1H[1;47r[47;132H
+[46;1H49248343[1;48r[47;1H[1;47r[2S[45;1H52754918
+12598621[1;48r[47;1H[1;47r[47;132H
+[46;1H53058008[1;48r[47;1H[1;47r[2S[45;1H51007592
+37010568[1;48r[47;1H[1;47r[2S[45;1H50720905
+53057410[1;48r[47;1H[1;47r[47;132H
+[46;1H51197300[1;48r[47;1H[1;47r[2S[45;1H52683195
+27681907[1;48r[47;1H[1;47r[2S[45;1H51152957
+52161778[1;48r[47;1H[1;47r[47;132H
+[46;1H50005452[1;48r[47;1H[1;47r[2S[45;1H50669529
+49998206[1;48r[47;1H[1;47r[47;132H
+[46;1H50759440[1;48r[47;1H[1;47r[2S[45;1H52709697
+52631742[1;48r[47;1H[1;47r[2S[45;1H50676891
+52479341[1;48r[47;1H[1;47r[2S[45;1H52160649
+52705209[1;48r[47;1H[1;47r[2S[45;1H52533596
+51126995[1;48r[47;1H[1;47r[2S[45;1H51301346
+52850806[1;48r[47;1H[1;47r[2S[45;1H51744771
+49908889[1;48r[47;1H[1;47r[47;132H
+[46;1H51645455[1;48r[47;1H[1;47r[2S[45;1H39792599
+53067930[1;48r[47;1H[1;47r[47;132H
+[46;1H53075086[1;48r[47;1H[1;47r[2S[45;1H38243114
+52776495[1;48r[47;1H[1;47r[2S[45;1H50718004
+29569603[1;48r[47;1H[1;47r[47;132H
+[46;1H52868156[1;48r[47;1H[1;47r[2S[45;1H52778209
+31612235[1;48r[47;1H[1;47r[2S[45;1H52048190
+52844555[1;48r[47;1H[1;47r[47;132H
+[46;1H53084041[1;48r[47;1H[1;47r[2S[45;1H52918997
+53018444[1;48r[47;1H[1;47r[2S[45;1H50704952
+50015891[1;48r[47;1H[1;47r[2S[45;1H50200864
+47964988[1;48r[47;1H[1;47r[2S[45;1H51403161
+50424562[1;48r[47;1H[1;47r[47;132H
+[46;1H49945404[1;48r[47;1H[1;47r[2S[45;1H20422170
+53002620[1;48r[47;1H[1;47r[47;132H
+[46;1H52976583[1;48r[47;1H[1;47r[2S[45;1H52489871
+53071190[1;48r[47;1H[1;47r[2S[45;1H50287514
+14720400[1;48r[47;1H[1;47r[2S[45;1H52812751
+52801489[1;48r[47;1H[1;47r[2S[45;1H40684262
+52882573[1;48r[47;1H[1;47r[47;132H
+[46;1H33631101[1;48r[47;1H[1;47r[2S[45;1H52724725
+49989755[1;48r[47;1H[1;47r[2S[45;1H52558011
+52036644[1;48r[47;1H[1;47r[47;132H
+[46;1H50038433[1;48r[47;1H[1;47r[2S[45;1H52821302
+52294653[1;48r[47;1H[1;47r[47;132H
+[46;1H52147775[1;48r[47;1H[1;47r[2S[45;1H49200164
+53078987[1;48r[47;1H[1;47r[2S[45;1H50593376
+41521760[1;48r[47;1H[1;47r[2S[45;1H52660946
+52804949[1;48r[47;1H[1;47r[2S[45;1H49263512
+38610362[1;48r[47;1H[1;47r[47;132H
+[46;1H50658053[1;48r[47;1H[1;47r[2S[45;1H49423742
+38312855[1;48r[47;1H[1;47r[2S[45;1H49647049
+43058502[1;48r[47;1H[1;47r[47;132H
+[46;1H52556992[1;48r[47;1H[1;47r[2S[45;1H43083835
+51959847[1;48r[47;1H[1;47r[3S[44;1H49396726
+52960608
+52986477[1;48r[47;1H[1;47r[2S[45;1H18548250
+52789100[1;48r[47;1H[1;47r[2S[45;1H51874804
+50332419[1;48r[47;1H[1;47r[2S[45;1H50002830
+52913882[1;48r[47;1H[1;47r[2S[45;1H52437017
+52402330[1;48r[47;1H[1;47r[2S[45;1H47950934
+52958253[1;48r[47;1H[1;47r[2S[45;1H47257366
+36595881[1;48r[47;1H[1;47r[47;132H
+[46;1H53013845[1;48r[47;1H[1;47r[2S[45;1H52978794
+52186522[1;48r[47;1H[1;47r[2S[45;1H51728657
+52573608[1;48r[47;1H[1;47r[2S[45;1H52091533
+51252850[1;48r[47;1H[1;47r[47;132H
+[46;1H52761040[1;48r[47;1H[1;47r[2S[45;1H38855113
+51968865[1;48r[47;1H[1;47r[47;132H
+[46;1H53093124[1;48r[47;1H[1;47r[2S[45;1H53014052
+52886341[1;48r[47;1H[1;47r[2S[45;1H52660802
+51138056[1;48r[47;1H[1;47r[2S[45;1H46619300
+52870090[1;48r[47;1H[1;47r[47;132H
+[46;1H52744183[1;48r[47;1H[1;47r[2S[45;1H51803143
+51409347[1;48r[47;1H[1;47r[2S[45;1H51081226
+52960550[1;48r[47;1H[1;47r[2S[45;1H52953635
+33378222[1;48r[47;1H[1;47r[47;132H
+[46;1H52444905[1;48r[47;1H[1;47r[2S[45;1H49808679
+53021867[1;48r[47;1H[1;47r[2S[45;1H47412112
+47346111[1;48r[47;1H[1;47r[47;132H
+[46;1H48523769[1;48r[47;1H[1;47r[2S[45;1H48185764
+28644226[1;48r[47;1H[1;47r[2S[45;1H52988732
+48135836[1;48r[47;1H[1;47r[47;132H
+[46;1H52562171[1;48r[47;1H[1;47r[2S[45;1H30672120
+52768278[1;48r[47;1H[1;47r[2S[45;1H52363384
+50880858[1;48r[47;1H[1;47r[2S[45;1H47265458
+52987300[1;48r[47;1H[1;47r[2S[45;1H50104667
+49618395[1;48r[47;1H[1;47r[2S[45;1H33993847
+50833636[1;48r[47;1H[1;47r[2S[45;1H50147915
+50289674[1;48r[47;1H[1;47r[47;132H
+[46;1H50270744[1;48r[47;1H[1;47r[2S[45;1H43086691
+43002296[1;48r[47;1H[1;47r[47;132H
+[46;1H31798459
+50989966[1;48r[47;9H[1;47r[2S[46;1H37386263[1;48r[47;1H[1;47r[2S[45;1H52978849
+49374774[1;48r[47;1H[1;47r[47;132H
+[46;1H43152633[1;48r[47;1H[1;47r[2S[45;1H52985657
+50442542[1;48r[47;1H[1;47r[2S[45;1H52770861
+51643689[1;48r[47;1H[1;47r[2S[45;1H51341166
+49524801[1;48r[47;1H[1;47r[47;132H
+[46;1H39366896[1;48r[47;1H[1;47r[2S[45;1H52947165
+51725472[1;48r[47;1H[1;47r[2S[45;1H52496636
+52822617[1;48r[47;1H[1;47r[2S[45;1H52479865
+50703543[1;48r[47;1H[1;47r[47;132H
+[46;1H49828549[1;48r[47;1H[1;47r[2S[45;1H43879637
+51337956[1;48r[47;1H[1;47r[2S[45;1H39425588
+53070409[1;48r[47;1H[1;47r[47;132H
+[46;1H51343687[1;48r[47;1H[1;47r[2S[45;1H49059365
+50631983[1;48r[47;1H[1;47r[2S[45;1H50452306
+41905526[1;48r[47;1H[1;47r[6S[41;1H51167656
+51205644
+49559882
+30329810
+36369004
+52744964[1;48r[47;1H[1;47r[3S[44;1H51112341
+50755863
+52572105[1;48r[47;1H[1;47r[2S[45;1H51741466
+49577356[1;48r[47;1H[1;47r[2S[45;1H40938563
+52571463[1;48r[47;1H[1;47r[2S[45;1H52821457
+52764679[1;48r[47;1H[1;47r[2S[45;1H41125812
+52947290[1;48r[47;1H[1;47r[3S[44;1H49514928
+52859210
+40432963[1;48r[47;1H[1;47r[2S[45;1H35039726
+52872993[1;48r[47;1H[1;47r[2S[45;1H52712162
+48358035[1;48r[47;1H[1;47r[2S[45;1H47867897
+44020425[1;48r[47;1H[1;47r[47;132H
+[46;1H39424751[1;48r[47;1H[1;47r[2S[45;1H53067931
+52014761[1;48r[47;1H[1;47r[2S[45;1H52009378
+50616776[1;48r[47;1H[1;47r[2S[45;1H51740940
+50323648[1;48r[47;1H[1;47r[2S[45;1H47307757
+53015634[1;48r[47;1H[1;47r[3S[44;1H52618134
+50759001
+49097813[1;48r[47;1H[1;47r[2S[45;1H51388692
+45088744[1;48r[47;1H[1;47r[2S[45;1H52317033
+38889875[1;48r[47;1H[1;47r[2S[45;1H50058656
+52977415[1;48r[47;1H[1;47r[2S[45;1H48581126
+50899460[1;48r[47;1H[1;47r[2S[45;1H46348524
+53087372[1;48r[47;1H[1;47r[2S[45;1H52280224
+52272094[1;48r[47;1H[1;47r[2S[45;1H52229186
+50946478[1;48r[47;1H[1;47r[2S[45;1H35373008
+53060203[1;48r[47;1H[1;47r[2S[45;1H40354595
+47392054[1;48r[47;1H[1;47r[3S[44;1H46905518
+37805349
+52778876[1;48r[47;1H[1;47r[2S[45;1H51731994
+50909980[1;48r[47;1H[1;47r[2S[45;1H50858933
+51273949[1;48r[47;1H[1;47r[2S[45;1H42627253
+34236000[1;48r[47;1H[1;47r[2S[45;1H51935069
+51668159[1;48r[47;1H[1;47r[2S[45;1H51212167
+50375720[1;48r[47;1H[1;47r[2S[45;1H26802692
+36398642[1;48r[47;1H[1;47r[2S[45;1H51376733
+52859935[1;48r[47;1H[1;47r[2S[45;1H51152027
+50940744[1;48r[47;1H[1;47r[2S[45;1H53084718
+52818926[1;48r[47;1H[1;47r[2S[45;1H51930306
+53066131[1;48r[47;1H[1;47r[2S[45;1H53031416
+50971011[1;48r[47;1H[1;47r[2S[45;1H39828223
+45838740[1;48r[47;1H[1;47r[2S[45;1H51277212
+49963437[1;48r[47;1H[1;47r[2S[45;1H20401140
+52477572[1;48r[47;1H[1;47r[47;132H
+[46;1H52908596[1;48r[47;1H[1;47r[2S[45;1H49956909
+25613486[1;48r[47;1H[1;47r[2S[45;1H53041816
+52887769[1;48r[47;1H[1;47r[2S[45;1H50747195
+50067221[1;48r[47;1H[1;47r[2S[45;1H49629036
+48204227[1;48r[47;1H[1;47r[2S[45;1H52963744
+52809057[1;48r[47;1H[1;47r[3S[44;1H52651244
+52027938
+51749393[1;48r[47;1H[1;47r[2S[45;1H18800155
+52464095[1;48r[47;1H[1;47r[2S[45;1H42706701
+41523864[1;48r[47;1H[1;47r[2S[45;1H18548312
+50001942[1;48r[47;1H[1;47r[2S[45;1H39653614
+52613129[1;48r[47;1H[1;47r[2S[45;1H52599173
+49709123[1;48r[47;1H[1;47r[47;132H
+[46;1H47116775[1;48r[47;1H[1;47r[2S[45;1H53058973
+52009166[1;48r[47;1H[1;47r[4S[43;1H47226334
+53074803
+49464729
+48242885[1;48r[47;1H[1;47r[2S[45;1H39663319
+33360060[1;48r[47;1H[1;47r[2S[45;1H50739528
+26973976[1;48r[47;1H[1;47r[2S[45;1H52875304
+52847717[1;48r[47;1H[1;47r[2S[45;1H52687412
+52417414[1;48r[47;1H[1;47r[2S[45;1H51152905
+50262576[1;48r[47;1H[1;47r[2S[45;1H46877221
+39773708[1;48r[47;1H[1;47r[2S[45;1H52719824
+50869571[1;48r[47;1H[1;47r[2S[45;1H49850969
+44184384[1;48r[47;1H[1;47r[2S[45;1H42852744
+44657626[1;48r[47;1H[1;47r[2S[45;1H34844779
+52934870[1;48r[47;1H[1;47r[2S[45;1H52643745
+52599570[1;48r[47;1H[1;47r[2S[45;1H49257001
+34271677[1;48r[47;1H[1;47r[2S[45;1H53030545
+51366396[1;48r[47;1H[1;47r[2S[45;1H46194801
+45979403[1;48r[47;1H[1;47r[2S[45;1H38350586
+52891206[1;48r[47;1H[1;47r[2S[45;1H51736210
+50079159[1;48r[47;1H[1;47r[2S[45;1H40882846
+52584172[1;48r[47;1H[1;47r[2S[45;1H51210590
+51116836[1;48r[47;1H[1;47r[47;132H
+[46;1H49621826[1;48r[47;1H[1;47r[3S[44;1H52960913
+52784843
+52545329[1;48r[47;1H[1;47r[2S[45;1H50874414
+44498121[1;48r[47;1H[1;47r[2S[45;1H52653706
+53073369[1;48r[47;1H[1;47r[2S[45;1H52987415
+52935844[1;48r[47;1H[1;47r[2S[45;1H49494754
+37928338[1;48r[47;1H[1;47r[2S[45;1H52388392
+51067904[1;48r[47;1H[1;47r[2S[45;1H49286822
+44761874[1;48r[47;1H[1;47r[2S[45;1H52139358
+50898292[1;48r[47;1H[1;47r[2S[45;1H53092736
+49336548[1;48r[47;1H[1;47r[2S[45;1H39614869
+35523175[1;48r[47;1H[1;47r[3S[44;1H26915713
+23360882
+52921362[1;48r[47;1H[1;47r[2S[45;1H45245794
+49561769[1;48r[47;1H[1;47r[2S[45;1H35854103
+52996207[1;48r[47;1H[1;47r[2S[45;1H52499409
+52205720[1;48r[47;1H[1;47r[2S[45;1H50768673
+30081986[1;48r[47;1H[1;47r[2S[45;1H52932081
+49344980[1;48r[47;1H[1;47r[2S[45;1H36055300
+53080622[1;48r[47;1H[1;47r[2S[45;1H52959840
+52754940[1;48r[47;1H[1;47r[2S[45;1H52437038
+51716884[1;48r[47;1H[1;47r[2S[45;1H41549714
+53057371[1;48r[47;1H[1;47r[2S[45;1H52720291
+52063173[1;48r[47;1H[1;47r[3S[44;1H51080263
+41763380
+36567112[1;48r[47;1H[1;47r[2S[45;1H52853018
+52389304[1;48r[47;1H[1;47r[2S[45;1H51315280
+50959090[1;48r[47;1H[1;47r[2S[45;1H42173554
+36232108[1;48r[47;1H[1;47r[2S[45;1H29639251
+22952028[1;48r[47;1H[1;47r[2S[45;1H51927631
+51003836[1;48r[47;1H[1;47r[2S[45;1H53079427
+52438789[1;48r[47;1H[1;47r[2S[45;1H50605810
+49836087[1;48r[47;1H[1;47r[2S[45;1H49445874
+49312585[1;48r[47;1H[1;47r[2S[45;1H53052945
+53024515[1;48r[47;1H[1;47r[3S[44;1H52287009
+51814776
+51764665[1;48r[47;1H[1;47r[2S[45;1H51380442
+49216591[1;48r[47;1H[1;47r[2S[45;1H51717849
+50762809[1;48r[47;1H[1;47r[2S[45;1H50223242
+49355557[1;48r[47;1H[1;47r[47;132H
+[46;1H48245725[1;48r[47;1H[1;47r[2S[45;1H53009403
+51761391[1;48r[47;1H[1;47r[2S[45;1H49298311
+52542864[1;48r[47;1H[1;47r[2S[45;1H52487933
+49194495[1;48r[47;1H[1;47r[3S[44;1H53071138
+53016908
+52468373[1;48r[47;1H[1;47r[2S[45;1H51388751
+51062124[1;48r[47;1H[1;47r[2S[45;1H48750423
+45814424[1;48r[47;1H[1;47r[2S[45;1H45775115
+43932718[1;48r[47;1H[1;47r[2S[45;1H52708799
+52624195[1;48r[47;1H[1;47r[2S[45;1H50178145
+49620110[1;48r[47;1H[1;47r[2S[45;1H52923654
+50909784[1;48r[47;1H[1;47r[2S[45;1H49796397
+49131037[1;48r[47;1H[1;47r[2S[45;1H48840057
+52606675[1;48r[47;1H[1;47r[2S[45;1H51209967
+51097716[1;48r[47;1H[1;47r[2S[45;1H42442234
+53092367[1;48r[47;1H[1;47r[2S[45;1H52764121
+49389861[1;48r[47;1H[1;47r[2S[45;1H46160224
+41775808[1;48r[47;1H[1;47r[3S[44;1H51701856
+50734993
+43021965[1;48r[47;1H[1;47r[2S[45;1H49694975
+36681550[1;48r[47;1H[1;47r[2S[45;1H53026413
+52769068[1;48r[47;1H[1;47r[2S[45;1H52214553
+50857882[1;48r[47;1H[1;47r[2S[45;1H44538579
+50747141[1;48r[47;1H[1;47r[2S[45;1H50150483
+53053083[1;48r[47;1H[1;47r[2S[45;1H50794483
+49315939[1;48r[47;1H[1;47r[2S[45;1H49102993
+35316077[1;48r[47;1H[1;47r[2S[45;1H31406259
+52961594[1;48r[47;1H[1;47r[2S[45;1H51737389
+50684595[1;48r[47;1H[1;47r[2S[45;1H51300959
+50935517[1;48r[47;1H[1;47r[2S[45;1H50368037
+40595889[1;48r[47;1H[1;47r[2S[45;1H40051756
+52769408[1;48r[47;1H[1;47r[2S[45;1H52362855
+51066882[1;48r[47;1H[1;47r[2S[45;1H50859589
+50175632[1;48r[47;1H[1;47r[2S[45;1H53012990
+50740272[1;48r[47;1H[1;47r[2S[45;1H50717925
+50320963[1;48r[47;1H[1;47r[2S[45;1H36818999
+30101572[1;48r[47;1H[1;47r[2S[45;1H27114827
+52398462[1;48r[47;1H[1;47r[2S[45;1H51343369
+50950064[1;48r[47;1H[1;47r[2S[45;1H50886639
+49867522[1;48r[47;1H[1;47r[2S[45;1H42357512
+41980939[1;48r[47;1H[1;47r[2S[45;1H52623080
+52536648[1;48r[47;1H[1;47r[2S[45;1H52240154
+51299750[1;48r[47;1H[1;47r[2S[45;1H51136581
+50977226[1;48r[47;1H[1;47r[47;132H
+[46;1H13993962[1;48r[47;1H[1;47r[2S[45;1H52776909
+52649455[1;48r[47;1H[1;47r[3S[44;1H52793976
+52783335
+52340667[1;48r[47;1H[1;47r[2S[45;1H51340000
+50119287[1;48r[47;1H[1;47r[2S[45;1H44819611
+52841839[1;48r[47;1H[1;47r[2S[45;1H52545721
+52397641[1;48r[47;1H[1;47r[47;132H
+[46;1H51831325[1;48r[47;1H[1;47r[2S[45;1H51650080
+51043906[1;48r[47;1H[1;47r[2S[45;1H50706176
+50658596[1;48r[47;1H[1;47r[3S[44;1H46849857
+44731169
+44207108[1;48r[47;1H[1;47r[3S[44;1H36949740
+49022073
+45180289[1;48r[47;1H[1;47r[2S[45;1H53070662
+52918265[1;48r[47;1H[1;47r[2S[45;1H52782589
+52746542[1;48r[47;1H[1;47r[2S[45;1H52526368
+52357858[1;48r[47;1H[1;47r[2S[45;1H45344448
+53075795[1;48r[47;1H[1;47r[47;132H
+[46;1H52768983[1;48r[47;1H[1;47r[2S[45;1H52486517
+51767311[1;48r[47;1H[1;47r[2S[45;1H52697971
+49684429[1;48r[47;1H[1;47r[3S[44;1H49320094
+42152039
+38840436[1;48r[47;1H[1;47r[2S[45;1H36780283
+51320059[1;48r[47;1H[1;47r[2S[45;1H49664433
+33559580[1;48r[47;1H[1;47r[2S[45;1H52900384
+52441867[1;48r[47;1H[1;47r[2S[45;1H52124482
+51263286[1;48r[47;1H[1;47r[2S[45;1H50429811
+49255792[1;48r[47;1H[1;47r[2S[45;1H49111640
+42372900[1;48r[47;1H[1;47r[2S[45;1H53045954
+52172447[1;48r[47;1H[1;47r[2S[45;1H52109600
+51152855[1;48r[47;1H[1;47r[2S[45;1H51010646
+50372990[1;48r[47;1H[1;47r[2S[45;1H44189182
+43093648[1;48r[47;1H[1;47r[2S[45;1H53053049
+52928260[1;48r[47;1H[1;47r[2S[45;1H51406912
+48500875[1;48r[47;1H[1;47r[2S[45;1H39381520
+53025502[1;48r[47;1H[1;47r[2S[45;1H52806429
+52770104[1;48r[47;1H[1;47r[3S[44;1H52590451
+52501683
+51079773[1;48r[47;1H[1;47r[2S[45;1H50746081
+50384836[1;48r[47;1H[1;47r[2S[45;1H43681751
+36152181[1;48r[47;1H[1;47r[2S[45;1H52797417
+43320771[1;48r[47;1H[1;47r[2S[45;1H40001053
+53006770[1;48r[47;1H[1;47r[2S[45;1H52375519
+51336578[1;48r[47;1H[1;47r[2S[45;1H51140190
+49322932[1;48r[47;1H[1;47r[2S[45;1H46856618
+39352452[1;48r[47;1H[1;47r[2S[45;1H53069821
+52851134[1;48r[47;1H[1;47r[2S[45;1H52797729
+52203333[1;48r[47;1H[1;47r[2S[45;1H50093726
+49353662[1;48r[47;1H[1;47r[2S[45;1H44527841
+40891338[1;48r[47;1H[1;47r[2S[45;1H35583599
+24821538[1;48r[47;1H[1;47r[47;132H
+[46;1H52700359[1;48r[47;1H[1;47r[3S[44;1H51688225
+51616072
+51362690[1;48r[47;1H[1;47r[2S[45;1H49784014
+33666987[1;48r[47;1H[1;47r[2S[45;1H31888987
+28749888[1;48r[47;1H[1;47r[2S[45;1H52776905
+52769680[1;48r[47;1H[1;47r[2S[45;1H45911168
+45861535[1;48r[47;1H[1;47r[2S[45;1H33612856
+32236675[1;48r[47;1H[1;47r[2S[45;1H52998086
+52846971[1;48r[47;1H[1;47r[2S[45;1H52841075
+52640872[1;48r[47;1H[1;47r[2S[45;1H52558032
+47862135[1;48r[47;1H[1;47r[2S[45;1H37015883
+52536074[1;48r[47;1H[1;47r[2S[45;1H51752008
+51266167[1;48r[47;1H[1;47r[2S[45;1H51008196
+50798783[1;48r[47;1H[1;47r[2S[45;1H50774246
+52905723[1;48r[47;1H[1;47r[2S[45;1H51889051
+51864310[1;48r[47;1H[1;47r[2S[45;1H51624230
+51359947[1;48r[47;1H[1;47r[2S[45;1H51237296
+49553538[1;48r[47;1H[1;47r[2S[45;1H14403122
+52485851[1;48r[47;1H[1;47r[2S[45;1H52027907
+51908618[1;48r[47;1H[1;47r[2S[45;1H51150291
+49693503[1;48r[47;1H[1;47r[2S[45;1H49531257
+36438183[1;48r[47;1H[1;47r[2S[45;1H53015346
+52888137[1;48r[47;1H[1;47r[2S[45;1H52832478
+52692817[1;48r[47;1H[1;47r[2S[45;1H51048555
+50983162[1;48r[47;1H[1;47r[2S[45;1H50695806
+44806789[1;48r[47;1H[1;47r[2S[45;1H44776887
+53064010[1;48r[47;1H[1;47r[2S[45;1H53021951
+52930352[1;48r[47;1H[1;47r[2S[45;1H52693037
+51988066[1;48r[47;1H[1;47r[2S[45;1H51979649
+49985562[1;48r[47;1H[1;47r[2S[45;1H49738138
+49437056[1;48r[47;1H[1;47r[2S[45;1H49332535
+42975208[1;48r[47;1H[1;47r[2S[45;1H33587739
+52921118[1;48r[47;1H[1;47r[2S[45;1H52447932
+52327458[1;48r[47;1H[1;47r[2S[45;1H52204092
+51345392[1;48r[47;1H[1;47r[2S[45;1H50334423
+49380797[1;48r[47;1H[1;47r[2S[45;1H47304339
+40884237[1;48r[47;1H[1;47r[2S[45;1H38778131
+36632284[1;48r[47;1H[1;47r[2S[45;1H36247714
+30212713[1;48r[47;1H[1;47r[2S[45;1H20018062
+50728990[1;48r[47;1H[1;47r[2S[45;1H49957190
+43519458[1;48r[47;1H[1;47r[2S[45;1H52857480
+52438824[1;48r[47;1H[1;47r[2S[45;1H52432257
+52096512[1;48r[47;1H[1;47r[2S[45;1H51914753
+51378626[1;48r[47;1H[1;47r[2S[45;1H51177466
+51101301[1;48r[47;1H[1;47r[2S[45;1H51095446
+38577070[1;48r[47;1H[1;47r[5S[42;1H53006845
+52780213
+52627388
+52507985
+51350262[1;48r[47;1H[1;47r[2S[45;1H50780512
+50681562[1;48r[47;1H[1;47r[2S[45;1H49697848
+30501489[1;48r[47;1H[1;47r[2S[45;1H52983693
+52952506[1;48r[47;1H[1;47r[3S[44;1H52258595
+52045373
+51899002[1;48r[47;1H[1;47r[2S[45;1H51697838
+51341721[1;48r[47;1H[1;47r[2S[45;1H50462706
+50221812[1;48r[47;1H[1;47r[2S[45;1H49818928
+49779580[1;48r[47;1H[1;47r[2S[45;1H49580074
+48282789[1;48r[47;1H[1;47r[2S[45;1H43389853
+43127415[1;48r[47;1H[1;47r[2S[45;1H42636479
+37492827[1;48r[47;1H[1;47r[2S[45;1H52747250
+52436282[1;48r[47;1H[1;47r[2S[45;1H51060163
+51020757[1;48r[47;1H[1;47r[2S[45;1H50237277
+49789211[1;48r[47;1H[1;47r[2S[45;1H49456371
+48486228[1;48r[47;1H[1;47r[2S[45;1H43640584
+52445820[1;48r[47;1H[1;47r[2S[45;1H51394793
+51304688[1;48r[47;1H[1;47r[2S[45;1H50984552
+50954482[1;48r[47;1H[1;47r[2S[45;1H49551923
+38967405[1;48r[47;1H[1;47r[2S[45;1H38899800
+23595366[1;48r[47;1H[1;47r[2S[45;1H52562189
+52317431[1;48r[47;1H[1;47r[2S[45;1H51381608
+51357939[1;48r[47;1H[1;47r[2S[45;1H50555753
+49447535[1;48r[47;1H[1;47r[2S[45;1H53096155
+52877960[1;48r[47;1H[1;47r[2S[45;1H52644129
+51958405[1;48r[47;1H[1;47r[3S[44;1H51688728
+51636710
+50951948[1;48r[47;1H[1;47r[2S[45;1H50491732
+50366777[1;48r[47;1H[1;47r[2S[45;1H50302730
+49726283[1;48r[47;1H[1;47r[2S[45;1H48819053
+48379653[1;48r[47;1H[1;47r[2S[45;1H53033443
+52864495[1;48r[47;1H[1;47r[2S[45;1H51062975
+50810207[1;48r[47;1H[1;47r[2S[45;1H50735506
+49709381[1;48r[47;1H[1;47r[2S[45;1H49256646
+48420158[1;48r[47;1H[1;47r[2S[45;1H45042957
+41104747[1;48r[47;1H[1;47r[2S[45;1H53089838
+52833260[1;48r[47;1H[1;47r[2S[45;1H53057129
+53027693[1;48r[47;1H[1;47r[2S[45;1H52231964
+51804372[1;48r[47;1H[1;47r[2S[45;1H51272397
+51063473[1;48r[47;1H[1;47r[2S[45;1H49883642
+49338731[1;48r[47;1H[1;47r[3S[44;1H41988825
+31283258
+53067436[1;48r[47;1H[1;47r[2S[45;1H52913038
+52631726[1;48r[47;1H[1;47r[2S[45;1H52364186
+51116445[1;48r[47;1H[1;47r[47;132H
+[46;1H50685026[1;48r[47;1H[1;47r[2S[45;1H50510246
+48028003[1;48r[47;1H[1;47r[2S[45;1H46220931
+41934110[1;48r[47;1H[1;47r[3S[44;1H38782199
+38685946
+31706721[1;48r[47;1H[1;47r[47;132H
+[46;1H52719490[1;48r[47;1H[1;47r[2S[45;1H52527375
+52435894[1;48r[47;1H[1;47r[2S[45;1H50986119
+49945660[1;48r[47;1H[1;47r[2S[45;1H45339081
+35944741[1;48r[47;1H[1;47r[3S[44;1H31844968
+27769902
+23801320[1;48r[47;1H[1;47r[2S[45;1H53087799
+52902190[1;48r[47;1H[1;47r[2S[45;1H52778199
+52746777[1;48r[47;1H[1;47r[2S[45;1H51654951
+50245100[1;48r[47;1H[1;47r[2S[45;1H50142550
+49968721[1;48r[47;1H[1;47r[2S[45;1H46398585
+46057280[1;48r[47;1H[1;47r[2S[45;1H36801808
+34956297[1;48r[47;1H[1;47r[2S[45;1H16056234
+52946003[1;48r[47;1H[1;47r[2S[45;1H52760989
+52532871[1;48r[47;1H[1;47r[2S[45;1H52077199
+52021908[1;48r[47;1H[1;47r[2S[45;1H51395538
+51267193[1;48r[47;1H[1;47r[47;132H
+[46;1H51200408[1;48r[47;1H[1;47r[2S[45;1H50264364
+50149954[1;48r[47;1H[1;47r[2S[45;1H49000954
+41093134[1;48r[47;1H[1;47r[2S[45;1H52977633
+52866174[1;48r[47;1H[1;47r[2S[45;1H52840188
+51631879[1;48r[47;1H[1;47r[2S[45;1H50420175
+50121460[1;48r[47;1H[1;47r[2S[45;1H50091197
+42480219[1;48r[47;1H[1;47r[2S[45;1H33382577
+27290383[1;48r[47;1H[1;47r[2S[45;1H53048056
+53043892[1;48r[47;1H[1;47r[2S[45;1H52759271
+52421621[1;48r[47;1H[1;47r[2S[45;1H52416483
+50903265[1;48r[47;1H[1;47r[3S[44;1H50460693
+50123972
+50042615[1;48r[47;1H[1;47r[2S[45;1H49931260
+49837360[1;48r[47;1H[1;47r[2S[45;1H47313975
+14807203[1;48r[47;1H[1;47r[2S[45;1H52693154
+52507046[1;48r[47;1H[1;47r[2S[45;1H52417417
+52306476[1;48r[47;1H[1;47r[2S[45;1H52223520
+51985044[1;48r[47;1H[1;47r[3S[44;1H51639711
+50888688
+50591678[1;48r[47;1H[1;47r[2S[45;1H50552724
+50128797[1;48r[47;1H[1;47r[2S[45;1H50109712
+49895626[1;48r[47;1H[1;47r[2S[45;1H48738119
+45761633[1;48r[47;1H[1;47r[2S[45;1H53049759
+52969730[1;48r[47;1H[1;47r[2S[45;1H52932955
+52872630[1;48r[47;1H[1;47r[3S[44;1H52385990
+52042479
+50553643[1;48r[47;1H[1;47r[2S[45;1H49935455
+49614641[1;48r[47;1H[1;47r[2S[45;1H45460192
+52928593[1;48r[47;1H[1;47r[2S[45;1H52506680
+52176580[1;48r[47;1H[1;47r[2S[45;1H51039672
+50826414[1;48r[47;1H[1;47r[2S[45;1H50699680
+50506686[1;48r[47;1H[1;47r[2S[45;1H49404909
+40427568[1;48r[47;1H[1;47r[2S[45;1H52992914
+52548648[1;48r[47;1H[1;47r[2S[45;1H52432457
+52431159[1;48r[47;1H[1;47r[2S[45;1H52281917
+51177889[1;48r[47;1H[1;47r[2S[45;1H51169169
+50914351[1;48r[47;1H[1;47r[2S[45;1H50708211
+49979986[1;48r[47;1H[1;47r[2S[45;1H46089061
+33113980[1;48r[47;1H[huy@sjsu worksheet5]$ for id in $(cat custid.txt); do echo $id; done[24G[Kls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hcustid.txt  ws5.txt[1;48r[47;1H[huy@sjsu worksheet5]$ mkdir CUSTOMERs[KSID[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu worksheet5]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hcustid.txt  [34m[1mCUSTOMERSID(B[m  ws5.txt[1;48r[47;1H[huy@sjsu worksheet5]$ for id in $(cat custid.txt)[1;47r[47;132H
+[1;48r[47;1H> do[1;47r[47;132H
+[1;48r[47;1H> [?25l
+[30m[42m[ws5] 0:WS5*                                                                                 "sjsu.pub.pic2.ibm.com" 14:03 11-Oct-22(B[m[47;3H[?12l[?25hmkdir CUSTOMERSID/[K[K[KID/$id.txt[1;47r[47;132H
+[1;48r[47;1H> done[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu worksheet5]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[47;132H
+[46;1Hcustid.txt  [34m[1mCUSTOMERSID(B[m  ws5.txt[1;48r[47;1H[huy@sjsu worksheet5]$ cd CUSTOMERSID/[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu CUSTOMERSID]$ ls[1;47r[47;132H
+[1;48r[47;1H[1;47r[3S[44;1H[34m[1m12598621.txt(B[m  [34m[1m39569598.txt(B[m  [34m[1m47346111.txt(B[m  [34m[1m49867522.txt(B[m  [34m[1m50740272.txt(B[m  [34m[1m51277212.txt(B[m  [34m[1m52186522.txt(B[m  [34m[1m52653706.txt(B[m  [34m[1m52932955.txt
+13993962.txt(B[m  [34m[1m39614869.txt(B[m  [34m[1m47392054.txt(B[m  [34m[1m49883642.txt(B[m  [34m[1m50746081.txt(B[m  [34m[1m51299750.txt(B[m  [34m[1m52203333.txt(B[m  [34m[1m52660802.txt(B[m  [34m[1m52934870.txt
+14403122.txt(B[m  [34m[1m39653614.txt(B[m  [34m[1m47412112.txt(B[m  [34m[1m49895626.txt(B[m  [34m[1m50747141.txt(B[m  [34m[1m51300959.txt(B[m  [34m[1m52204092.txt(B[m  [34m[1m52660946.txt(B[m  [34m[1m52935844.txt[1;48r[47;1H(B[m[1;47r[17S[30;1H[34m[1m14720400.txt(B[m  [34m[1m39663319.txt(B[m  [34m[1m47862135.txt(B[m  [34m[1m49908889.txt(B[m  [34m[1m50747195.txt(B[m  [34m[1m51301346.txt(B[m  [34m[1m52205720.txt(B[m  [34m[1m52683195.txt(B[m  [34m[1m52938698.txt
+14807203.txt(B[m  [34m[1m39773708.txt(B[m  [34m[1m47867897.txt(B[m  [34m[1m49931260.txt(B[m  [34m[1m50755863.txt(B[m  [34m[1m51304688.txt(B[m  [34m[1m52214553.txt(B[m  [34m[1m52687412.txt(B[m  [34m[1m52946003.txt
+16056234.txt(B[m  [34m[1m39792599.txt(B[m  [34m[1m47950934.txt(B[m  [34m[1m49935455.txt(B[m  [34m[1m50759001.txt(B[m  [34m[1m51315280.txt(B[m  [34m[1m52223435.txt(B[m  [34m[1m52692817.txt(B[m  [34m[1m52947077.txt
+18548250.txt(B[m  [34m[1m39828223.txt(B[m  [34m[1m47964988.txt(B[m  [34m[1m49945008.txt(B[m  [34m[1m50759440.txt(B[m  [34m[1m51320059.txt(B[m  [34m[1m52223520.txt(B[m  [34m[1m52693037.txt(B[m  [34m[1m52947165.txt
+18548312.txt(B[m  [34m[1m40001053.txt(B[m  [34m[1m48028003.txt(B[m  [34m[1m49945404.txt(B[m  [34m[1m50761804.txt(B[m  [34m[1m51325095.txt(B[m  [34m[1m52229186.txt(B[m  [34m[1m52693154.txt(B[m  [34m[1m52947290.txt
+18800155.txt(B[m  [34m[1m40051756.txt(B[m  [34m[1m48135836.txt(B[m  [34m[1m49945660.txt(B[m  [34m[1m50762809.txt(B[m  [34m[1m51336578.txt(B[m  [34m[1m52231964.txt(B[m  [34m[1m52697458.txt(B[m  [34m[1m52952506.txt
+20018062.txt(B[m  [34m[1m40354595.txt(B[m  [34m[1m48185764.txt(B[m  [34m[1m49956909.txt(B[m  [34m[1m50768673.txt(B[m  [34m[1m51337956.txt(B[m  [34m[1m52240154.txt(B[m  [34m[1m52697971.txt(B[m  [34m[1m52953635.txt
+20401140.txt(B[m  [34m[1m40427568.txt(B[m  [34m[1m48204227.txt(B[m  [34m[1m49957190.txt(B[m  [34m[1m50774246.txt(B[m  [34m[1m51340000.txt(B[m  [34m[1m52254603.txt(B[m  [34m[1m52700359.txt(B[m  [34m[1m52958253.txt
+20422170.txt(B[m  [34m[1m40432963.txt(B[m  [34m[1m48242885.txt(B[m  [34m[1m49963437.txt(B[m  [34m[1m50774468.txt(B[m  [34m[1m51341166.txt(B[m  [34m[1m52258595.txt(B[m  [34m[1m52705209.txt(B[m  [34m[1m52959840.txt
+20595117.txt(B[m  [34m[1m40595889.txt(B[m  [34m[1m48245725.txt(B[m  [34m[1m49968721.txt(B[m  [34m[1m50776149.txt(B[m  [34m[1m51341721.txt(B[m  [34m[1m52266433.txt(B[m  [34m[1m52706646.txt(B[m  [34m[1m52960550.txt
+22952028.txt(B[m  [34m[1m40684262.txt(B[m  [34m[1m48282789.txt(B[m  [34m[1m49979986.txt(B[m  [34m[1m50780512.txt(B[m  [34m[1m51343369.txt(B[m  [34m[1m52272094.txt(B[m  [34m[1m52708799.txt(B[m  [34m[1m52960608.txt
+23360882.txt(B[m  [34m[1m40882846.txt(B[m  [34m[1m48354073.txt(B[m  [34m[1m49985562.txt(B[m  [34m[1m50794483.txt(B[m  [34m[1m51343687.txt(B[m  [34m[1m52280224.txt(B[m  [34m[1m52709697.txt(B[m  [34m[1m52960913.txt
+23595366.txt(B[m  [34m[1m40884237.txt(B[m  [34m[1m48358035.txt(B[m  [34m[1m49989755.txt(B[m  [34m[1m50798783.txt(B[m  [34m[1m51345392.txt(B[m  [34m[1m52281917.txt(B[m  [34m[1m52712162.txt(B[m  [34m[1m52961594.txt
+23801320.txt(B[m  [34m[1m40891338.txt(B[m  [34m[1m48379653.txt(B[m  [34m[1m49992211.txt(B[m  [34m[1m50810207.txt(B[m  [34m[1m51350262.txt(B[m  [34m[1m52287009.txt(B[m  [34m[1m52719490.txt(B[m  [34m[1m52963744.txt
+24821538.txt(B[m  [34m[1m40938563.txt(B[m  [34m[1m48420158.txt(B[m  [34m[1m49998206.txt(B[m  [34m[1m50826414.txt(B[m  [34m[1m51357939.txt(B[m  [34m[1m52294653.txt(B[m  [34m[1m52719824.txt(B[m  [34m[1m52966385.txt
+25613486.txt(B[m  [34m[1m41012519.txt(B[m  [34m[1m48486228.txt(B[m  [34m[1m50001942.txt(B[m  [34m[1m50833636.txt(B[m  [34m[1m51359947.txt(B[m  [34m[1m52300235.txt(B[m  [34m[1m52720291.txt(B[m  [34m[1m52969730.txt
+26802692.txt(B[m  [34m[1m41093134.txt(B[m  [34m[1m48500875.txt(B[m  [34m[1m50002830.txt(B[m  [34m[1m50857882.txt(B[m  [34m[1m51362690.txt(B[m  [34m[1m52306476.txt(B[m  [34m[1m52724725.txt(B[m  [34m[1m52976583.txt
+26915713.txt(B[m  [34m[1m41104747.txt(B[m  [34m[1m48523769.txt(B[m  [34m[1m50005452.txt(B[m  [34m[1m50858[1;48r[47;62H(B[m[1;47r[18S[29;62H[34m[1m933.txt(B[m  [34m[1m51366396.txt(B[m  [34m[1m52317033.txt(B[m  [34m[1m52744183.txt(B[m  [34m[1m52977415.txt
+26973976.txt(B[m  [34m[1m41125812.txt(B[m  [34m[1m48581126.txt(B[m  [34m[1m50015891.txt(B[m  [34m[1m50859589.txt(B[m  [34m[1m51376733.txt(B[m  [34m[1m52317431.txt(B[m  [34m[1m52744964.txt(B[m  [34m[1m52977633.txt
+27114827.txt(B[m  [34m[1m41521760.txt(B[m  [34m[1m48738119.txt(B[m  [34m[1m50038433.txt(B[m  [34m[1m50864942.txt(B[m  [34m[1m51378626.txt(B[m  [34m[1m52327458.txt(B[m  [34m[1m52746542.txt(B[m  [34m[1m52978794.txt
+27290383.txt(B[m  [34m[1m41523864.txt(B[m  [34m[1m48750423.txt(B[m  [34m[1m50042615.txt(B[m  [34m[1m50869571.txt(B[m  [34m[1m51379338.txt(B[m  [34m[1m52340667.txt(B[m  [34m[1m52746777.txt(B[m  [34m[1m52978849.txt
+27681907.txt(B[m  [34m[1m41549714.txt(B[m  [34m[1m48819053.txt(B[m  [34m[1m50057481.txt(B[m  [34m[1m50874414.txt(B[m  [34m[1m51380442.txt(B[m  [34m[1m52357858.txt(B[m  [34m[1m52747250.txt(B[m  [34m[1m52983693.txt
+27769902.txt(B[m  [34m[1m41763380.txt(B[m  [34m[1m48840057.txt(B[m  [34m[1m50058656.txt(B[m  [34m[1m50880858.txt(B[m  [34m[1m51381608.txt(B[m  [34m[1m52362855.txt(B[m  [34m[1m52753467.txt(B[m  [34m[1m52985657.txt
+28644226.txt(B[m  [34m[1m41775808.txt(B[m  [34m[1m49000954.txt(B[m  [34m[1m50067221.txt(B[m  [34m[1m50881246.txt(B[m  [34m[1m51388692.txt(B[m  [34m[1m52363384.txt(B[m  [34m[1m52754918.txt(B[m  [34m[1m52986477.txt
+28749888.txt(B[m  [34m[1m41905526.txt(B[m  [34m[1m49022073.txt(B[m  [34m[1m50068216.txt(B[m  [34m[1m50886639.txt(B[m  [34m[1m51388751.txt(B[m  [34m[1m52364186.txt(B[m  [34m[1m52754940.txt(B[m  [34m[1m52987300.txt
+29569603.txt(B[m  [34m[1m41934110.txt(B[m  [34m[1m49042814.txt(B[m  [34m[1m50079159.txt(B[m  [34m[1m50888688.txt(B[m  [34m[1m51394793.txt(B[m  [34m[1m52375519.txt(B[m  [34m[1m52759271.txt(B[m  [34m[1m52987415.txt
+29639251.txt(B[m  [34m[1m41980939.txt(B[m  [34m[1m49059365.txt(B[m  [34m[1m50091197.txt(B[m  [34m[1m50895620.txt(B[m  [34m[1m51395538.txt(B[m  [34m[1m52385990.txt(B[m  [34m[1m52760989.txt(B[m  [34m[1m52988732.txt
+30081986.txt(B[m  [34m[1m41988825.txt(B[m  [34m[1m49097813.txt(B[m  [34m[1m50093726.txt(B[m  [34m[1m50898292.txt(B[m  [34m[1m51403161.txt(B[m  [34m[1m52388392.txt(B[m  [34m[1m52761040.txt(B[m  [34m[1m52992914.txt
+30101572.txt(B[m  [34m[1m42152039.txt(B[m  [34m[1m49102993.txt(B[m  [34m[1m50104667.txt(B[m  [34m[1m50899460.txt(B[m  [34m[1m51406912.txt(B[m  [34m[1m52389304.txt(B[m  [34m[1m52764121.txt(B[m  [34m[1m52996207.txt
+30212713.txt(B[m  [34m[1m42173554.txt(B[m  [34m[1m49111640.txt(B[m  [34m[1m50109712.txt(B[m  [34m[1m50903265.txt(B[m  [34m[1m51409347.txt(B[m  [34m[1m52397641.txt(B[m  [34m[1m52764679.txt(B[m  [34m[1m52998086.txt
+30329810.txt(B[m  [34m[1m42357512.txt(B[m  [34m[1m49115690.txt(B[m  [34m[1m50119287.txt(B[m  [34m[1m50909784.txt(B[m  [34m[1m51616072.txt(B[m  [34m[1m52398462.txt(B[m  [34m[1m52768278.txt(B[m  [34m[1m53002620.txt
+30501489.txt(B[m  [34m[1m42372900.txt(B[m  [34m[1m49131037.txt(B[m  [34m[1m50121460.txt(B[m  [34m[1m50909980.txt(B[m  [34m[1m51624230.txt(B[m  [34m[1m52402330.txt(B[m  [34m[1m52768983.txt(B[m  [34m[1m53006770.txt
+30559999.txt(B[m  [34m[1m42442234.txt(B[m  [34m[1m49148452.txt(B[m  [34m[1m50122160.txt(B[m  [34m[1m50913245.txt(B[m  [34m[1m51631879.txt(B[m  [34m[1m52416483.txt(B[m  [34m[1m52769068.txt(B[m  [34m[1m53006845.txt
+30672120.txt(B[m  [34m[1m42480219.txt(B[m  [34m[1m49194495.txt(B[m  [34m[1m50123972.txt(B[m  [34m[1m50914351.txt(B[m  [34m[1m51636710.txt(B[m  [34m[1m52417414.txt(B[m  [34m[1m52769408.txt(B[m  [34m[1m53008075.txt
+31283258.txt(B[m  [34m[1m42627253.txt(B[m  [34m[1m49200164.txt(B[m  [34m[1m50128797.txt(B[m  [34m[1m50935517.txt(B[m  [34m[1m51639711.txt(B[m  [34m[1m52417417.txt(B[m  [34m[1m52769680.txt(B[m  [34m[1m53009403.txt[1;48r[47;1H(B[m[1;47r[17S[30;1H[34m[1m31406259.txt(B[m  [34m[1m42636479.txt(B[m  [34m[1m49202417.txt(B[m  [34m[1m50142550.txt(B[m  [34m[1m50940744.txt(B[m  [34m[1m51643689.txt(B[m  [34m[1m52421621.txt(B[m  [34m[1m52770104.txt(B[m  [34m[1m53009736.txt
+31612235.txt(B[m  [34m[1m42706701.txt(B[m  [34m[1m49216591.txt(B[m  [34m[1m50147915.txt(B[m  [34m[1m50941451.txt(B[m  [34m[1m51645455.txt(B[m  [34m[1m52431159.txt(B[m  [34m[1m52770861.txt(B[m  [34m[1m53012990.txt
+31706721.txt(B[m  [34m[1m42800127.txt(B[m  [34m[1m49248343.txt(B[m  [34m[1m50149954.txt(B[m  [34m[1m50946478.txt(B[m  [34m[1m51650080.txt(B[m  [34m[1m52432257.txt(B[m  [34m[1m52774618.txt(B[m  [34m[1m53013845.txt
+31798459.txt(B[m  [34m[1m42852744.txt(B[m  [34m[1m49255792.txt(B[m  [34m[1m50150483.txt(B[m  [34m[1m50950064.txt(B[m  [34m[1m51654951.txt(B[m  [34m[1m52432457.txt(B[m  [34m[1m52776495.txt(B[m  [34m[1m53014052.txt
+31844968.txt(B[m  [34m[1m42975208.txt(B[m  [34m[1m49256646.txt(B[m  [34m[1m50175632.txt(B[m  [34m[1m50951948.txt(B[m  [34m[1m51668159.txt(B[m  [34m[1m52435894.txt(B[m  [34m[1m52776905.txt(B[m  [34m[1m53015346.txt
+31888987.txt(B[m  [34m[1m43002296.txt(B[m  [34m[1m49257001.txt(B[m  [34m[1m50178145.txt(B[m  [34m[1m50954482.txt(B[m  [34m[1m51688225.txt(B[m  [34m[1m52436282.txt(B[m  [34m[1m52776909.txt(B[m  [34m[1m53015634.txt
+32236675.txt(B[m  [34m[1m43021965.txt(B[m  [34m[1m49263512.txt(B[m  [34m[1m50199793.txt(B[m  [34m[1m50959090.txt(B[m  [34m[1m51688728.txt(B[m  [34m[1m52437017.txt(B[m  [34m[1m52778199.txt(B[m  [34m[1m53016908.txt
+33113980.txt(B[m  [34m[1m43058502.txt(B[m  [34m[1m49273674.txt(B[m  [34m[1m50200864.txt(B[m  [34m[1m50971011.txt(B[m  [34m[1m51697838.txt(B[m  [34m[1m52437038.txt(B[m  [34m[1m52778209.txt(B[m  [34m[1m53016962.txt
+33360060.txt(B[m  [34m[1m43083835.txt(B[m  [34m[1m49286822.txt(B[m  [34m[1m50221812.txt(B[m  [34m[1m50977226.txt(B[m  [34m[1m51701856.txt(B[m  [34m[1m52438789.txt(B[m  [34m[1m52778876.txt(B[m  [34m[1m53018444.txt
+33378222.txt(B[m  [34m[1m43086691.txt(B[m  [34m[1m49298311.txt(B[m  [34m[1m50223242.txt(B[m  [34m[1m50983162.txt(B[m  [34m[1m51716884.txt(B[m  [34m[1m52438824.txt(B[m  [34m[1m52780213.txt(B[m  [34m[1m53021867.txt
+33382577.txt(B[m  [34m[1m43093648.txt(B[m  [34m[1m49312585.txt(B[m  [34m[1m50237277.txt(B[m  [34m[1m50984552.txt(B[m  [34m[1m51717849.txt(B[m  [34m[1m52441867.txt(B[m  [34m[1m52782589.txt(B[m  [34m[1m53021951.txt
+33559580.txt(B[m  [34m[1m43127415.txt(B[m  [34m[1m49315939.txt(B[m  [34m[1m50245100.txt(B[m  [34m[1m50986119.txt(B[m  [34m[1m51725472.txt(B[m  [34m[1m52444905.txt(B[m  [34m[1m52783335.txt(B[m  [34m[1m53024515.txt
+33587739.txt(B[m  [34m[1m43152633.txt(B[m  [34m[1m49320094.txt(B[m  [34m[1m50262576.txt(B[m  [34m[1m50989966.txt(B[m  [34m[1m51728657.txt(B[m  [34m[1m52445820.txt(B[m  [34m[1m52784843.txt(B[m  [34m[1m53025502.txt
+33612856.txt(B[m  [34m[1m43320771.txt(B[m  [34m[1m49322932.txt(B[m  [34m[1m50264364.txt(B[m  [34m[1m51003836.txt(B[m  [34m[1m51731994.txt(B[m  [34m[1m52447634.txt(B[m  [34m[1m52789100.txt(B[m  [34m[1m53026413.txt
+33631101.txt(B[m  [34m[1m43389853.txt(B[m  [34m[1m49332535.txt(B[m  [34m[1m50270744.txt(B[m  [34m[1m51007592.txt(B[m  [34m[1m51736210.txt(B[m  [34m[1m52447932.txt(B[m  [34m[1m52791632.txt(B[m  [34m[1m53027693.txt
+33666987.txt(B[m  [34m[1m43519458.txt(B[m  [34m[1m49336548.txt(B[m  [34m[1m50287514.txt(B[m  [34m[1m51008196.txt(B[m  [34m[1m51737389.txt(B[m  [34m[1m52451546.txt(B[m  [34m[1m52793250.txt(B[m  [34m[1m53030545.txt
+33993847.txt(B[m  [34m[1m43546353.txt(B[m  [34m[1m49338731.txt(B[m  [34m[1m50289674.txt(B[m  [34m[1m51010391.txt(B[m  [34m[1m51740940.txt(B[m  [34m[1m52464095.txt(B[m  [34m[1m52793976.txt(B[m  [34m[1m53031416.txt
+34236000.txt(B[m  [34m[1m43640584.txt(B[m  [34m[1m49344980.txt(B[m  [34m[1m50302730.txt(B[m  [34m[1m51010[1;48r[47;62H(B[m[1;47r[18S[29;62H[34m[1m646.txt(B[m  [34m[1m51741466.txt(B[m  [34m[1m52468373.txt(B[m  [34m[1m52797417.txt(B[m  [34m[1m53033443.txt
+34271677.txt(B[m  [34m[1m43681751.txt(B[m  [34m[1m49353662.txt(B[m  [34m[1m50320963.txt(B[m  [34m[1m51020757.txt(B[m  [34m[1m51744771.txt(B[m  [34m[1m52474360.txt(B[m  [34m[1m52797729.txt(B[m  [34m[1m53037408.txt
+34844779.txt(B[m  [34m[1m43879637.txt(B[m  [34m[1m49355557.txt(B[m  [34m[1m50323648.txt(B[m  [34m[1m51039672.txt(B[m  [34m[1m51749393.txt(B[m  [34m[1m52476938.txt(B[m  [34m[1m52797744.txt(B[m  [34m[1m53041816.txt
+34956297.txt(B[m  [34m[1m43932718.txt(B[m  [34m[1m49355567.txt(B[m  [34m[1m50332419.txt(B[m  [34m[1m51043906.txt(B[m  [34m[1m51752008.txt(B[m  [34m[1m52477572.txt(B[m  [34m[1m52801489.txt(B[m  [34m[1m53043892.txt
+35004134.txt(B[m  [34m[1m44020425.txt(B[m  [34m[1m49374774.txt(B[m  [34m[1m50334423.txt(B[m  [34m[1m51048555.txt(B[m  [34m[1m51761391.txt(B[m  [34m[1m52479341.txt(B[m  [34m[1m52804949.txt(B[m  [34m[1m53045954.txt
+35039726.txt(B[m  [34m[1m44184384.txt(B[m  [34m[1m49380797.txt(B[m  [34m[1m50366777.txt(B[m  [34m[1m51060163.txt(B[m  [34m[1m51764665.txt(B[m  [34m[1m52479865.txt(B[m  [34m[1m52806429.txt(B[m  [34m[1m53047293.txt
+35316077.txt(B[m  [34m[1m44189182.txt(B[m  [34m[1m49389861.txt(B[m  [34m[1m50368037.txt(B[m  [34m[1m51062124.txt(B[m  [34m[1m51767311.txt(B[m  [34m[1m52485851.txt(B[m  [34m[1m52809057.txt(B[m  [34m[1m53047425.txt
+35373008.txt(B[m  [34m[1m44207108.txt(B[m  [34m[1m49390985.txt(B[m  [34m[1m50372990.txt(B[m  [34m[1m51062975.txt(B[m  [34m[1m51803143.txt(B[m  [34m[1m52486517.txt(B[m  [34m[1m52812751.txt(B[m  [34m[1m53048056.txt
+35523175.txt(B[m  [34m[1m44498121.txt(B[m  [34m[1m49396726.txt(B[m  [34m[1m50375720.txt(B[m  [34m[1m51063473.txt(B[m  [34m[1m51804372.txt(B[m  [34m[1m52487933.txt(B[m  [34m[1m52818926.txt(B[m  [34m[1m53049759.txt
+35583599.txt(B[m  [34m[1m44527841.txt(B[m  [34m[1m49404909.txt(B[m  [34m[1m50378566.txt(B[m  [34m[1m51065232.txt(B[m  [34m[1m51809405.txt(B[m  [34m[1m52489871.txt(B[m  [34m[1m52821302.txt(B[m  [34m[1m53052943.txt
+35854103.txt(B[m  [34m[1m44538579.txt(B[m  [34m[1m49423742.txt(B[m  [34m[1m50384836.txt(B[m  [34m[1m51066882.txt(B[m  [34m[1m51814776.txt(B[m  [34m[1m52496636.txt(B[m  [34m[1m52821457.txt(B[m  [34m[1m53052945.txt
+35944741.txt(B[m  [34m[1m44657626.txt(B[m  [34m[1m49437056.txt(B[m  [34m[1m50389232.txt(B[m  [34m[1m51067904.txt(B[m  [34m[1m51831325.txt(B[m  [34m[1m52496677.txt(B[m  [34m[1m52822617.txt(B[m  [34m[1m53053049.txt
+35985708.txt(B[m  [34m[1m44731169.txt(B[m  [34m[1m49445874.txt(B[m  [34m[1m50420175.txt(B[m  [34m[1m51079773.txt(B[m  [34m[1m51864310.txt(B[m  [34m[1m52499409.txt(B[m  [34m[1m52830980.txt(B[m  [34m[1m53053083.txt
+36055300.txt(B[m  [34m[1m44761874.txt(B[m  [34m[1m49447323.txt(B[m  [34m[1m50424562.txt(B[m  [34m[1m51080263.txt(B[m  [34m[1m51874804.txt(B[m  [34m[1m52500542.txt(B[m  [34m[1m52832478.txt(B[m  [34m[1m53057129.txt
+36152181.txt(B[m  [34m[1m44776887.txt(B[m  [34m[1m49447535.txt(B[m  [34m[1m50429811.txt(B[m  [34m[1m51081226.txt(B[m  [34m[1m51889051.txt(B[m  [34m[1m52501683.txt(B[m  [34m[1m52833260.txt(B[m  [34m[1m53057371.txt
+36232108.txt(B[m  [34m[1m44806789.txt(B[m  [34m[1m49456371.txt(B[m  [34m[1m50442542.txt(B[m  [34m[1m51095446.txt(B[m  [34m[1m51899002.txt(B[m  [34m[1m52506680.txt(B[m  [34m[1m52840188.txt(B[m  [34m[1m53057410.txt
+36247714.txt(B[m  [34m[1m44819611.txt(B[m  [34m[1m49464729.txt(B[m  [34m[1m50452306.txt(B[m  [34m[1m51097716.txt(B[m  [34m[1m51908618.txt(B[m  [34m[1m52507046.txt(B[m  [34m[1m52841075.txt(B[m  [34m[1m53058008.txt
+36369004.txt(B[m  [34m[1m45041039.txt(B[m  [34m[1m49494754.txt(B[m  [34m[1m50460693.txt(B[m  [34m[1m51101301.txt(B[m  [34m[1m51914753.txt(B[m  [34m[1m52507985.txt(B[m  [34m[1m52841839.txt(B[m  [34m[1m53058973.txt[1;48r[47;1H(B[m[1;47r[17S[30;1H[34m[1m36398642.txt(B[m  [34m[1m45042957.txt(B[m  [34m[1m49514928.txt(B[m  [34m[1m50462706.txt(B[m  [34m[1m51110953.txt(B[m  [34m[1m51915884.txt(B[m  [34m[1m52517734.txt(B[m  [34m[1m52844555.txt(B[m  [34m[1m53060203.txt
+36438183.txt(B[m  [34m[1m45088744.txt(B[m  [34m[1m49524801.txt(B[m  [34m[1m50491732.txt(B[m  [34m[1m51112341.txt(B[m  [34m[1m51917998.txt(B[m  [34m[1m52526368.txt(B[m  [34m[1m52845727.txt(B[m  [34m[1m53064010.txt
+36567112.txt(B[m  [34m[1m45180289.txt(B[m  [34m[1m49531257.txt(B[m  [34m[1m50506686.txt(B[m  [34m[1m51116445.txt(B[m  [34m[1m51927631.txt(B[m  [34m[1m52527375.txt(B[m  [34m[1m52846971.txt(B[m  [34m[1m53066131.txt
+36595881.txt(B[m  [34m[1m45193257.txt(B[m  [34m[1m49551923.txt(B[m  [34m[1m50510246.txt(B[m  [34m[1m51116836.txt(B[m  [34m[1m51930306.txt(B[m  [34m[1m52532871.txt(B[m  [34m[1m52847717.txt(B[m  [34m[1m53067436.txt
+36632284.txt(B[m  [34m[1m45245794.txt(B[m  [34m[1m49553538.txt(B[m  [34m[1m50552724.txt(B[m  [34m[1m51126995.txt(B[m  [34m[1m51934027.txt(B[m  [34m[1m52533596.txt(B[m  [34m[1m52850806.txt(B[m  [34m[1m53067930.txt
+36642996.txt(B[m  [34m[1m45273033.txt(B[m  [34m[1m49559882.txt(B[m  [34m[1m50553643.txt(B[m  [34m[1m51130320.txt(B[m  [34m[1m51935069.txt(B[m  [34m[1m52536074.txt(B[m  [34m[1m52851134.txt(B[m  [34m[1m53067931.txt
+36681550.txt(B[m  [34m[1m45284807.txt(B[m  [34m[1m49561769.txt(B[m  [34m[1m50555753.txt(B[m  [34m[1m51136581.txt(B[m  [34m[1m51958405.txt(B[m  [34m[1m52536648.txt(B[m  [34m[1m52853018.txt(B[m  [34m[1m53069821.txt
+36780283.txt(B[m  [34m[1m45339081.txt(B[m  [34m[1m49577356.txt(B[m  [34m[1m50591678.txt(B[m  [34m[1m51138056.txt(B[m  [34m[1m51959847.txt(B[m  [34m[1m52542864.txt(B[m  [34m[1m52857480.txt(B[m  [34m[1m53070409.txt
+36801808.txt(B[m  [34m[1m45344448.txt(B[m  [34m[1m49580074.txt(B[m  [34m[1m50592435.txt(B[m  [34m[1m51140190.txt(B[m  [34m[1m51968865.txt(B[m  [34m[1m52545329.txt(B[m  [34m[1m52859210.txt(B[m  [34m[1m53070662.txt
+36818999.txt(B[m  [34m[1m45460192.txt(B[m  [34m[1m49600435.txt(B[m  [34m[1m50593376.txt(B[m  [34m[1m51142763.txt(B[m  [34m[1m51979649.txt(B[m  [34m[1m52545721.txt(B[m  [34m[1m52859935.txt(B[m  [34m[1m53071109.txt
+36949740.txt(B[m  [34m[1m45761633.txt(B[m  [34m[1m49614641.txt(B[m  [34m[1m50605810.txt(B[m  [34m[1m51145127.txt(B[m  [34m[1m51985044.txt(B[m  [34m[1m52548648.txt(B[m  [34m[1m52864495.txt(B[m  [34m[1m53071138.txt
+37010568.txt(B[m  [34m[1m45761937.txt(B[m  [34m[1m49618395.txt(B[m  [34m[1m50608834.txt(B[m  [34m[1m51147790.txt(B[m  [34m[1m51987970.txt(B[m  [34m[1m52556992.txt(B[m  [34m[1m52866174.txt(B[m  [34m[1m53071190.txt
+37015883.txt(B[m  [34m[1m45775115.txt(B[m  [34m[1m49620110.txt(B[m  [34m[1m50616776.txt(B[m  [34m[1m51150291.txt(B[m  [34m[1m51988066.txt(B[m  [34m[1m52558011.txt(B[m  [34m[1m52868156.txt(B[m  [34m[1m53072811.txt
+37386263.txt(B[m  [34m[1m45814424.txt(B[m  [34m[1m49621826.txt(B[m  [34m[1m50631983.txt(B[m  [34m[1m51152027.txt(B[m  [34m[1m52008531.txt(B[m  [34m[1m52558032.txt(B[m  [34m[1m52870090.txt(B[m  [34m[1m53073369.txt
+37492827.txt(B[m  [34m[1m45838740.txt(B[m  [34m[1m49629036.txt(B[m  [34m[1m50652563.txt(B[m  [34m[1m51152855.txt(B[m  [34m[1m52009166.txt(B[m  [34m[1m52562171.txt(B[m  [34m[1m52872630.txt(B[m  [34m[1m53074803.txt
+37805349.txt(B[m  [34m[1m45861535.txt(B[m  [34m[1m49647049.txt(B[m  [34m[1m50658053.txt(B[m  [34m[1m51152905.txt(B[m  [34m[1m52009378.txt(B[m  [34m[1m52562189.txt(B[m  [34m[1m52872993.txt(B[m  [34m[1m53075086.txt
+37928338.txt(B[m  [34m[1m45911168.txt(B[m  [34m[1m49664433.txt(B[m  [34m[1m50658596.txt(B[m  [34m[1m51152957.txt(B[m  [34m[1m52012289.txt(B[m  [34m[1m52564468.txt(B[m  [34m[1m52875304.txt(B[m  [34m[1m53075795.txt
+38002140.txt(B[m  [34m[1m45979403.txt(B[m  [34m[1m49684429.txt(B[m  [34m[1m50667536.txt(B[m  [34m[1m51167[1;48r[47;62H(B[m[1;47r[18S[29;62H[34m[1m656.txt(B[m  [34m[1m52014761.txt(B[m  [34m[1m52571463.txt(B[m  [34m[1m52877960.txt(B[m  [34m[1m53078987.txt
+38243114.txt(B[m  [34m[1m46057280.txt(B[m  [34m[1m49693503.txt(B[m  [34m[1m50669529.txt(B[m  [34m[1m51169169.txt(B[m  [34m[1m52021908.txt(B[m  [34m[1m52572105.txt(B[m  [34m[1m52882573.txt(B[m  [34m[1m53079427.txt
+38312855.txt(B[m  [34m[1m46089061.txt(B[m  [34m[1m49693975.txt(B[m  [34m[1m50676891.txt(B[m  [34m[1m51177466.txt(B[m  [34m[1m52027907.txt(B[m  [34m[1m52573608.txt(B[m  [34m[1m52886341.txt(B[m  [34m[1m53080622.txt
+38350586.txt(B[m  [34m[1m46134316.txt(B[m  [34m[1m49694975.txt(B[m  [34m[1m50681562.txt(B[m  [34m[1m51177889.txt(B[m  [34m[1m52027938.txt(B[m  [34m[1m52584172.txt(B[m  [34m[1m52887769.txt(B[m  [34m[1m53082946.txt
+38491967.txt(B[m  [34m[1m46160224.txt(B[m  [34m[1m49697848.txt(B[m  [34m[1m50684595.txt(B[m  [34m[1m51197300.txt(B[m  [34m[1m52036644.txt(B[m  [34m[1m52590451.txt(B[m  [34m[1m52888137.txt(B[m  [34m[1m53084041.txt
+38577070.txt(B[m  [34m[1m46194801.txt(B[m  [34m[1m49709123.txt(B[m  [34m[1m50685026.txt(B[m  [34m[1m51199159.txt(B[m  [34m[1m52042479.txt(B[m  [34m[1m52599173.txt(B[m  [34m[1m52891206.txt(B[m  [34m[1m53084107.txt
+38610362.txt(B[m  [34m[1m46220931.txt(B[m  [34m[1m49709381.txt(B[m  [34m[1m50695806.txt(B[m  [34m[1m51200408.txt(B[m  [34m[1m52045373.txt(B[m  [34m[1m52599570.txt(B[m  [34m[1m52894384.txt(B[m  [34m[1m53084718.txt
+38672733.txt(B[m  [34m[1m46348524.txt(B[m  [34m[1m49726283.txt(B[m  [34m[1m50699680.txt(B[m  [34m[1m51205644.txt(B[m  [34m[1m52048190.txt(B[m  [34m[1m52606675.txt(B[m  [34m[1m52900384.txt(B[m  [34m[1m53087372.txt
+38685946.txt(B[m  [34m[1m46398585.txt(B[m  [34m[1m49738138.txt(B[m  [34m[1m50702879.txt(B[m  [34m[1m51209967.txt(B[m  [34m[1m52063173.txt(B[m  [34m[1m52613129.txt(B[m  [34m[1m52902190.txt(B[m  [34m[1m53087799.txt
+38778131.txt(B[m  [34m[1m46619300.txt(B[m  [34m[1m49750558.txt(B[m  [34m[1m50703543.txt(B[m  [34m[1m51210331.txt(B[m  [34m[1m52077199.txt(B[m  [34m[1m52615377.txt(B[m  [34m[1m52905723.txt(B[m  [34m[1m53089838.txt
+38782199.txt(B[m  [34m[1m46849857.txt(B[m  [34m[1m49779580.txt(B[m  [34m[1m50704952.txt(B[m  [34m[1m51210590.txt(B[m  [34m[1m52091533.txt(B[m  [34m[1m52618134.txt(B[m  [34m[1m52908596.txt(B[m  [34m[1m53092367.txt
+38840436.txt(B[m  [34m[1m46856618.txt(B[m  [34m[1m49784014.txt(B[m  [34m[1m50706176.txt(B[m  [34m[1m51212167.txt(B[m  [34m[1m52096512.txt(B[m  [34m[1m52623080.txt(B[m  [34m[1m52913038.txt(B[m  [34m[1m53092736.txt
+38855113.txt(B[m  [34m[1m46877221.txt(B[m  [34m[1m49786731.txt(B[m  [34m[1m50708211.txt(B[m  [34m[1m51214937.txt(B[m  [34m[1m52109600.txt(B[m  [34m[1m52624195.txt(B[m  [34m[1m52913882.txt(B[m  [34m[1m53093124.txt
+38889875.txt(B[m  [34m[1m46905518.txt(B[m  [34m[1m49789211.txt(B[m  [34m[1m50717925.txt(B[m  [34m[1m51237296.txt(B[m  [34m[1m52124482.txt(B[m  [34m[1m52627388.txt(B[m  [34m[1m52918265.txt(B[m  [34m[1m53096155.txt
+38899800.txt(B[m  [34m[1m46983871.txt(B[m  [34m[1m49796397.txt(B[m  [34m[1m50718004.txt(B[m  [34m[1m51243012.txt(B[m  [34m[1m52139358.txt(B[m  [34m[1m52631726.txt(B[m  [34m[1m52918997.txt
+38967405.txt(B[m  [34m[1m47116775.txt(B[m  [34m[1m49808679.txt(B[m  [34m[1m50720905.txt(B[m  [34m[1m51247650.txt(B[m  [34m[1m52147775.txt(B[m  [34m[1m52631742.txt(B[m  [34m[1m52921118.txt
+39134375.txt(B[m  [34m[1m47226334.txt(B[m  [34m[1m49818928.txt(B[m  [34m[1m50728990.txt(B[m  [34m[1m51252850.txt(B[m  [34m[1m52150226.txt(B[m  [34m[1m52639757.txt(B[m  [34m[1m52921362.txt
+39352452.txt(B[m  [34m[1m47257366.txt(B[m  [34m[1m49828549.txt(B[m  [34m[1m50732546.txt(B[m  [34m[1m51263286.txt(B[m  [34m[1m52160649.txt(B[m  [34m[1m52640872.txt(B[m  [34m[1m52923654.txt
+39366896.txt(B[m  [34m[1m47265458.txt(B[m  [34m[1m49836087.txt(B[m  [34m[1m50734993.txt(B[m  [1;48r[47;57H[1;47r[4S[43;57H[34m[1m51266167.txt(B[m  [34m[1m52161778.txt(B[m  [34m[1m52643745.txt(B[m  [34m[1m52928260.txt
+39381520.txt(B[m  [34m[1m47304339.txt(B[m  [34m[1m49837360.txt(B[m  [34m[1m50735506.txt(B[m  [34m[1m51267193.txt(B[m  [34m[1m52172447.txt(B[m  [34m[1m52644129.txt(B[m  [34m[1m52928593.txt
+39424751.txt(B[m  [34m[1m47307757.txt(B[m  [34m[1m49850969.txt(B[m  [34m[1m50736950.txt(B[m  [34m[1m51272397.txt(B[m  [34m[1m52173832.txt(B[m  [34m[1m52649455.txt(B[m  [34m[1m52930352.txt
+39425588.txt(B[m  [34m[1m47313975.txt(B[m  [34m[1m49865122.txt(B[m  [34m[1m50739528.txt(B[m  [34m[1m51273949.txt(B[m  [34m[1m52176580.txt(B[m  [34m[1m52651244.txt(B[m  [34m[1m52932081.txt
+(B[m[huy@sjsu CUSTOMERSID]$ [1;48r[47;25Hcd ..[1;47r[47;132H
+[1;48r[47;1H[huy@sjsu worksheet5]$ c[K[1;47r[47;132H
+[46;24Hlogout[1;48r[47;1H[1;48r(B[m[?1l>[H[2J]112[?12l[?25h[?1000l[?1002l[?1006l[?1005l[?1049l[23;0;0t[exited]
+]0;huy@sjsu:~/git/worksheet1/worksheet5[huy@sjsu worksheet5]$ exit
+
+Script done on 2022-10-11 14:04:07-04:00
