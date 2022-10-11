@@ -3,7 +3,7 @@ Step by step:
 - for loop:
 for id in $(cat custid.txt)
 do
-mkdir CUSTOMERSID/$id.txt
+echo $id CUSTOMERSID/$id.txt
 done
 
 
