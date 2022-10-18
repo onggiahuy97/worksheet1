@@ -1,0 +1,408 @@
+Questions:
+1. 
+date '+%Y%m%d_%H%M%S'
+2.
+[huy@sjsu PRODUCTS]$ for f in ;do echo $f > ${f%.}.$(date '+%Y%m%d_%H%M%S').txt; done
+3.
+[huy@sjsu PRODUCTS]$ for f in _.txt; do echo product_review: 7 >> $f; done
+4.
+ln -s productID.DATETIME.txt productID.LATEST.txt
+5.
+crobtab -e
+* * * * * <job> > average rating score
+
+
+Script started on 2022-10-18 14:45:37-04:00
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ ls
+0373836635.txt  0811828964.txt  1844161560.txt  20221018_144132.txt  ws6.txt
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ mkdri[K[Kir PRODUCTS
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ mv 0373836635.txt PRODUCTS/
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ ls
+0811828964.txt  1844161560.txt  20221018_144132.txt  [0m[01;34mPRODUCTS[0m  ws6.txt
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ mv 0811828964.txt PRODUCTS/
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ mv 1844161560.txt PRODUCTS/
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ ls
+20221018_144132.txt  [0m[01;34mPRODUCTS[0m  ws6.txt
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ ls PRODUCTS/
+0373836635.txt  0811828964.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ for FILE in[K[K[K[K[K[K[K[K[K[K[Kcd PRODUCTS/
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.txt  0811828964.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *; do echo $f; done
+0373836635.txt
+0811828964.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *; do echo $f; done[1P[1P[1P[1P[1P[1P[1P[1@c[1@p[1@ [1P[1P[1P
+bash: syntax error near unexpected token `;'
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ l[Kclear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ cat 0373836635.txt 
+2
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ cd
+khuy@sjsu:~\[huy@sjsu ~]$ ls 
+amazon_reviews_us_Books_v1_02.tsv  custid.txt  [0m[01;34mgit[0m  t.tsv  [01;34mworksheet1[0m
+khuy@sjsu:~\[huy@sjsu ~]$ cd git/worksheet1/
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ ls
+[0m[01;34mA1[0m  [01;34mA2[0m  [01;34mA3[0m  [01;34mworksheet1[0m  [01;34mworksheet2[0m  [01;34mworksheet3[0m  [01;34mworksheet4[0m  [01;34mworksheet5[0m  [01;34mworksheet6[0m
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ ls A3
+a3.041022.txt  a3.txt         question2.txt  question4.1.txt  question4.answer.txt     question4.txt
+a3.061022.txt  question1.txt  question3.txt  question4.2.txt  question4.SupportA2.txt
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ ls A2
+a2.combined.txt  cmds.log  downloaded_tweets_extend_nolf.txt  downloaded_tweets_extend_original_nolf.txt
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ ls wr[Korksheet4
+cmds.log  [0m[01;34mCUSTOMERS[0m  [01;34mPRODUCTS[0m  README.txt  ws4.092622.1.txt  ws4.092622.2.txt  ws4.092622.txt  ws4.combined.txt
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ ls worksheet4[K3
+cmds.log  w3.09132022.1.txt  w3.09132022.2.txt  w3.09132022.txt  w3.txt
+khuy@sjsu:~/git/worksheet1\[huy@sjsu worksheet1]$ cd
+khuy@sjsu:~\[huy@sjsu ~]$ ls
+amazon_reviews_us_Books_v1_02.tsv  custid.txt  [0m[01;34mgit[0m  t.tsv  [01;34mworksheet1[0m
+khuy@sjsu:~\[huy@sjsu ~]$ cd git/worksheet1/worksheet6
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ ls
+20221018_144132.txt  [0m[01;34mPRODUCTS[0m  ws6.txt
+khuy@sjsu:~/git/worksheet1/worksheet6\[huy@sjsu worksheet6]$ cd PRODUCTS/
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.txt  0811828964.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for [K[K[K[Kecho ls ln
+ls ln
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls [K[K[Kln
+ln: missing file operand
+Try 'ln --help' for more information.
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ln -s
+ln: missing file operand
+Try 'ln --help' for more information.
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ [K[huy@sjsu PRODUCTS]$ clear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.txt  0811828964.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *; echo f; done
+bash: syntax error near unexpected token `echo'
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *; echo f; done[1@d[1@o
+f
+f
+f
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo f; done[1@$
+0373836635.txt
+0811828964.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo $f; done[1P[1P[1@"[1@"[1@$[1@{[1@f[1@i[1@l[1P[1P[1@#[1@#[1@x[1@/[1P[1P[1@*[1@x[1@/[1P[1P[1P[1@*[1@x[1@/[1@}
+0373836635.txt
+0811828964.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo "${f##*x/}"; done[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1@'[1@b[1@a[1@s[1@e[1@n[1@a[1@m[1@e[1@ [1@f[1P[1@$[1@f
+> ^C
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo 'basename $f; done[1@'
+basename $f
+basename $f
+basename $f
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo 'basename $f'; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfor f in *;do echo 'basename $f'; done[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@$[1@{[1@f[1@%[1@.[1@*[1@}[1@}
+0373836635}
+0811828964}
+1844161560}
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo ${f%.*}}; done[1P
+0373836635
+0811828964
+1844161560
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo ${f%.*}; done[1@.
+0373836635.
+0811828964.
+1844161560.
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo ${f%.*}.; done[1@$[1@([1@d[1@a[1@t[1@e[1@)
+0373836635.Tue Oct 18 16:28:28 EDT 2022
+0811828964.Tue Oct 18 16:28:28 EDT 2022
+1844161560.Tue Oct 18 16:28:28 EDT 2022
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo ${f%.*}.$(date); done[1@ [16@'+%Y%m%d_%H%M%S'
+0373836635.20221018_162836
+0811828964.20221018_162836
+1844161560.20221018_162836
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *;do echo ${f%.*}.$(date '+%Y%m%d_%H%M%S'); done[1@.t; done M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx; doneeM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ lsfor f in *;do echo $f > ${f%.*}.$(date '+%Y%m%d_%H%M%S').txtt; donefor f in *;do echo $f > ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Klsfor f in *;do echo $f > ${f%.*}.$(date '+%Y%m%d_%H%M%S').txtt; donefor f in *;do echo $f > ${f%.*}.$(date '+%Y%m%d_%H%M%S').txt; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *.t[K[K_*[K[K[K[K[K[K[K[K[K[K[K[Kls [K[K[Kfor f in *_*.txt; do echo f; done
+f
+f
+f
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo f; done[1P[1@$[1@f
+0373836635.20221018_162901.txt
+0811828964.20221018_162901.txt
+1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo $f; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@3[C[C[C[1P[1P[1P[1P[1@9[1P[1@p[1@r[1@o[1@d[1@u[1@c[1@t[1@_[1@r[1@e[1@v[1@i[1@e[1@w
+product_review
+product_review
+product_review
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo product_review; done[1@:[1@ [1@7[1@ [1@>[1@>[1@ [1@$[1@f
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ vi [K[K[Kcat *_*.txt
+0373836635.txt
+product_review: 7
+0811828964.txt
+product_review: 7
+1844161560.txt
+product_review: 7
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ cat *_*.txtls[Kfor f in *_*.txt; do echo product_review: 7 >> $f; donels[K[K[9P[C[C[C[C[C[C[9@: 7 >> $f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ clear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo f; done
+f
+f
+f
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo f; done[1P[1@$[1@*[1@.[1@t[1@x[1@t
+.txt
+.txt
+.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo $*.txt; done[C[1P[1P[1P[1P[1P[1@([1P[1@{[1@f[1@}
+0373836635.20221018_162901.txt
+0811828964.20221018_162901.txt
+1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f}; done[1@*
+bash: ${f*}: bad substitution
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f*}; done[1P[1@*[C
+bash: ${*f}: bad substitution
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${*f}; done[C[1P[1P[1@f[1@%[1@.
+0373836635.20221018_162901.txt
+0811828964.20221018_162901.txt
+1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%.}; done[1@*
+0373836635.20221018_162901
+0811828964.20221018_162901
+1844161560.20221018_162901
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%.*}; done[1@*
+0373836635.20221018_162901
+0811828964.20221018_162901
+1844161560.20221018_162901
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%*.*}; done[1P[C[C[1@.
+0373836635.20221018_162901.txt
+0811828964.20221018_162901.txt
+1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%.*.}; done[1P[1P
+bash: ${f.*}: bad substitution
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f.*}; done[1P[1P[1@%[1@*[1@.
+0373836635.20221018_162901.txt
+0811828964.20221018_162901.txt
+1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%*.}; done[1@*
+0373836635.20221018_162901
+0811828964.20221018_162901
+1844161560.20221018_162901
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *_*.txt; do echo ${f%*.*}; done[1P[1P[1P[1@*[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P
+0373836635.20221018_162901.txt
+0373836635.txt
+0811828964.20221018_162901.txt
+0811828964.txt
+1844161560.20221018_162901.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *.txt; do echo ${f%}; done[1@!
+for f in f in *.txt ; do echo ${f%} ; done.txt; do echo ${f%}; done
+bash: syntax error near unexpected token `do'
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in f in *.txt ; do echo ${f%} ; done.txt; do echo ${f%%}; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24P*.txt; do echo ${f%}; done
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+0373836635.20221018_162901.txt
+0373836635.txt
+0811828964.20221018_162901.txt
+0811828964.txt
+1844161560.20221018_162901.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in *.txt; do echo ${f%}; done[C[1P[1@{[1@}
+{}.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in {}.txt; do echo ${f%}; done[1@$[C[1@*
+.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ for f in ${*}.txt; do echo ${f%}; done[C[C[C[1P[1P[1P[2@()[1@*
+bash: 0373836635.20221018_162901.txt: command not found
+.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1
+0373836635.20221018_162901.txt
+0373836635.txt
+0811828964.20221018_162901.txt
+0811828964.txt
+1844161560.20221018_162901.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1
+0373836635.20221018_162901.txt
+0373836635.txt
+0811828964.20221018_162901.txt
+0811828964.txt
+1844161560.20221018_162901.txt
+1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep 0
+[01;31m[K0[m[K373836635.2[01;31m[K0[m[K221[01;31m[K0[m[K18_1629[01;31m[K0[m[K1.txt
+[01;31m[K0[m[K373836635.txt
+[01;31m[K0[m[K811828964.2[01;31m[K0[m[K221[01;31m[K0[m[K18_1629[01;31m[K0[m[K1.txt
+[01;31m[K0[m[K811828964.txt
+184416156[01;31m[K0[m[K.2[01;31m[K0[m[K221[01;31m[K0[m[K18_1629[01;31m[K0[m[K1.txt
+184416156[01;31m[K0[m[K.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep 03
+[01;31m[K03[m[K73836635.20221018_162901.txt
+[01;31m[K03[m[K73836635.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep 03[C[K[K-r [K[Ke ".."
+[01;31m[K03[m[K[01;31m[K73[m[K[01;31m[K83[m[K[01;31m[K66[m[K[01;31m[K35[m[K[01;31m[K.2[m[K[01;31m[K02[m[K[01;31m[K21[m[K[01;31m[K01[m[K[01;31m[K8_[m[K[01;31m[K16[m[K[01;31m[K29[m[K[01;31m[K01[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+[01;31m[K03[m[K[01;31m[K73[m[K[01;31m[K83[m[K[01;31m[K66[m[K[01;31m[K35[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+[01;31m[K08[m[K[01;31m[K11[m[K[01;31m[K82[m[K[01;31m[K89[m[K[01;31m[K64[m[K[01;31m[K.2[m[K[01;31m[K02[m[K[01;31m[K21[m[K[01;31m[K01[m[K[01;31m[K8_[m[K[01;31m[K16[m[K[01;31m[K29[m[K[01;31m[K01[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+[01;31m[K08[m[K[01;31m[K11[m[K[01;31m[K82[m[K[01;31m[K89[m[K[01;31m[K64[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+[01;31m[K18[m[K[01;31m[K44[m[K[01;31m[K16[m[K[01;31m[K15[m[K[01;31m[K60[m[K[01;31m[K.2[m[K[01;31m[K02[m[K[01;31m[K21[m[K[01;31m[K01[m[K[01;31m[K8_[m[K[01;31m[K16[m[K[01;31m[K29[m[K[01;31m[K01[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+[01;31m[K18[m[K[01;31m[K44[m[K[01;31m[K16[m[K[01;31m[K15[m[K[01;31m[K60[m[K[01;31m[K.t[m[K[01;31m[Kxt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e ".."[1P"
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "."[C[1P"^"2"0"2"2"
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "^2022"[1P"[1P"[1P"[1P"_"
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "^_"."
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "^_."[1P"[1P"[1P"["]"^]"0]"-]"9]"
+0373836635[01;31m[K.[m[K20221018[01;31m[K_[m[K162901[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+0373836635[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+0811828964[01;31m[K.[m[K20221018[01;31m[K_[m[K162901[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+0811828964[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+1844161560[01;31m[K.[m[K20221018[01;31m[K_[m[K162901[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+1844161560[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "[^0-9]"[1P0-9]"
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K.[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K.txt
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K.txt
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K.[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K.txt
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K.txt
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K.[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K.txt
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "[0-9]"[C[1P]"[1P]"[1P]"^]"_]"
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "[^_]"[1P]"[1P]"/]"/]"^//]"
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K_[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -1 | grep -e "[^//]"_]"\]"[1P]"
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K3[m[K[01;31m[K7[m[K[01;31m[K3[m[K[01;31m[K8[m[K[01;31m[K3[m[K[01;31m[K6[m[K[01;31m[K6[m[K[01;31m[K3[m[K[01;31m[K5[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K0[m[K[01;31m[K8[m[K[01;31m[K1[m[K[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K2[m[K[01;31m[K8[m[K[01;31m[K9[m[K[01;31m[K6[m[K[01;31m[K4[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[K2[m[K[01;31m[K0[m[K[01;31m[K2[m[K[01;31m[K2[m[K[01;31m[K1[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K8[m[K_[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K2[m[K[01;31m[K9[m[K[01;31m[K0[m[K[01;31m[K1[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+[01;31m[K1[m[K[01;31m[K8[m[K[01;31m[K4[m[K[01;31m[K4[m[K[01;31m[K1[m[K[01;31m[K6[m[K[01;31m[K1[m[K[01;31m[K5[m[K[01;31m[K6[m[K[01;31m[K0[m[K[01;31m[K.[m[K[01;31m[Kt[m[K[01;31m[Kx[m[K[01;31m[Kt[m[K
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls 0373836635.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls [K[Kn -s 0373836635.LATEST.txt 0373836635.20221018_162901.txt  M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+ln: failed to create symbolic link '0373836635.20221018_162901.txt': File exists
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ [K[huy@sjsu PRODUCTS]$ [K[huy@sjsu PRODUCTS]$ ls -s 0373836635.20221018_162901.txt 0373836635.LATEST.txt
+ls: cannot access '0373836635.LATEST.txt': No such file or directory
+4 0373836635.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ clear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ cat [K[K[K[Kecho [K[K[K[K[Kcat 0373836635.txt > 0373836635.LATEST.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.20221018_162901.txt  1844161560.txt
+0373836635.LATEST.txt           0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ln -n 0373836635.20221018_162901.txt 0373836635.LATEST.txt 
+ln: failed to create hard link '0373836635.LATEST.txt': File exists
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -l
+total 28
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 0373836635.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 17:00 0373836635.LATEST.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0373836635.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 0811828964.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0811828964.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 1844161560.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -ln -n 0373836635.20221018_162901.txt 0373836635.LATEST.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs -l[K[K[K[K[K[Krm 0373836635.T[KLATEST.txt 
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ clear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+0811828964.20221018_162901.txt  1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -l
+total 24
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 0373836635.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0373836635.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 0811828964.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0811828964.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 1844161560.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -l[Kclear[3Plsrm 0373836635.LATEST.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l[Kn -n 0373836635.20221018_162901.txt 0373836635.LATEST.txt 
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.20221018_162901.txt  1844161560.txt
+0373836635.LATEST.txt           0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls -l
+total 28
+-rw-rw-r-- 2 huy huy 33 Oct 18 16:32 0373836635.20221018_162901.txt
+-rw-rw-r-- 2 huy huy 33 Oct 18 16:32 0373836635.LATEST.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0373836635.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 0811828964.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 0811828964.txt
+-rw-rw-r-- 1 huy huy 33 Oct 18 16:32 1844161560.20221018_162901.txt
+-rw-rw-r-- 1 huy huy  2 Oct 18 14:44 1844161560.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crontab -3
+crontab: invalid option -- '3'
+crontab: usage error: unrecognized option
+Usage:
+ crontab [options] file
+ crontab [options]
+ crontab -n [hostname]
+
+Options:
+ -u <user>  define user
+ -e         edit user's crontab
+ -l         list user's crontab
+ -r         delete user's crontab
+ -i         prompt before deleting
+ -n <host>  set host in cluster to run users' crontabs
+ -c         get host in cluster to run users' crontabs
+ -s         selinux context
+ -V         print version and exit
+ -x <mask>  enable debugging
+
+Default operation is replace, per 1003.2
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crontab -3[Ke
+no crontab for huy - using an empty one
+[?1049h[?1h=[1;25r[23m[24m[0m[H[J[?25l[25;1H"/tmp/crontab.iX2xxi" 0L, 0C[2;1H[1m[34m~                                                                                 [3;1H~                                                                                 [4;1H~                                                                                 [5;1H~                                                                                 [6;1H~                                                                                 [7;1H~                                                                                 [8;1H~                                                                                 [9;1H~                                                                                 [10;1H~                                                                                 [11;1H~                                                                                 [12;1H~                                                                                 [13;1H~                                                                                 [14;1H~                                                                                 [15;1H~                                                                                 [16;1H~                                                                                 [17;1H~                                                                                 [18;1H~                                                                                 [19;1H~                                                                                 [20;1H~                                                                                 [21;1H~                                                                                 [22;1H~                                                                                 [23;1H~                                                                                 [24;1H~                                                                                 [1;1H[34h[?25h[?25l[0m[25;1H[1m-- INSERT --[0m[25;13H[K[1;1H[34h[?25h[?25l*[34h[?25h[?25l [34h[?25h[?25l*[34h[?25h[?25l [34h[?25h[?25l*[34h[?25h[?25l [34h[?25h[?25l*[34h[?25h[?25l [34h[?25h[?25l*[34h[?25h[?25l [34h[?25h[?25le[34h[?25h[?25lc[34h[?25h[?25lh[34h[?25h[?25lo[34h[?25h[?25l [34h[?25h[?25la[34h[?25h[?25lv[34h[?25h[?25le[34h[?25h[?25lr[34h[?25h[?25la[34h[?25h[?25lg[34h[?25h[?25le[34h[?25h[?25l [34h[?25h[?25lr[34h[?25h[?25la[34h[?25h[?25lt[34h[?25h[?25li[34h[?25h[?25ln[34h[?25h[?25lg[34h[?25h[25;1H[K[?25l[1;29H[34h[?25h[?25l[25;1H:[34h[?25hwq[?25l"/tmp/crontab.iX2xxi" 1L, 30C written
+[?1l>[34h[?25h[?1049lcrontab: installing new crontab
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ ls
+0373836635.20221018_162901.txt  0811828964.20221018_162901.txt  1844161560.txt
+0373836635.LATEST.txt           0811828964.txt
+0373836635.txt                  1844161560.20221018_162901.txt
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crobtab -e
+bash: crobtab: command not found
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crontab
+^[[A^[[B^X^Ckhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crontab -r[Ke
+[?1049h[?1h=[1;25r[23m[24m[0m[H[J[?25l[25;1H"/tmp/crontab.XnRu2Y" 1L, 30C[1;1H* * * * * echo average rating
+[1m[34m~                                                                                 [3;1H~                                                                                 [4;1H~                                                                                 [5;1H~                                                                                 [6;1H~                                                                                 [7;1H~                                                                                 [8;1H~                                                                                 [9;1H~                                                                                 [10;1H~                                                                                 [11;1H~                                                                                 [12;1H~                                                                                 [13;1H~                                                                                 [14;1H~                                                                                 [15;1H~                                                                                 [16;1H~                                                                                 [17;1H~                                                                                 [18;1H~                                                                                 [19;1H~                                                                                 [20;1H~                                                                                 [21;1H~                                                                                 [22;1H~                                                                                 [23;1H~                                                                                 [24;1H~                                                                                 [1;1H[34h[?25h[?25l[0m[25;1H[K[25;1H:[34h[?25hwq[?25l"/tmp/crontab.XnRu2Y" 1L, 30C written
+[?1l>[34h[?25h[?1049lcrontab: installing new crontab
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ crontab -e
+[?1049h[?1h=[1;25r[23m[24m[0m[H[J[?25l[25;1H"/tmp/crontab.aSxMCG" 1L, 30C[1;1H* * * * * echo average rating
+[1m[34m~                                                                                 [3;1H~                                                                                 [4;1H~                                                                                 [5;1H~                                                                                 [6;1H~                                                                                 [7;1H~                                                                                 [8;1H~                                                                                 [9;1H~                                                                                 [10;1H~                                                                                 [11;1H~                                                                                 [12;1H~                                                                                 [13;1H~                                                                                 [14;1H~                                                                                 [15;1H~                                                                                 [16;1H~                                                                                 [17;1H~                                                                                 [18;1H~                                                                                 [19;1H~                                                                                 [20;1H~                                                                                 [21;1H~                                                                                 [22;1H~                                                                                 [23;1H~                                                                                 [24;1H~                                                                                 [1;1H[34h[?25h[0m* * * * * echo average ratinn[?25l[25;1H[1m-- INSERT --[0m[25;13H[K[1;29H[34h[?25hg[?25l [34h[?25h[?25l>[34h[?25h[?25l [34h[?25h[?25lP[34h[?25h[?25lR[34h[?25h[?25lO[34h[?25h[?25lD[34h[?25h[?25lU[34h[?25h[?25lC[34h[?25h[?25lT[34h[?25h[?25lS[34h[?25h[?25l/[34h[?25h[?25l[1;41H[K[1;41H[34h[?25h[?25l[1;40H[K[1;40H[34h[?25h[?25l[1;39H[K[1;39H[34h[?25h[?25l[1;38H[K[1;38H[34h[?25h[?25l[1;37H[K[1;37H[34h[?25h[?25l[1;36H[K[1;36H[34h[?25h[?25l[1;35H[K[1;35H[34h[?25h[?25l[1;34H[K[1;34H[34h[?25h[?25l[7C[34h[?25h[?25l[1;34H[34h[?25h[?25l[1;33H[K[1;33H[34h[?25h[?25lP[34h[?25h[?25lR[34h[?25h[?25lO[34h[?25h[?25lD[34h[?25h[?25lU[34h[?25h[?25lC[34h[?25h[?25lT[34h[?25h[?25lS[34h[?25h[?25l/[34h[?25h[?25lp[34h[?25h[?25lr[34h[?25h[?25lo[34h[?25h[?25l[1;44H[K[1;44H[34h[?25h[?25l[1;43H[K[1;43H[34h[?25h[?25l[1;42H[K[1;42H[34h[?25h[?25li[34h[?25h[?25ld[34h[?25h[?25l.[34h[?25h[?25lA[34h[?25h[?25lV[34h[?25h[?25lE[34h[?25h[?25lR[34h[?25h[?25l[1;48H[K[1;48H[34h[?25h[?25l[1;47H[K[1;47H[34h[?25h[?25lG[34h[?25h[?25lR[34h[?25h[?25lA[34h[?25h[?25lT[34h[?25h[?25lI[34h[?25h[?25lN[34h[?25h[?25lG[34h[?25h[?25l.[34h[?25h[?25lt[34h[?25h[?25lx[34h[?25h[?25lt[34h[?25h[?25l:[34h[?25h[25;1H[K[?25l[1;58H[34h[?25h[?25l[25;1H[1m-- INSERT --[1;58H[34h[?25h[0m:[?25l[1;58H[K[1;58H[34h[?25h[25;1H[K[?25l[1;57H[34h[?25h[?25l[25;1H:[34h[?25hwq[?25l"/tmp/crontab.aSxMCG" 1L, 58C written
+[?1l>[34h[?25h[?1049lcrontab: installing new crontab
+khuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ clear
+[H[Jkhuy@sjsu:~/git/worksheet1/worksheet6/PRODUCTS\[huy@sjsu PRODUCTS]$ exit
+
+Script done on 2022-10-18 17:11:06-04:00
