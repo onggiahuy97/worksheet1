@@ -1,0 +1,1000 @@
+    6  head -n 2 amazon_reviews_us_Books_v1_02.tsv | sed 's/<[^>]*>//g;s/\t/ /g;s/ /\n/g;'/^[[:space:]]*$/d'
+    7  head -n 2 amazon_reviews_us_Books_v1_02.tsv | sed 's/<[^>]*>//g;s/\t/ /g;s/ /\n/g;/^[[:space:]]*$/d'
+    8  head -n 2 amazon_reviews_us_Books_v1_02.tsv | sed 's/<[^>]*>//g;s/\t/ /g;s/ /\n/g'
+    9  clear
+   10  head -n 2 amazon_reviews_us_Books_v1_02.tsv | 
+   11  head -n 2 amazon_reviews_us_Books_v1_02.tsv | cat
+   12  clear
+   13  head -n amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]'
+   14  head amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]'
+   15  head amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]' | sed 's/ \+/ /g'
+   16  head amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g'
+   17  head amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g'
+   18  cat amazon_reviews_us_Books_v1_02.tsv | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr
+   19  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr
+   20  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr | head -n 10
+   21  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr | head -n 10 > most10WordsInVerified.txt
+   22  clear
+   23  ls
+   24  ll
+   25  cd git/worksheet1/
+   26  ls
+   27  ll
+   28  cd
+   29  ls *ver
+   30  ls *ver*.txt
+   31  mv *ver*.txt /home/huy/git/worksheet1/worksheet8
+   32  ls
+   33  cd git/worksheet1/worksheet8
+   34  ls
+   35  history > cmds.log
+   36  df -H
+   37  clear
+   38  ls
+   39  cd
+   40  ll
+   41  clear
+   42  ll
+   43  cd git/worksheet1/
+   44  ls
+   45  ll
+   46  cd A4
+   47  ls
+   48  cd
+   49  clear
+   50  hf -H
+   51  df -H
+   52  owd
+   53  pwd
+   54  ll
+   55  cd
+   56  cd /home/
+   57  ll
+   58  free
+   59  meminfo
+   60  ll
+   61  clear
+   62  cd 
+   63  cd git/worksheet1/worksheet8/
+   64  ls
+   65  history > cmds.log
+   66  cd ~/mnt/sratch
+   67  cd
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd ..
+   72  ls
+   73  cd mnt/
+   74  ls
+   75  cd scratch/
+   76  ls
+   77  cd huy/
+   78  ls
+   79  clear
+   80  mkdir git
+   81  ls
+   82  cd git/
+   83  mkdir ws8
+   84  ls
+   85  cd ws8/
+   86  ls
+   87  clear
+   88  cd
+   89  ls
+   90  clear
+   91  cd
+   92  ls
+   93  cd
+   94  mv amazon_reviews_us_Books_v1_02.tsv ~/mnt/sratch/huy
+   95  cd ..
+   96  cd ../..
+   97  ls
+   98  cd
+   99  cd ~///mnt
+  100  cd ~//mnt
+  101  cd ..
+  102  pwd
+  103  cd ..
+  104  ls
+  105  pwd
+  106  cd
+  107  cd ~/mnt
+  108  cd /mnt
+  109  ls
+  110  clear
+  111  cd
+  112  ls
+  113  mv amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/huy
+  114  ls
+  115  cd git/worksheet1/
+  116  ls
+  117  cd
+  118  cd git/
+  119  ls
+  120  mv worksheet1 /mnt/scratch/huy
+  121  ls
+  122  cd /mnt/scratch/huy
+  123  ls
+  124  cd git/
+  125  ls
+  126  cd ..
+  127  ls
+  128  ls worksheet1/
+  129  rm git
+  130  ls
+  131  rm -r git
+  132  ls
+  133  clear
+  134  ls
+  135  cd worksheet1/
+  136  ls
+  137  cd worksheet8/
+  138  ls
+  139  history > cmds.log
+  140  ls
+  141  clear
+  142  tmux attach -t hw
+  143  ssh huy@172.31.197.164
+  144  clear
+  145  ls
+  146  cd /mnt/scratch/huy
+  147  ls
+  148  cd worksheet1/
+  149  ls
+  150  cd worksheet8
+  151  ls
+  152  ll
+  153  head ws8.txt 
+  154  head cmds.log 
+  155  cat cmds.log >> ws8.txt 
+  156  ll
+  157  clear
+  158  cat ws8.txt 
+  159  clear
+  160  ls
+  161  clear
+  162  array = ( I a an as at the by in for of on that )
+  163  array=( I a an as at the by in for of on that  )
+  164  echo array
+  165  echo $array 
+  166  for i in "${array[@]}"; do echo $i; done
+  167  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' > most10WordsInVerified.txt
+  168  head most10WordsInVerified.txt 
+  169  for i in "${array[@]}";  do sed -i -e "s/\<$i\>\s*//g" most10WordsInVerified.txt ; done
+  170  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr | head -n 10
+  171  clear
+  172  ls
+  173  rm most10WordsInVerified.txt 
+  174  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr | head -n 10 > most10WordsInVerified.txt
+  175  ls
+  176  clear
+  177  cat most10WordsInVerified.txt 
+  178  rm most10WordsInVerified.txt 
+  179  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr > most10WordsInVerified.txt
+  180  cat most10WordsInVerified.txt 
+  181  clear
+  182  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr
+  183  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr | head
+  184  ls
+  185  clear
+  186  rm most10WordsInVerified.txt 
+  187  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr > most10WordsInVerified.txt
+  188  ls
+  189  clear
+  190  head most10WordsInVerified.txt 
+  191  head -n 20 most10WordsInVerified.txt 
+  192  head -n 50 most10WordsInVerified.txt 
+  193  clear
+  194  ls
+  195  rm most10WordsInVerified.txt 
+  196  ls
+  197  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr > most10WordsInVerified.txt
+  198  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g" most10WordsInVerified.txt; done
+  199  head most10WordsInVerified.txt 
+  200  clear
+  201  rm most10WordsInVerified.txt 
+  202  ls
+  203  clear
+  204  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' > most10WordsInVerified.txt
+  205  ls
+  206  head most10WordsInVerified.txt 
+  207  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g" most10WordsInVerified.txt; done
+  208  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr | head
+  209  clear
+  210  ls
+  211  array=( I a an as at the by in for of on that and to is with br this be The)
+  212  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g" most10WordsInVerified.txt; done
+  213  cat most10WordsInVerified.txt 
+  214  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g;/^$/d" most10WordsInVerified.txt; done
+  215  cat most10WordsInVerified.txt 
+  216  clear
+  217  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr 
+  218  cat most10WordsInVerified.txt | sort | uniq -c | sort -nr | head
+  219  clear
+  220  rm most10WordsInVerified.txt 
+  221  ls
+  222  clear
+  223  ls
+  224  rm unverified.txt 
+  225  ls
+  226  cd ..
+  227  ls
+  228  awk '/unverified/{print}' amazon_reviews_us_Books_v1_02.tsv | head > unverified.txt
+  229  mv unverified.txt /mnt/scratch/huy/worksheet1/worksheet8/
+  230  ls
+  231  cd worksheet1/worksheet8/
+  232  ls
+  233  clear
+  234  cat verified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' > most10WordsInVerified.txt
+  235  cat unverified.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' > most10WordsInUnverified.txt
+  236  ls
+  237  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g;/^$/d" most10WordsInVerified.txt; done
+  238  for i in "${array[@]}"; do     sed -i -e "s/\<$i\>\s*//g;/^$/d" most10WordsInUnverified.txt; done
+  239  ls
+  240  clear
+  241  cat most10WordsInUnverified.txt | sort | uniq -c | sort -nr | head
+  242  ls
+  243  clear
+  244  vi ws8.txt 
+  245  head ws8.txt 
+  246  cd ..
+  247  ls
+  248  clear
+  249  git status
+  250  git add .
+  251  git commit -m "ws8"
+  252  git push -u origin main
+  253  ls
+  254  clear
+  255  ls
+  256  which bash
+  257  vi randomsample.sh
+  258  ls
+  259  chmod u+x randomsample.sh 
+  260  ./randomsample.sh 
+  261  vi randomsample.sh 
+  262  ./randomsample.sh 1 a
+  263  cd ..
+  264  ls
+  265  cd ..
+  266  pwd
+  267  ls
+  268  mv amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/huy/worksheet1/worksheet9/
+  269  cd worksheet1/worksheet9/
+  270  ls
+  271  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  272  ./randomsample.sh 2 amazon_reviews_us_Books_v1_02.tsv 
+  273  clear
+  274  ./randomsample.sh 
+  275  ./randomsample.sh 2
+  276  vi randomsample.sh 
+  277  ./randomsample.sh 
+  278  ./randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  279  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  280  clear
+  281  ./randomsample.sh 111 amazon_reviews_us_Books_v1_02.tsv 
+  282  vi randomsample.sh 
+  283  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  284  vi randomsample.sh 
+  285  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  286  i randomsample.sh 
+  287  vi randomsample.sh 
+  288  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  289  vi randomsample.sh 
+  290  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  291  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  292  vi randomsample.sh 
+  293  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  294  vi randomsample.sh 
+  295  ./randomsample.sh 123 amazon_reviews_us_Books_v1_02.tsv 
+  296  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  297  vi randomsample.sh 
+  298  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  299  vi randomsample.sh 
+  300  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  301  vi randomsample.sh 
+  302  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  303  vi randomsample.sh 
+  304  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  305  vi randomsample.sh 
+  306  ./randomsample.sh 5 amazon_reviews_us_Books_v1_02.tsv 
+  307  vi randomsample.sh 
+  308  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  309  vi randomsample.sh 
+  310  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  311  vi randomsample.sh 
+  312  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  313  vi randomsample.sh 
+  314  ./randomsample.sh 1 amazon_reviews_us_Books_v1_02.tsv 
+  315  ./randomsample.sh 3 amazon_reviews_us_Books_v1_02.tsv 
+  316  clear
+  317  vi randomsample.sh 
+  318  cat randomsample.sh 
+  319  ls
+  320  vi ws9.txt 
+  321  script ws9.txt
+  322  head ws9.txt 
+  323  vi ws9.txt 
+  324  clear
+  325  ls
+  326  mv amazon_reviews_us_Books_v1_02.tsv /../mnt/scratch/huy/
+  327  ls
+  328  history > cmds.log
+  329  ls
+  330  clear
+  331  head ws9.txt 
+  332  clear
+  333  head randomsample.sh 
+  334  clear
+  335  ls
+  336  head cmds.log 
+  337  clear
+  338  cd ..
+  339  ls
+  340  cd ..
+  341  ls
+  342  cd worksheet1/
+  343  ls
+  344  git status
+  345  git add .
+  346  git status
+  347  git commit -m "worksheet9"
+  348  git push -u origin main
+  349  cd ~/mnt/sratch
+  350  cd /mnt/scratch/
+  351  ls
+  352  cd h
+  353  cd huy/
+  354  ls
+  355  clear
+  356  cd worksheet1/
+  357  ls
+  358  mkdir worksheet9
+  359  ls
+  360  cd worksheet9
+  361  ls
+  362  tmux new-session -s homework
+  363  tmux new-session -s worksheet9
+  364  ls
+  365  cd ..
+  366  ls
+  367  cd ..
+  368  ls
+  369  cd mnt/scratch/
+  370  ls
+  371  cd huy/
+  372  ls
+  373  clear
+  374  cd worksheet1/
+  375  ls
+  376  clear
+  377  ls
+  378  clear
+  379  ls
+  380  cd /mnt/scratch/huy/
+  381  ls
+  382  clear
+  383  cd /mnt/scratch/huy/
+  384  ls
+  385  cd worksheet1/
+  386  ls
+  387  mkdir A5
+  388  cd A5
+  389  ls
+  390  clear
+  391  tmux new-session -s A5
+  392  clear
+  393  cd /mnt/scratch/huy/worksheet1/A5
+  394  tmux attach -t A5
+  395  cd /mnt/scratch/huy/
+  396  cd A5
+  397  ls
+  398  cd worksheet1/A5
+  399  ls
+  400  clear
+  401  ls
+  402  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' > retweeted.txt
+  403  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{print $2,$1}' > replies.txt
+  404  ls
+  405  clear
+  406  head retweeted.txt 
+  407  clear
+  408  vi calculation.sh 
+  409  ./calculation.sh retweeted.txt | head
+  410  clear
+  411  vi calculation.sh 
+  412  cd ..
+  413  ls
+  414  cd A4
+  415  ls
+  416  ll
+  417  cp downloaded_tweets_extend_nolf2.tsv /mnt/scratch/huy/worksheet1/A5
+  418  ll
+  419  cd ..
+  420  clear
+  421  cd A5
+  422  ls
+  423  clear
+  424  ls
+  425  head downloaded_tweets_extend_nolf2.tsv 
+  426  clear
+  427  head -n 1 re
+  428  head -n 1 downloaded_tweets_extend_nolf2.tsv 
+  429  clear
+  430  grep replies downloaded_tweets_extend_nolf2.tsv 
+  431  clear
+  432  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | head 
+  433  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$"\t" -f4 | head
+  434  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | head
+  435  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | head
+  436  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' | head
+  437  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' > retweeted.txt
+  438  clear
+  439  head -n 1 downloaded_tweets_extend_nolf2.tsv 
+  440  [huy@sjsu A5]$ cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' | head
+  441  cat downloaded_tweets_extend_nolf2.tsv | grep retweeted | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' | head
+  442  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{if ($1>3) print $2,$1}' | head
+  443  grep replies downloaded_tweets_extend_nolf2.tsv | wc -l
+  444  grep replies downloaded_tweets_extend_nolf2.tsv | head
+  445  grep replies downloaded_tweets_extend_nolf2.tsv 
+  446  cd ..
+  447  ls
+  448  cd A4
+  449  ls
+  450  grep replies downloaded_tweets_extend_original_nolf2.tsv | wc
+  451  grep replies downloaded_tweets_extend_original_nolf2.tsv | wc -l
+  452  grep reply downloaded_tweets_extend_nolf2.tsv | wc 
+  453  grep replies downloaded_tweets_extend_nolf2.tsv | wc
+  454  grep retweeted downloaded_tweets_extend_nolf2.tsv | wc
+  455  clear
+  456  cd ..
+  457  cd A5
+  458  ls
+  459  clear
+  460  [huy@sjsu A5]$ cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | head
+  461  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | head
+  462  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | awk 'print $2,$1' | head
+  463  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | awk '{print $2,$1}' | head
+  464  cat downloaded_tweets_extend_nolf2.tsv | grep replies | cut -d$'\t' -f4 | tr -s '\n' | tr -d '"' | tr , '\n' | sort | uniq -c | sort -nr | awk '{print $2,$1}' > replies.txt
+  465  ls
+  466  head retweeted.txt 
+  467  vi calculation.sh
+  468  chmod u+x calculation.sh 
+  469  ./calculation.sh 
+  470  vi calculation.sh 
+  471  ./calculation.sh 
+  472  clear
+  473  ./calculation.sh 
+  474  clear
+  475  vi calculation.sh 
+  476  ./calculation.sh 
+  477  vi calculation.sh 
+  478  ./calculation.sh 
+  479  vi calculation.sh 
+  480  ls
+  481  rm replies.txt 
+  482  rm retweeted.txt 
+  483  ls
+  484  clear
+  485  ls
+  486  vi calculation.sh 
+  487  ./calculation.sh retweeted.txt downloaded_tweets_extend_nolf2.tsv 
+  488  vi calculation.sh 
+  489  ./calculation.sh retweeted.txt 
+  490  vi calculation.sh 
+  491  rm calculation.sh 
+  492  ls
+  493  clear
+  494  vi runScript.sh
+  495  chmod u+x runScript.sh 
+  496  ./runScript.sh 
+  497  vi runScript.sh 
+  498  py test.py
+  499  vi test.py
+  500  py test.py 
+  501  ls
+  502  rm test.py 
+  503  ls
+  504  clear
+  505  vi runScript.sh 
+  506  clear
+  507  ls
+  508  cat retweeted.txt | awk '{sum+=$2} END {print sum}'
+  509  cat replies.txt | awk '{sum+=$2} END {print sum}'
+  510  grep retweeted downloaded_tweets_extend_nolf2.tsv | wc -l
+  511  head retweeted.txt 
+  512  grep Ukraine downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | head
+  513  head -n 1 downloaded_tweets_extend_nolf2.tsv 
+  514  grep Ukraine downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head 
+  515  grep Ukraine downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1 
+  516  grep Ukraine downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1 | awk '{print $1}'
+  517  clear
+  518  ls
+  519  vi runScript.sh 
+  520  ./runScript.sh 
+  521  vi runScript.sh 
+  522  ./runScript.sh 
+  523  vi runScript.sh 
+  524  ./runScript.sh 
+  525  vi runScript.sh 
+  526  ./runScript.sh 
+  527  vi runScript.sh 
+  528  ./runScript.sh 
+  529  vi runScript.sh 
+  530  ./runScript.sh 
+  531  vi runScript.sh 
+  532  ./runScript.sh 
+  533  vi runScript.sh 
+  534  ./runScript.sh 
+  535  vi runScript.sh 
+  536  ./runScript.sh 
+  537  vi runScript.sh 
+  538  ./runScript.sh 
+  539  vi runScript.sh 
+  540  ./runScript.sh 
+  541  vi runScript.sh 
+  542  ./runScript.sh 
+  543  vi runScript.sh 
+  544  ./runScript.sh 
+  545  vi runScript.sh 
+  546  ./runScript.sh 
+  547  clear
+  548  ls
+  549  awk '{print $1}' retweeted.txt | head
+  550  awk '{print $1}' retweeted.txt > retweeted.H.txt
+  551  awk '{print $2}' retweeted.txt > retweeted.C.txt
+  552  head retweeted.C.txt 
+  553  clear
+  554  for c in retweeted.H.txt; do echo $c; done
+  555  for c in retweeted.H.txt; do echo "$c"; done
+  556  for p in (retweeted.H.txt); do
+  557  for c in retweeted.H.txt; do echo "{$c}"; done
+  558  while read p; do echo $p;done<retweeted.H.txt 
+  559  clear
+  560  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv;done<retweeted.H.txt 
+  561  clear
+  562  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $1}' ; done<retweeted.H.txt 
+  563  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $1}' > retweeted.clusterCLeader.txt ; done<retweeted.H.txt 
+  564  ls
+  565  ll
+  566  head retweeted.clusterCLeader.txt 
+  567  rm retweeted.clusterCLeader.txt 
+  568  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $1}' >> retweeted.clusterCLeader.txt ; done<retweeted.H.txt 
+  569  ll
+  570  head retweeted.clusterCLeader.txt 
+  571  clear
+  572  ll
+  573  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | wc -l >> retweeted.tweetsInC; done<retweeted.txt 
+  574  ls
+  575  ll
+  576  rm retweeted.tweetsInC 
+  577  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | wc -l >> retweeted.tweetsInC.txt; done<retweeted.txt 
+  578  ll
+  579  head retweeted.tweetsInC.txt 
+  580  clear
+  581  ll
+  582  34/23
+  583  man paste
+  584  paste retweeted.H.txt retweeted.C.txt | column s $'\t' -t 
+  585  man column
+  586  paste retweeted.H.txt retweeted.C.txt | column s $'\t' -t | head
+  587  paste retweeted.H.txt retweeted.C.txt | column -s $'\t' -t | head
+  588  clear
+  589  while read p; do VALUE=$((29529/48956)); echo $VALUE; done<retweeted.txt
+  590  while read p; do echo $(echo "29529/48956" | bc -l); done<retweeted.txt
+  591  while read p; do echo $(echo "29529/48956" | bc -l) >> retweeted.freHOverall; done<retweeted.txt
+  592  ll
+  593  head retweeted.C
+  594  head retweeted.C.txt 
+  595  head retweeted.H.txt 
+  596  cat retweeted.H.txt retweeted.C.txt | head
+  597  man paste
+  598  paste retweeted.H.txt retweeted.C.txt | head
+  599  paste retweeted.H.txt retweeted.C.txt | awk '{print $1}' | head
+  600  ll
+  601  clear
+  602  ll
+  603  paste retweeted.C.txt retweeted.tweetsInC.txt | head
+  604  paste retweeted.C.txt retweeted.tweetsInC.txt | awk '{echo "hello"}' | head
+  605  paste retweeted.C.txt retweeted.tweetsInC.txt | echo $1 | head
+  606  paste retweeted.C.txt retweeted.tweetsInC.txt | awk '{
+  607  cH=(expr $1)
+  608  cC=(expr  $2)}'
+  609  paste retweeted.C.txt retweeted.tweetsInC.txt | awk '{
+  610  cH=(expr $1)
+  611  cC=(expr  $2)}' | echo $cH
+  612  paste retweeted.C.txt retweeted.tweetsInC.txt | head
+  613  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print $(echo "$1/$2" | bc -l) 
+  614  }'
+  615  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print int("$1/$2")}' 
+  616  }'
+  617  done
+  618  quit
+  619  '
+  620  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print int("$1/$2")}'
+  621  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print double("$1/$2")}'
+  622  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print float("$1/$2")}'
+  623  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{print int("$1/$2")}'
+  624  paste retweeted.C.txt retweeted.tweetsInC.txt | head | awk '{dev=$1/$2; printf "%.5f\n",dev}'
+  625  paste retweeted.C.txt retweeted.tweetsInC.txt | awk '{dev=$1/$2; printf "%.5f\n",dev}' > retweeted.freHinC.txt
+  626  ll
+  627  head retweeted.freHinC.txt 
+  628  clear
+  629  ll
+  630  head retweeted.freHOverall 
+  631  paste retweeted.freHinC.txt retweeted.freHOverall | head
+  632  paste retweeted.freHinC.txt retweeted.freHOverall | awk '{dev=$1/$2;printf"%.5f\n",dev}' | head
+  633  paste retweeted.freHinC.txt retweeted.freHOverall | awk '{dev=$1/$2;printf"%.5f\n",dev}' > retweeted.reFreHC.txt
+  634  ll
+  635  clear
+  636  ll
+  637  paste retweeted.H.txt | head
+  638  while read p; do echo "29529">>retweeted.HEntiredata.txt; done<retweeted.txt 
+  639  head retweeted.H
+  640  head retweeted.HEntiredata.txt 
+  641  while read p; do echo "48956">>retweeted.TweetsEntireDataset.txt; done<retweeted.txt 
+  642  ll
+  643  [huy@sjsu A5]$ paste retweeted.H.txt retweeted.clusterCLeader.txt retweeted.reFreHC.txt retweeted.freHinC.txt retweeted.freHOverall retweeted.C.txt retweeted.tweetsInC.txt retweeted.HEntiredata.txt retweeted.TweetsEntireDataset.txt | head
+  644  paste retweeted.H.txt retweeted.clusterCLeader.txt retweeted.reFreHC.txt retweeted.freHinC.txt retweeted.freHOverall retweeted.C.txt retweeted.tweetsInC.txt retweeted.HEntiredata.txt retweeted.TweetsEntireDataset.txt | head
+  645  paste retweeted.H.txt retweeted.clusterCLeader.txt retweeted.reFreHC.txt retweeted.freHinC.txt retweeted.freHOverall retweeted.C.txt retweeted.tweetsInC.txt retweeted.HEntiredata.txt retweeted.TweetsEntireDataset.txt | column -s $'\t' -t | head
+  646  paste retweeted.H.txt retweeted.clusterCLeader.txt retweeted.reFreHC.txt retweeted.freHinC.txt retweeted.freHOverall retweeted.C.txt retweeted.tweetsInC.txt retweeted.HEntiredata.txt retweeted.TweetsEntireDataset.txt | column -s $'\t' -t > result.csv
+  647  vi result.csv 
+  648  head retweeted.clusterCLeader.txt 
+  649  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $1}' >> ttt.txt ; done<retweeted.H.txt
+  650  head ttt.txt 
+  651  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1
+  652  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1; done<retweeted.H.txt 
+  653  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | awk '{print $2}' | sort | uniq -c | sort -nr | head -n 1; done<retweeted.H.txt 
+  654  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | sort | uniq -c | sort -nr | head -n 1; done<retweeted.H.txt 
+  655  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $2}' ; done<retweeted.H.txt
+  656  clear
+  657  rm retweeted.clusterCLeader.txt 
+  658  while read p; do grep $p downloaded_tweets_extend_nolf2.tsv | cut -d$'\t' -f2 | sort | uniq -c | sort -nr | head -n 1| awk '{print $2}' >> retweeted.clusterCLeader.txt ; done<retweeted.H.txt
+  659  rm result.csv 
+  660  paste retweeted.H.txt retweeted.clusterCLeader.txt retweeted.reFreHC.txt retweeted.freHinC.txt retweeted.freHOverall retweeted.C.txt retweeted.tweetsInC.txt retweeted.HEntiredata.txt retweeted.TweetsEntireDataset.txt | column -s $'\t' -t > result.csv
+  661  vi result.csv 
+  662  clear
+  663  cd /mnt/scratch/huy/worksheet1/A5/
+  664  vi runScript.sh 
+  665  tmux attach -t A5
+  666  cd /mnt/scratch/huy/worksheet1/
+  667  ls
+  668  mkdir worksheet10
+  669  cd worksheet10/
+  670  tmux new-session -s ws10
+  671  tmux attach -t ws10
+  672  touch numbers.py
+  673  ls
+  674  vi numbers.py 
+  675  ls
+  676  cd ..
+  677  ls
+  678  cd ..
+  679  ls
+  680  mv amazon_reviews_us_Books_v1_02.tsv worksheet1/worksheet10/
+  681  cd worksheet1/worksheet10
+  682  ll
+  683  clear
+  684  ls
+  685  time python3 numbers.py 
+  686  cat amazon_reviews_us_Books_v1_02.tsv | head -n 1000 amazon.tsv
+  687  cat amazon_reviews_us_Books_v1_02.tsv | head -n 1000 > amazon.tsv
+  688  ls
+  689  mv amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/huy/
+  690  ls
+  691  vi numbers.py 
+  692  time python3 numbers.py
+  693  cat < amazon.tsv >> amazon.tsv 
+  694  cat amazon.tsv >> amazon.tsv 
+  695  head amazon.tsv >> amazon.tsv 
+  696  time python3 numbers.py
+  697  rm amazon.tsv 
+  698  cd ..
+  699  ls
+  700  cat amazon_reviews_us_Books_v1_02.tsv | head -n 5000 amazon.tsv
+  701  cat amazon_reviews_us_Books_v1_02.tsv | head -n 5000 > amazon.tsv
+  702  mv amazon.tsv worksheet1/worksheet10
+  703  cd worksheet1/worksheet10
+  704  ls
+  705  clear
+  706  time python3 numbers.py
+  707  head -n 1 amazon.tsv 
+  708  vi numbers.sh
+  709  chmod u+x numbers.sh 
+  710  ./numbers.sh 
+  711  vi numbers.sh 
+  712  awk amazon.tsv '{}'
+  713  awk amazon.tsv '{print $8}'
+  714  head -n 1 amazon.tsv | awk '{print}'
+  715  head -n 1 amazon.tsv | awk '{print $8}'
+  716  head -n 1 amazon.tsv | awk '{print $9}'
+  717  tail -n 2 amazon.tsv 
+  718  tail -n 2 amazon.tsv > amazon1.tsv
+  719  head amazon1.tsv 
+  720  clear
+  721  vi numbers.sh 
+  722  ./numbers.sh 
+  723  vi numbers.sh 
+  724  ./numbers.sh 
+  725  vi numbers.sh 
+  726  ./numbers.sh 
+  727  clear
+  728  rm amazon1.tsv 
+  729  clear
+  730  cat amazon.tsv 
+  731  clear
+  732  vi numbers.sh 
+  733  ./numbers.sh 
+  734  vi numbers.sh 
+  735  ./numbers.sh 
+  736  vi numbers.sh
+  737  ./numbers.sh 
+  738  vi numbers.sh 
+  739  ./numbers.sh 
+  740  head -n 1 amazon.tsv 
+  741  head -n 1 amazon.tsv | awk 'print $9}'
+  742  head -n 1 amazon.tsv | awk '{print $9}'
+  743  vi numbers.sh
+  744  ./numbers.sh 
+  745  vi numbers.sh 
+  746  ./numbers.sh 
+  747  vi numbers.sh
+  748  ./numbers.sh 
+  749  vi numbers.sh 
+  750  ./numbers.sh 
+  751  ./ numbers.
+  752  clear
+  753  vi numbers.sh 
+  754  ./numbers.sh 
+  755  vi numbers.sh 
+  756  ./numbers.sh 
+  757  vi numbers.sh 
+  758  ./numbers.sh 
+  759  clear
+  760  vi numbers.sh 
+  761  ./numbers.sh 
+  762  clear
+  763  vi numbers.sh 
+  764  ./numbers.sh 
+  765  vi numbers.sh 
+  766  ./numbers.sh 
+  767  vi numbers.sh 
+  768  ./numbers.sh 
+  769  tail -n 2 amazon.tsv > a.tsv
+  770  wc -l amazon.tsv 
+  771  wc -l a.tsv 
+  772  rm a.tsv 
+  773  vi numbers.ts
+  774  ls
+  775  vi numbers.sh 
+  776  ./numbers.sh 
+  777  vi numbers.sh 
+  778  ./numbers.sh 
+  779  vi numbers.sh 
+  780  ./numbers.sh 
+  781  vi numbers.sh 
+  782  ./numbers.sh 
+  783  vi numbers.sh 
+  784  ./numbers.sh 
+  785  vi numbers.sh 
+  786  ./numbers.sh 
+  787  vi numbers.sh 
+  788  ./numbers.sh 
+  789  vi numbers.sh 
+  790  ./numbers.sh 
+  791  clear
+  792   clear
+  793  ls
+  794  vi numbers.sh 
+  795  ./numbers.sh 
+  796  vi numbers.sh 
+  797  ./numbers.sh 
+  798  vi numbers.sh 
+  799  ./numbers.sh 
+  800  vi numbers.sh 
+  801  ./numbers.sh 
+  802  vi numbers.sh 
+  803  ./numbers.sh 
+  804  vi numbers.sh 
+  805  ./numbers.sh 
+  806  vi numbers.sh 
+  807  ./numbers.sh 
+  808  vi numbers.
+  809  ls
+  810  vi numbers.sh 
+  811  ./numbers.sh 
+  812  vi numbers.sh 
+  813  ./numbers.sh 
+  814  vi numbers.sh 
+  815  ./numbers.sh 
+  816  vi numbers.sh 
+  817  ./numbers.sh 
+  818  vi numbers.sh 
+  819  ./numbers.sh 
+  820  vi numbers.sh 
+  821  ./numbers.sh 
+  822  vi numbers.sh 
+  823  ./numbers.sh 
+  824  vi numbers.sh 
+  825  ./numbers.sh 
+  826  vi numbers.sh 
+  827  ./numbers.sh 
+  828  vi numbers.sh 
+  829  ls
+  830  time numbers.sh
+  831  time sh numbers.sh
+  832  vi numbers.sh 
+  833  ./numbers.sh 
+  834  vi numbers.
+  835  ni numbers.sh 
+  836  vi numbers.sh 
+  837  min=`awk 'BEGIN{a=1000}{if ($1<0+a) a=$1} END{print a}' amazon.tsv`
+  838  echo $min
+  839  vi numbers.sh 
+  840  ./numbers.sh 
+  841  vi numbers.sh 
+  842  ./numbers.sh 
+  843  vi numbers.sh 
+  844  ./numbers.sh 
+  845  time sh numbers.sh 
+  846  time python3 numbers.py 
+  847  cd ..
+  848  ls
+  849  cd A4
+  850  ls
+  851  ls -l down*
+  852  cp downloaded_tweets_extend_nolf2.tsv /mnt/scratch/huy/worksheet1/A6
+  853  clear
+  854  cd ..
+  855  clear
+  856  cd A6
+  857  ls
+  858  clear
+  859  head downloaded_tweets_extend_nolf2.tsv 
+  860  clear
+  861  grep replied_to downloaded_tweets_extend_nolf2.tsv | head -n 1
+  862  grep replied_to downloaded_tweets_extend_nolf2.tsv | awk '$2 != $6'
+  863  clear
+  864  tmux new -s A6
+  865  cd ..
+  866  ls
+  867  cd ..
+  868  ls
+  869  cd mmt
+  870  cd /mnt/scratch/
+  871  ls
+  872  clear
+  873  cd huy/
+  874  clear
+  875  ls
+  876  clear
+  877  cd worksheet1/
+  878  ls
+  879  mkdir A6
+  880  clear
+  881  cd A6
+  882  script a6.txt
+  883  clear
+  884  grep replied_to downloaded_tweets_extend_nolf2.tsv | wc -l
+  885  grep replied_to downloaded_tweets_extend_nolf2.tsv | awk '$2!=$6' | wc -l
+  886  grep replied_to downloaded_tweets_extend_nolf2.tsv | awk -F "\t" '($2 != $6)' | wc -l
+  887  grep replied_to downloaded_tweets_extend_nolf2.tsv | awk -F "\t" '($2 != $6)' > nolf_REPLIES.NOBOTS.tsv
+  888  head nolf_REPLIES.NOBOTS.tsv 
+  889  clear
+  890  cp /mnt/scratch/huy/worksheet1/A4/downloaded_tweets_extend_original_nolf2.tsv /mnt/scratch/huy/worksheet1/A6/
+  891  ls
+  892  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | awk -F "\t" '($2 != $6) | wc -l
+  893  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | awk -F "\t" '($2 != $6)' | wc -l
+  894  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | wc -l
+  895  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | awk -F "\t" '($2 != $6)' | wc -l
+  896  grep replied_to downloaded_tweets_extend_original_nolf2.tsv | awk -F "\t" '($2 != $6)' > original_REPLIES.NOBOTS.tsv
+  897  clear
+  898  ls
+  899  clear
+  900  cat nolf_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 | head
+  901  cat nolf_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 | wc -l
+  902  cat nolf_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 | sort | uniq -c | wc -l
+  903  clear
+  904  cat nolf_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 > total$6.txt
+  905  cat original_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 >> total.txt 
+  906  wc -l total.txt 
+  907  rm total.txt 
+  908  cat original_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 >> total$6.txt
+  909  ls
+  910  rm total.txt 
+  911  ls
+  912  clear
+  913  cat nolf_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 > total_IN_REPLY_TO_USER_ID.txt
+  914  cat original_REPLIES.NOBOTS.tsv | cut -d$'\t' -f6 >> total_IN_REPLY_TO_USER_ID.txt 
+  915  clear
+  916  wc -l total_IN_REPLY_TO_USER_ID.txt 
+  917  clear
+  918  cat total_IN_REPLY_TO_USER_ID.txt | sort | uniq -c | wc -l
+  919  cat original_REPLIES.NOBOTS.tsv | awk -F "\t" '($2 == $6)' | wc -l
+  920  head -n 1 downloaded_tweets_extend_nolf2.tsv 
+  921  grep replied_to downloaded_tweets_extend_* | wc -l
+  922  grep replied_to downloaded_tweets_extend_* | awk -F "\t" '($2 == $6)' | wc -l
+  923  clear
+  924  wc -l *NOBOTS.tsv
+  925  cat downloaded_tweets_extend_* | wc -l
+  926  cat *NOBOTS.tsv | wc -l
+  927  cat *NOBOTS.tsv | cut -d$'\t' -f2 | head 
+  928  cat *NOBOTS.tsv | cut -d$'\t' -f2 > userIDs.txt
+  929  head -n 2 *NO*
+  930  clear
+  931  ls
+  932  python3 --version
+  933  touch pyScript.py
+  934  vi pyScript.py
+  935  python3 pyScript.py 
+  936  vi pyScript.py 
+  937  python3 pyScript.py 
+  938  vi pyScript.py 
+  939  ls
+  940  vi pyScript.py 
+  941  clear
+  942  python3 pyScript.py 
+  943  vi pyScript.py 
+  944  python3 pyScript.py 
+  945  vi pyScript.py 
+  946  python3 pyScript.py 
+  947  vi pyScript.py 
+  948  clear
+  949  head -n 1 *NOBOTS.tsc
+  950  head -n 1 *NOBOTS.tsv
+  951  head -n 1 *NOBOTS.tsv | cut -d$'\t' -f3 
+  952  head -n 1 *NOBOTS.tsv | cut -d$'\t' -f3 | cut -d" " -f1
+  953  cat *NOBOTS.tsv | cut -d$'\t' -f3 | cut -d" " -f1 | sort | uniq -c | sort -nr -k 1 | head
+  954  head -n 1 *NOBOTS.tsv
+  955  clear
+  956  head -n 1 *NOBOTS.tsv | awk -F"\t" 'print $7' 
+  957  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $7}' 
+  958  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $6}' 
+  959  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $8}' 
+  960  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $9}' 
+  961  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $8}' 
+  962  head -n 1 *NOBOTS.tsv | awk -F"\t" '{print $8}' | sed -i "s/^M//g"
+  963  cat *NOBOTS.tsv | awk -F"\t" '{print $8}' > tweets.txt
+  964  tail tweets.txt 
+  965  head tweets.txt 
+  966  clear
+  967  cat tweets.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | head 
+  968  cat tweets.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | sort | uniq -c | sort -nr | head
+  969  cd ..
+  970  cd ws8
+  971  cd WS8
+  972  cd worksheet8
+  973  ls
+  974  head ws8.txt 
+  975  vi ws8.txt 
+  976  clear
+  977  cd ..
+  978  cd A6
+  979  clear
+  980  array=( I a an as at the by in for of on that and to is with br this be The)
+  981  for i in "${array[@]}"; do  sed -i -e "s/\<$i\>\s*//g;/^$/d" tweetsWord.txt; done
+  982  ls
+  983  clear
+  984  cat tweets.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' | head 
+  985  cat tweets.txt | tr -d '[:punct:]' | sed 's/ \+/ /g' | sed 's/\t/ /g' | sed 's/ /\n/g' > tweetsWord.txt
+  986  array=( I a an as at the by in for of on that and to is with br this be The)
+  987  for i in "${array[@]}"; do sed -i -e "s/\<$i\>\s*//g;/^$/d" tweetsWord.txt; done
+  988  head tweetsWord.txt 
+  989  array=( I a an as at the by in for of on that and to is with br this be The You my)
+  990  for i in "${array[@]}"; do sed -i -e "s/\<$i\>\s*//g;/^$/d" tweetsWord.txt;  done
+  991  head tweetsWord.txt 
+  992  cat tweetsWord.txt | sort | uniq -c | sort -nr | head -n 10
+  993  clear
+  994  ll
+  995  rm downloaded_tweets_extend_*
+  996  ll
+  997  clear
+  998  tmux attach -t A6
+  999  clear
+ 1000  tmux attach -t A6
+ 1001  clear
+ 1002  cd /mnt/scratch/huy/worksheet1/A6
+ 1003  history
+ 1004  clear
+ 1005  history > cmds.log
